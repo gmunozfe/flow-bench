@@ -264,6 +264,17 @@ java -jar -Dquarkus.profile=redis target/quarkus-app/quarkus-run.jar
 k6 run -e RATE=5000 -e DURATION=2m bench/k6-order20.js
 ```
 
+### Previous evaluation
+
+You can check with cURL command that your workflow is ready to run benchmarks
+
+```bash
+curl -X GET http://localhost:8080/hello-flow  -H 'content-type: application/json'
+curl -X POST http://localhost:8080/bench/order   -H 'Content-Type: application/json'   -d '{"orderId":"1","amount":42.5,"customerId":"cust-1"}'
+curl -X POST http://localhost:8080/bench/order20   -H 'Content-Type: application/json'   -d '{"orderId":"1","amount":42.5,"customerId":"cust-1"}'
+```
+
+
 ---
 
 ## 📊 What to Compare
