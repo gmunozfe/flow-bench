@@ -241,21 +241,86 @@ Means:
 > Requests that were scheduled but never executed because the system was saturated.
 
 ---
+## 💾 Local persistence services
 
-## 🚀 Running the Project
+This project can run with:
 
-### Build
+- **Redis** on `localhost:6379`
+- **PostgreSQL (JPA)** on `localhost:5432`, database `flow`, user `flow`, password `flow`
+- **MVStore file persistence** at `/tmp/hello-flow.mvstore.db`
 
-With the corresponding profile:
+### Start Redis and PostgreSQL
+
+Start both containers in the background:
+
 ```bash
-mvn clean package -Predis -Dquarkus.profile=redis 
+docker compose up -d
 ```
 
-### Launch
-
-With the corresponding profile:
+Start only Redis:
 ```bash
+docker compose up -d redis
+```
+
+Start only PostgreSQL:
+```bash
+docker compose up -d postgres
+```
+
+### Stop containers
+
+Stop and remove containers, but keep persisted data:
+```bash
+docker compose down
+```
+
+### Reset to a fresh instance
+
+Stop and remove containers and delete their volumes:
+```bash
+docker compose down -v
+```
+
+This gives you a brand-new Redis and PostgreSQL state the next time you start them.
+
+
+### MVStore reset
+
+MVStore is file-based, not container-based. To start with a fresh MVStore database:
+
+```bash
+rm -f /tmp/hello-flow.mvstore.db
+```
+
+---
+
+## 🚀 Build and Run the app with each profile
+
+No persistence:
+```bash
+mvn clean package
+java -jar target/quarkus-app/quarkus-run.jar
+```
+
+File (MVStore):
+```bash
+rm -f /tmp/hello-flow.mvstore.db
+mvn clean package -Pfile -Dquarkus.profile=file
+java -jar -Dquarkus.profile=file target/quarkus-app/quarkus-run.jar
+```
+
+Redis:
+```bash
+docker compose up -d redis
+mvn clean package -Predis -Dquarkus.profile=redis
 java -jar -Dquarkus.profile=redis target/quarkus-app/quarkus-run.jar
+```
+
+JPA:
+```bash
+docker compose up -d postgres
+mvn clean package -Pjpa -Dquarkus.profile=jpa
+java -jar -Dquarkus.profile=jpa target/quarkus-app/quarkus-run.jar
 ```
 
 ### Run benchmarks
