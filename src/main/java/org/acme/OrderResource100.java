@@ -4,15 +4,15 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Path;
 
-@Path("/bench/order20")
+@Path("/bench/order100")
 @ApplicationScoped
-public class OrderResource20 extends AbstractOrderResource<OrderWorkflow20> {
+public class OrderResource100 extends AbstractOrderResource<OrderWorkflow100> {
 
     @Inject
-    OrderWorkflow20 workflow;
+    OrderWorkflow100 workflow;
 
     @Override
-    protected OrderWorkflow20 workflow() {
+    protected OrderWorkflow100 workflow() {
         return workflow;
     }
 }

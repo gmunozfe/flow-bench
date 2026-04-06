@@ -3,15 +3,15 @@ package org.acme;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class OrderWorkflow20 extends AbstractOrderWorkflow {
+public class OrderWorkflow100 extends AbstractOrderWorkflow {
 
     @Override
     protected String workflowName() {
-        return "order-workflow-20";
+        return "order-workflow-100";
     }
 
     @Override
     protected int stepCount() {
-        return 20;
+        return 100;
     }
 }

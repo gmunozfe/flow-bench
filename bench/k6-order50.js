@@ -7,7 +7,7 @@ const BASE_URL = __ENV.BASE_URL || 'http://localhost:8080';
 
 export const options = {
   scenarios: {
-    order20_test: {
+    order50_test: {
       executor: 'constant-arrival-rate',
       rate: RATE,
       timeUnit: '1s',
@@ -28,7 +28,7 @@ export default function () {
     customerId: 'cust-1',
   });
 
-  const res = http.post(`${BASE_URL}/bench/order20`, payload, {
+  const res = http.post(`${BASE_URL}/bench/order50`, payload, {
     headers: { 'Content-Type': 'application/json' },
   });
 
@@ -41,7 +41,7 @@ export default function () {
 
   check(res, {
     'status 200': (r) => r.status === 200,
-    'completed': () => body.status === 'COMPLETED_20_STEPS',
+    'completed': () => body.status === 'COMPLETED_50_STEPS',
     'orderId matches': () => body.orderId === `order-${__ITER}`,
     'customerId matches': () => body.customerId === 'cust-1',
     'amount matches': () => body.amount === 110.0,

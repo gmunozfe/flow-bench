@@ -23,6 +23,22 @@ It helps answer:
 * How does the system behave under high load?
 * Which persistence backend provides the best trade-off?
 
+
+---
+
+## 🧪 Benchmark philosophy
+
+This project benchmarks **Quarkus Flow** using **purpose-built micro-workflows**, not real business workflows.
+
+Each workflow isolates a **single stress dimension** of the engine:
+
+* execution overhead
+* payload growth
+* CPU-heavy workflow
+* step-count workflow
+
+The goal is to establish **practical thresholds and limits of Quarkus Flow itself**, independent of business logic.
+
 ---
 
 ## ⚙️ Workflows
@@ -31,7 +47,7 @@ The repository includes **4 workflows**, each representing a different execution
 
 ---
 
-### 1. `HelloWorkflow`
+### 1. Execution Overhead `HelloWorkflow`
 
 **Description:**
 
@@ -53,41 +69,141 @@ The repository includes **4 workflows**, each representing a different execution
 
 ---
 
-### 2. `OrderWorkflow`
 
-**Description:**
+## 2️⃣ Memory / payload workflow (JSON-growing payload)
 
-* Simple order lifecycle
-* Few sequential steps (e.g. RECEIVED → VALIDATED → COMPLETED)
+### Purpose
 
-**Purpose:**
+* state size growth
+* serialization/deserialization cost
+* persistence overhead (Redis / JPA / file)
 
-* Basic workflow execution with light persistence
-* Entry-level performance comparison
+### Shape
 
----
+* fixed number of steps (5)
+* one dominant amplification step
+* payload controlled by:
 
-### 3. `OrderWorkflow20`
-
-**Description:**
-
-* Extended workflow with **20 sequential steps**
-* Simulates a realistic business process
-
-**Purpose:**
-
-* Stress test persistence layer
-* Measure cost of many state transitions
-
-**Characteristics:**
-
-* 💾 Heavy persistence load
-* 🔁 Many intermediate states
-* 📊 Ideal for identifying bottlenecks
+  * `items` → width
+  * `iterations` → depth
 
 ---
 
-### 4. `OrderEnrichmentWorkflow`
+## 🔥 Important behavior
+
+This workflow follows an **amplification pattern**:
+
+```
+small → medium → medium → LARGE → small
+```
+
+* Only one step (`set-3`) produces the large payload
+* All other steps remain smaller
+
+---
+
+## 📊 Key metrics
+
+### 🔹 Peak step payload
+
+Largest state snapshot persisted at a single step.
+
+Example:
+
+* `100k mutations` → ~**780 KB peak payload**
+
+---
+
+### 🔹 Total persisted payload per workflow
+
+Sum of all persisted states across steps.
+
+Example:
+
+* `100k mutations` → ~**830 KB total persisted**
+
+---
+
+## 📐 Payload sizing (empirical)
+
+From measurements:
+
+```
+~7.8 bytes per mutation
+```
+
+### Examples
+
+| Mutations | Peak payload |
+| --------: | -----------: |
+|       10k |       ~78 KB |
+|       30k |      ~235 KB |
+|      100k |      ~780 KB |
+|      300k |     ~2.35 MB |
+|        1M |      ~7.8 MB |
+|        3M |     ~23.5 MB |
+
+---
+
+## ⚡ Performance characteristics (Redis example)
+
+### Latency vs payload size
+
+| Payload | Avg latency |
+| ------: | ----------: |
+|  ~80 KB |      ~10 ms |
+| ~235 KB |      ~18 ms |
+| ~780 KB |      ~67 ms |
+| ~2.3 MB |     ~103 ms |
+| ~7.8 MB |     ~283 ms |
+|  ~23 MB |     ~780 ms |
+
+👉 Latency grows **approximately linearly with payload size**
+
+---
+
+## 🎯 Key insight
+
+> Performance is dominated by the **largest state snapshot**, not the number of steps.
+
+---
+
+## 🚀 Threshold model
+
+System limits are defined by:
+
+```
+growing-payload = rate × payload size × latency
+```
+
+### Observed behavior
+
+* High rate + small payload → very stable
+* Low rate + large payload → still stable
+* High rate + large payload → memory pressure
+
+---
+
+## 🧪 Example benchmark commands
+
+### Throughput-oriented
+
+```bash
+k6 run -e RATE=150 -e ITEMS=1000 -e ITERATIONS=10 bench/k6-json.js
+k6 run -e RATE=150 -e ITEMS=1000 -e ITERATIONS=100 bench/k6-json.js
+```
+
+### Payload-oriented
+
+```bash
+k6 run -e RATE=5 -e ITEMS=1000 -e ITERATIONS=600 bench/k6-json.js
+k6 run -e RATE=1 -e ITEMS=10000 -e ITERATIONS=300 bench/k6-json.js
+```
+
+
+---
+
+### 3. `OrderEnrichmentWorkflow`
 
 **Description:**
 
@@ -110,6 +226,41 @@ Steps:
 * 🌐 Network latency involved
 * 🔄 Data transformation
 * ⚖️ Mix of compute + I/O
+
+---
+
+### 4. Persistence Stress Workflow (Step Count)
+
+## Purpose
+
+This workflow family isolates **persistence overhead per step** by:
+
+* keeping payload size **small and constant**
+* increasing the number of sequential steps
+* forcing **frequent persistence checkpoints**
+
+This allows measuring:
+
+* step transition cost
+* persistence write amplification (per step)
+* throughput degradation under high checkpoint frequency
+
+Unlike the JSON workflow (payload stress), this focuses on **cost per step**, not cost per byte.
+
+---
+
+## Workflow Shape
+
+* 20 / 50 / 100 sequential steps
+* each step performs a small `set(...)` transformation
+* payload remains constant (no amplification)
+* each step is persisted independently
+
+Endpoints:
+
+* `/bench/order20`
+* `/bench/order50`
+* `/bench/order100`
 
 ---
 
