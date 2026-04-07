@@ -1,0 +1,347 @@
+gmunozfe:flow-bench$ k6 run -e RATE=20 -e DURATION=30s bench/k6-order20.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-order20.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * order20_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    99.989801/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=51.52ms min=23.24ms med=50.23ms max=335.17ms p(90)=66.07ms p(95)=70.04ms
+      { expected_response:true }...: avg=51.52ms min=23.24ms med=50.23ms max=335.17ms p(90)=66.07ms p(95)=70.04ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    19.99796/s
+
+    EXECUTION
+    iteration_duration.............: avg=51.78ms min=23.37ms med=50.44ms max=335.67ms p(90)=66.35ms p(95)=70.37ms
+    iterations.....................: 601    19.99796/s
+    vus............................: 1      min=0        max=1 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 105 kB 3.5 kB/s
+    data_sent......................: 116 kB 3.9 kB/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 601 complete and 0 interrupted iterations
+order20_test ✓ [======================================] 000/010 VUs  30s  20.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=20 -e DURATION=30s bench/k6-order50.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-order50.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * order50_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    99.849592/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=120.18ms min=66.89ms med=121.98ms max=172.78ms p(90)=146.72ms p(95)=152.55ms
+      { expected_response:true }...: avg=120.18ms min=66.89ms med=121.98ms max=172.78ms p(90)=146.72ms p(95)=152.55ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    19.969918/s
+
+    EXECUTION
+    iteration_duration.............: avg=120.42ms min=67.04ms med=122.2ms  max=172.98ms p(90)=147.11ms p(95)=152.87ms
+    iterations.....................: 601    19.969918/s
+    vus............................: 2      min=1        max=3 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 105 kB 3.5 kB/s
+    data_sent......................: 116 kB 3.9 kB/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 601 complete and 0 interrupted iterations
+order50_test ✓ [======================================] 000/010 VUs  30s  20.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=20 -e DURATION=30s bench/k6-order100.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-order100.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * order100_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    99.480792/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=213.04ms min=151.98ms med=215.67ms max=338.48ms p(90)=240.24ms p(95)=249.68ms
+      { expected_response:true }...: avg=213.04ms min=151.98ms med=215.67ms max=338.48ms p(90)=240.24ms p(95)=249.68ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    19.896158/s
+
+    EXECUTION
+    iteration_duration.............: avg=213.26ms min=152.17ms med=215.87ms max=338.65ms p(90)=240.42ms p(95)=249.85ms
+    iterations.....................: 601    19.896158/s
+    vus............................: 3      min=3        max=5 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 105 kB 3.5 kB/s
+    data_sent......................: 117 kB 3.9 kB/s
+
+
+
+
+running (0m30.2s), 000/010 VUs, 601 complete and 0 interrupted iterations
+order100_test ✓ [======================================] 000/010 VUs  30s  20.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s bench/k6-order20.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-order20.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * order20_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22480   748.320198/s
+    checks_succeeded...: 100.00% 22480 out of 22480
+    checks_failed......: 0.00%   0 out of 22480
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=42.09ms min=35.31ms med=40.52ms max=114.52ms p(90)=47.44ms p(95)=53.11ms
+      { expected_response:true }...: avg=42.09ms min=35.31ms med=40.52ms max=114.52ms p(90)=47.44ms p(95)=53.11ms
+    http_req_failed................: 0.00%  0 out of 4496
+    http_reqs......................: 4496   149.66404/s
+
+    EXECUTION
+    dropped_iterations.............: 5      0.166441/s
+    iteration_duration.............: avg=42.26ms min=35.45ms med=40.67ms max=115.54ms p(90)=47.63ms p(95)=53.31ms
+    iterations.....................: 4496   149.66404/s
+    vus............................: 5      min=5         max=14
+    vus_max........................: 15     min=12        max=15
+
+    NETWORK
+    data_received..................: 785 kB 26 kB/s
+    data_sent......................: 871 kB 29 kB/s
+
+
+
+
+running (0m30.0s), 000/015 VUs, 4496 complete and 0 interrupted iterations
+order20_test ✓ [======================================] 000/015 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s bench/k6-order50.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-order50.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * order50_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+WARN[0023] Insufficient VUs, reached 200 active VUs and cannot initialize more  executor=constant-arrival-rate scenario=order50_test
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 19270   616.450494/s
+    checks_succeeded...: 100.00% 19270 out of 19270
+    checks_failed......: 0.00%   0 out of 19270
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=588.24ms min=87.47ms med=124.5ms  max=2.92s p(90)=2.31s p(95)=2.56s
+      { expected_response:true }...: avg=588.24ms min=87.47ms med=124.5ms  max=2.92s p(90)=2.31s p(95)=2.56s
+    http_req_failed................: 0.00%  0 out of 3854
+    http_reqs......................: 3854   123.290099/s
+
+    EXECUTION
+    dropped_iterations.............: 646    20.665647/s
+    iteration_duration.............: avg=588.52ms min=88.08ms med=124.76ms max=2.92s p(90)=2.31s p(95)=2.56s
+    iterations.....................: 3854   123.290099/s
+    vus............................: 80     min=15        max=200
+    vus_max........................: 200    min=19        max=200
+
+    NETWORK
+    data_received..................: 670 kB 21 kB/s
+    data_sent......................: 743 kB 24 kB/s
+
+
+
+
+running (0m31.3s), 000/200 VUs, 3854 complete and 0 interrupted iterations
+order50_test ✓ [======================================] 000/200 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s bench/k6-order100.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-order100.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * order100_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+WARN[0003] Insufficient VUs, reached 200 active VUs and cannot initialize more  executor=constant-arrival-rate scenario=order100_test
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 14930   476.907986/s
+    checks_succeeded...: 100.00% 14930 out of 14930
+    checks_failed......: 0.00%   0 out of 14930
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=1.95s min=1.12s med=1.67s max=4.95s p(90)=3.49s p(95)=3.96s
+      { expected_response:true }...: avg=1.95s min=1.12s med=1.67s max=4.95s p(90)=3.49s p(95)=3.96s
+    http_req_failed................: 0.00%  0 out of 2986
+    http_reqs......................: 2986   95.381597/s
+
+    EXECUTION
+    dropped_iterations.............: 1515   48.393543/s
+    iteration_duration.............: avg=1.95s min=1.13s med=1.67s max=4.95s p(90)=3.49s p(95)=3.96s
+    iterations.....................: 2986   95.381597/s
+    vus............................: 73     min=73        max=200
+    vus_max........................: 200    min=80        max=200
+
+    NETWORK
+    data_received..................: 521 kB 17 kB/s
+    data_sent......................: 577 kB 18 kB/s
+
+
+
+
+running (0m31.3s), 000/200 VUs, 2986 complete and 0 interrupted iterations
+order100_test ✓ [======================================] 000/200 VUs  30s  150.00 iters/s
