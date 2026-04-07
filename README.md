@@ -517,10 +517,11 @@ This overhead is:
 ![Cost per KB vs. Latency](docs/images/cost_per_kb_latency.png)
 ![Cost per KB Payload size vs. time increased](docs/images/cost_per_kb_vs_payload_size.png)
 
-## Cost per Payload KB
+#### Cost per Payload KB
 
 Using a workflow without persistence:
-Baseline payload cost ≈ 0.025 ms per KB
+- Baseline payload cost ≈ **0.025 ms per KB**
+- Payload cost scales linearly
 
 **File (MVStore)** shows the best scaling behavior:
 * Near-linear growth
