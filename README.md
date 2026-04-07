@@ -145,61 +145,11 @@ From measurements:
 
 ---
 
-## ⚡ Performance characteristics (Redis example)
-
-### Latency vs payload size
-
-| Payload | Avg latency |
-| ------: | ----------: |
-|  ~80 KB |      ~10 ms |
-| ~235 KB |      ~18 ms |
-| ~780 KB |      ~67 ms |
-| ~2.3 MB |     ~103 ms |
-| ~7.8 MB |     ~283 ms |
-|  ~23 MB |     ~780 ms |
-
-👉 Latency grows **approximately linearly with payload size**
-
----
-
-## 🎯 Key insight
-
-> Performance is dominated by the **largest state snapshot**, not the number of steps.
-
----
-
-## 🚀 Threshold model
-
-System limits are defined by:
-
-```
-growing-payload = rate × payload size × latency
-```
-
 ### Observed behavior
 
 * High rate + small payload → very stable
 * Low rate + large payload → still stable
 * High rate + large payload → memory pressure
-
----
-
-## 🧪 Example benchmark commands
-
-### Throughput-oriented
-
-```bash
-k6 run -e RATE=150 -e ITEMS=1000 -e ITERATIONS=10 bench/k6-json.js
-k6 run -e RATE=150 -e ITEMS=1000 -e ITERATIONS=100 bench/k6-json.js
-```
-
-### Payload-oriented
-
-```bash
-k6 run -e RATE=5 -e ITEMS=1000 -e ITERATIONS=600 bench/k6-json.js
-k6 run -e RATE=1 -e ITEMS=10000 -e ITERATIONS=300 bench/k6-json.js
-```
-
 
 ---
 
