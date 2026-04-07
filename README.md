@@ -509,9 +509,79 @@ Compare across:
 
 ---
 
+## 💡 Deeper Insights: Cost per KB vs Cost per Step
+
+This benchmark isolates two orthogonal scaling dimensions:
+
+* **Payload size (JSON workflow)** → memory / serialization / persistence volume
+* **Step count (order workflow)** → persistence frequency / overhead
+
+These behave very differently under load.
+
+---
+
+## 1. Cost per Step (Persistence Frequency)
+
+> Each additional step introduces a **fixed overhead**: persistence + transition + scheduling.
+
+This overhead is:
+
+* relatively small at low load
+* becomes dominant under high concurrency
+
+> Cost-per-step is low in isolation, but scales poorly with concurrency due to contention on persistence and execution resources.
+
+
+---
+
+## 2. Cost per KB (Payload Size)
+
+* latency increases with payload size
+* cost appears roughly proportional to payload size
+
+> The dominant factor is **the largest persisted snapshot**, which carries the large payload
+
+---
+
+## 3. Cost Model Comparison
+
+| Dimension     | Behavior                     | Bottleneck Type        |
+| ------------- | ---------------------------- | ---------------------- |
+| Cost per step | fixed overhead per step      | persistence frequency  |
+| Cost per KB   | proportional to payload size | serialization + db I/O |
+
+---
+
+### Combined effect
+
+Worst-case scenario:
+
+* large payload
+* many steps
+* high request rate
+
+➡️ leads to:
+
+* persistence saturation
+* memory pressure
+* latency spikes
+* throughput collapse
+
+
+---
+
 ## 📌 Conclusion
 
 * Workflow complexity directly impacts persistence cost
 * Redis provides the best balance between speed and persistence (needs to be refined still)
 * External calls (enrichment workflow) introduce latency variability
 * Persistence strategy must match system requirements
+* two factors dominate scalability:
+
+  * **state size**
+  * **number of steps**
+
+> The system scales well when **one dimension is controlled**,
+> but combining **large payloads + many steps + high rate** quickly reaches system limits.
+
+---
