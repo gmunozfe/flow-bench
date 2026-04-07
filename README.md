@@ -486,6 +486,17 @@ This overhead is:
 ![Cost per Step vs. Latency](docs/images/cost_per_step_20_150_rps.png)
 ![Cost per Step log scale](docs/images/cost_per_step_150rps_log.png)
 
+- Baseline orchestration cost (without persistence) ≈ **0.045 ms/step**
+
+#### Persistence overhead
+
+| Mode | Cost per step |
+|------|--------------|
+| None / File | ~0.04 ms |
+| Redis (stable) | ~0.5–1 ms |
+| JPA (stable) | ~2–10 ms |
+| Saturated systems | 10–100 ms |
+
 **File (MVStore)** is the best choice for step-heavy workflows; no saturation observed up to 100 steps at 150 req/s.
 
 **Redis** shows a good balance; safe at 20–50 steps under high rate, but 100 steps becomes a real pressure point.
@@ -505,6 +516,11 @@ This overhead is:
 
 ![Cost per KB vs. Latency](docs/images/cost_per_kb_latency.png)
 ![Cost per KB Payload size vs. time increased](docs/images/cost_per_kb_vs_payload_size.png)
+
+## Cost per Payload KB
+
+Using a workflow without persistence:
+Baseline payload cost ≈ 0.025 ms per KB
 
 **File (MVStore)** shows the best scaling behavior:
 * Near-linear growth
