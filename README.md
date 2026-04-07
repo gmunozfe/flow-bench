@@ -541,6 +541,24 @@ This overhead is:
 
 > The dominant factor is **the largest persisted snapshot**, which carries the large payload
 
+### Cost per KB across persistence modes
+
+![Cost per KB vs. Latency](docs/images/cost_per_kb_latency.png)
+![Cost per KB Payload size vs. time increased](docs/images/cost_per_kb_vs_payload_size.png)
+
+**File (MVStore)** shows the best scaling behavior:
+* Near-linear growth
+* Decreasing cost per KB as payload increases
+
+**Redis** behaves similarly but with higher baseline cost:
+* Moderate network and serialization overhead
+* Still benefits from batching effects
+
+**JPA** shows significantly worse scaling:
+* Higher baseline latency
+* Cost per KB remains consistently high (~0.3 ms/KB)
+* Limited benefit from payload amortization
+
 ---
 
 ## 3. Cost Model Comparison
