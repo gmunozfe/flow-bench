@@ -1,0 +1,685 @@
+gmunozfe:flow-bench$  k6 run -e RATE=20 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=10 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    100.10417/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=16.66ms min=5.1ms  med=17.21ms max=33.9ms  p(90)=20.46ms p(95)=22.17ms
+      { expected_response:true }...: avg=16.66ms min=5.1ms  med=17.21ms max=33.9ms  p(90)=20.46ms p(95)=22.17ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    20.020834/s
+
+    EXECUTION
+    iteration_duration.............: avg=17.05ms min=5.26ms med=17.63ms max=34.19ms p(90)=20.94ms p(95)=22.56ms
+    iterations.....................: 601    20.020834/s
+    vus............................: 0      min=0        max=1 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 116 kB 3.9 kB/s
+    data_sent......................: 98 kB  3.3 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 601 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  20.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=20 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=100 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3000    99.998921/s
+    checks_succeeded...: 100.00% 3000 out of 3000
+    checks_failed......: 0.00%   0 out of 3000
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=30.78ms min=23.52ms med=30.37ms max=54.61ms p(90)=35.88ms p(95)=37.28ms
+      { expected_response:true }...: avg=30.78ms min=23.52ms med=30.37ms max=54.61ms p(90)=35.88ms p(95)=37.28ms
+    http_req_failed................: 0.00%  0 out of 600
+    http_reqs......................: 600    19.999784/s
+
+    EXECUTION
+    iteration_duration.............: avg=30.99ms min=23.68ms med=30.59ms max=54.79ms p(90)=36.11ms p(95)=37.48ms
+    iterations.....................: 600    19.999784/s
+    vus............................: 0      min=0        max=1 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 118 kB 3.9 kB/s
+    data_sent......................: 98 kB  3.3 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 600 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  20.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=20 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=300 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    99.903466/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=78.39ms min=68.56ms med=76.67ms max=148.65ms p(90)=84.9ms p(95)=88.71ms
+      { expected_response:true }...: avg=78.39ms min=68.56ms med=76.67ms max=148.65ms p(90)=84.9ms p(95)=88.71ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    19.980693/s
+
+    EXECUTION
+    iteration_duration.............: avg=78.59ms min=68.76ms med=76.84ms max=148.79ms p(90)=85.1ms p(95)=88.98ms
+    iterations.....................: 601    19.980693/s
+    vus............................: 1      min=1        max=1 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 118 kB 3.9 kB/s
+    data_sent......................: 99 kB  3.3 kB/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 601 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  20.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=10 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22500   749.985341/s
+    checks_succeeded...: 100.00% 22500 out of 22500
+    checks_failed......: 0.00%   0 out of 22500
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=6.89ms min=4.28ms med=6.5ms  max=16.43ms p(90)=9.38ms p(95)=10.23ms
+      { expected_response:true }...: avg=6.89ms min=4.28ms med=6.5ms  max=16.43ms p(90)=9.38ms p(95)=10.23ms
+    http_req_failed................: 0.00%  0 out of 4500
+    http_reqs......................: 4500   149.997068/s
+
+    EXECUTION
+    iteration_duration.............: avg=7.05ms min=4.38ms med=6.65ms max=16.75ms p(90)=9.58ms p(95)=10.43ms
+    iterations.....................: 4500   149.997068/s
+    vus............................: 1      min=0         max=1 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4500 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=30 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22505   749.847284/s
+    checks_succeeded...: 100.00% 22505 out of 22505
+    checks_failed......: 0.00%   0 out of 22505
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=11.11ms min=9.12ms med=10.83ms max=18ms    p(90)=12.65ms p(95)=13.41ms
+      { expected_response:true }...: avg=11.11ms min=9.12ms med=10.83ms max=18ms    p(90)=12.65ms p(95)=13.41ms
+    http_req_failed................: 0.00%  0 out of 4501
+    http_reqs......................: 4501   149.969457/s
+
+    EXECUTION
+    iteration_duration.............: avg=11.26ms min=9.25ms med=10.98ms max=18.19ms p(90)=12.81ms p(95)=13.6ms 
+    iterations.....................: 4501   149.969457/s
+    vus............................: 1      min=1         max=2 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4501 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=60 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22505   749.650274/s
+    checks_succeeded...: 100.00% 22505 out of 22505
+    checks_failed......: 0.00%   0 out of 22505
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=22.06ms min=17.64ms med=21.68ms max=33.95ms p(90)=24.78ms p(95)=26.07ms
+      { expected_response:true }...: avg=22.06ms min=17.64ms med=21.68ms max=33.95ms p(90)=24.78ms p(95)=26.07ms
+    http_req_failed................: 0.00%  0 out of 4501
+    http_reqs......................: 4501   149.930055/s
+
+    EXECUTION
+    iteration_duration.............: avg=22.23ms min=17.81ms med=21.85ms max=34.09ms p(90)=24.96ms p(95)=26.23ms
+    iterations.....................: 4501   149.930055/s
+    vus............................: 3      min=3         max=4 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4501 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=80 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22505   749.327646/s
+    checks_succeeded...: 100.00% 22505 out of 22505
+    checks_failed......: 0.00%   0 out of 22505
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=31.3ms  min=21.03ms med=30.71ms max=64.7ms  p(90)=35.13ms p(95)=37.19ms
+      { expected_response:true }...: avg=31.3ms  min=21.03ms med=30.71ms max=64.7ms  p(90)=35.13ms p(95)=37.19ms
+    http_req_failed................: 0.00%  0 out of 4501
+    http_reqs......................: 4501   149.865529/s
+
+    EXECUTION
+    iteration_duration.............: avg=31.49ms min=21.38ms med=30.89ms max=64.89ms p(90)=35.34ms p(95)=37.4ms 
+    iterations.....................: 4501   149.865529/s
+    vus............................: 4      min=4         max=6 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4501 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=150 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=100 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22485   748.681121/s
+    checks_succeeded...: 100.00% 22485 out of 22485
+    checks_failed......: 0.00%   0 out of 22485
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=42.4ms  min=27.2ms  med=40.81ms max=90.99ms p(90)=50.71ms p(95)=53.73ms
+      { expected_response:true }...: avg=42.4ms  min=27.2ms  med=40.81ms max=90.99ms p(90)=50.71ms p(95)=53.73ms
+    http_req_failed................: 0.00%  0 out of 4497
+    http_reqs......................: 4497   149.736224/s
+
+    EXECUTION
+    dropped_iterations.............: 3      0.099891/s
+    iteration_duration.............: avg=42.62ms min=27.78ms med=41ms    max=91.27ms p(90)=50.94ms p(95)=53.98ms
+    iterations.....................: 4497   149.736224/s
+    vus............................: 5      min=5         max=8 
+    vus_max........................: 13     min=12        max=13
+
+    NETWORK
+    data_received..................: 881 kB 29 kB/s
+    data_sent......................: 738 kB 25 kB/s
+
+
+
+
+running (0m30.0s), 000/013 VUs, 4497 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/013 VUs  30s  150.00 iters/s
+gmunozfe:flow-bench$  k6 run -e RATE=5 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=300 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 750     24.999577/s
+    checks_succeeded...: 100.00% 750 out of 750
+    checks_failed......: 0.00%   0 out of 750
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=76.9ms  min=63.8ms  med=76.58ms max=88.96ms p(90)=82.6ms  p(95)=84.1ms 
+      { expected_response:true }...: avg=76.9ms  min=63.8ms  med=76.58ms max=88.96ms p(90)=82.6ms  p(95)=84.1ms 
+    http_req_failed................: 0.00% 0 out of 150
+    http_reqs......................: 150   4.999915/s
+
+    EXECUTION
+    iteration_duration.............: avg=77.26ms min=64.01ms med=77.01ms max=89.12ms p(90)=83.07ms p(95)=84.65ms
+    iterations.....................: 150   4.999915/s
+    vus............................: 0     min=0        max=0 
+    vus_max........................: 10    min=10       max=10
+
+    NETWORK
+    data_received..................: 29 kB 980 B/s
+    data_sent......................: 25 kB 820 B/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 150 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  5.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=5 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=600 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 755     25.04911/s
+    checks_succeeded...: 100.00% 755 out of 755
+    checks_failed......: 0.00%   0 out of 755
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=142.82ms min=127.46ms med=140.44ms max=160.35ms p(90)=152.61ms p(95)=154.17ms
+      { expected_response:true }...: avg=142.82ms min=127.46ms med=140.44ms max=160.35ms p(90)=152.61ms p(95)=154.17ms
+    http_req_failed................: 0.00% 0 out of 151
+    http_reqs......................: 151   5.009822/s
+
+    EXECUTION
+    iteration_duration.............: avg=143.28ms min=128.06ms med=140.89ms max=160.8ms  p(90)=153.05ms p(95)=154.52ms
+    iterations.....................: 151   5.009822/s
+    vus............................: 0     min=0        max=0 
+    vus_max........................: 10    min=10       max=10
+
+    NETWORK
+    data_received..................: 30 kB 982 B/s
+    data_sent......................: 25 kB 822 B/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 151 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  5.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=5 -e DURATION=30s -e ITEMS=1000 -e ITERATIONS=1000 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 750     24.975728/s
+    checks_succeeded...: 100.00% 750 out of 750
+    checks_failed......: 0.00%   0 out of 750
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=232.81ms min=212.49ms med=231.7ms  max=269.43ms p(90)=243.2ms  p(95)=251.36ms
+      { expected_response:true }...: avg=232.81ms min=212.49ms med=231.7ms  max=269.43ms p(90)=243.2ms  p(95)=251.36ms
+    http_req_failed................: 0.00% 0 out of 150
+    http_reqs......................: 150   4.995146/s
+
+    EXECUTION
+    iteration_duration.............: avg=233.02ms min=212.66ms med=231.89ms max=269.61ms p(90)=243.38ms p(95)=251.55ms
+    iterations.....................: 150   4.995146/s
+    vus............................: 1     min=1        max=2 
+    vus_max........................: 10    min=10       max=10
+
+    NETWORK
+    data_received..................: 30 kB 994 B/s
+    data_sent......................: 25 kB 824 B/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 150 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  5.00 iters/s
+gmunozfe:flow-bench$ k6 run -e RATE=1 -e DURATION=30s -e ITEMS=10000 -e ITERATIONS=300 bench/k6-json.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 1.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 150     4.999843/s
+    checks_succeeded...: 100.00% 150 out of 150
+    checks_failed......: 0.00%   0 out of 150
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=688.9ms  min=672.34ms med=687.31ms max=734.98ms p(90)=705.32ms p(95)=718.91ms
+      { expected_response:true }...: avg=688.9ms  min=672.34ms med=687.31ms max=734.98ms p(90)=705.32ms p(95)=718.91ms
+    http_req_failed................: 0.00%  0 out of 30
+    http_reqs......................: 30     0.999969/s
+
+    EXECUTION
+    iteration_duration.............: avg=689.71ms min=672.8ms  med=688.37ms max=735.98ms p(90)=705.88ms p(95)=719.84ms
+    iterations.....................: 30     0.999969/s
+    vus............................: 0      min=0       max=0 
+    vus_max........................: 10     min=10      max=10
+
+    NETWORK
+    data_received..................: 5.9 kB 198 B/s
+    data_sent......................: 5.0 kB 165 B/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 30 complete and 0 interrupted iterations
+json_test ✓ [======================================] 000/010 VUs  30s  1.00 iters/s
