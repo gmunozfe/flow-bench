@@ -481,6 +481,16 @@ This overhead is:
 
 > Cost-per-step is low in isolation, but scales poorly with concurrency due to contention on persistence and execution resources.
 
+### Cost per Step across persistence modes
+
+![Cost per Step vs. Latency](docs/images/cost_per_step_20_150_rps.png)
+![Cost per Step log scale](docs/images/cost_per_step_150rps_log.png)
+
+**File (MVStore)** is the best choice for step-heavy workflows; no saturation observed up to 100 steps at 150 req/s.
+
+**Redis** shows a good balance; safe at 20–50 steps under high rate, but 100 steps becomes a real pressure point.
+
+**JPA** has an acceptable for short workflows, but not a good fit for high-throughput step-heavy orchestration once step counts reach 50+.
 
 ---
 
