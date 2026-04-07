@@ -1,8 +1,8 @@
-# Order Workflow (3 Steps)
+# Order Workflow (3 Tasks)
 
 ## Overview
 
-Multi-step workflow simulating order processing.
+Multi-task workflow simulating order processing.
 
 ---
 

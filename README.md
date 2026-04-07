@@ -35,7 +35,7 @@ Each workflow isolates a **single stress dimension** of the engine:
 * execution overhead
 * payload growth
 * CPU-heavy workflow
-* step-count workflow
+* task-count workflow
 
 The goal is to establish **practical thresholds and limits of Quarkus Flow itself**, independent of business logic.
 
@@ -51,7 +51,7 @@ The repository includes **4 workflows**, each representing a different execution
 
 **Description:**
 
-* Minimal workflow with a single step
+* Minimal workflow with a single task
 
 ```json
 { "message": "hello world!" }
@@ -80,8 +80,8 @@ The repository includes **4 workflows**, each representing a different execution
 
 ### Shape
 
-* fixed number of steps (5)
-* one dominant amplification step
+* fixed number of tasks (5)
+* one dominant amplification task
 * payload controlled by:
 
   * `items` → width
@@ -97,16 +97,16 @@ This workflow follows an **amplification pattern**:
 small → medium → medium → LARGE → small
 ```
 
-* Only one step (`set-3`) produces the large payload
-* All other steps remain smaller
+* Only one task (`set-3`) produces the large payload
+* All other tasks remain smaller
 
 ---
 
 ## 📊 Key metrics
 
-### 🔹 Peak step payload
+### 🔹 Peak task payload
 
-Largest state snapshot persisted at a single step.
+Largest state snapshot persisted at a single task.
 
 Example:
 
@@ -116,7 +116,7 @@ Example:
 
 ### 🔹 Total persisted payload per workflow
 
-Sum of all persisted states across steps.
+Sum of all persisted states across tasks.
 
 Example:
 
@@ -159,7 +159,7 @@ From measurements:
 
 * Workflow with an **external HTTP call**
 
-Steps:
+Tasks:
 
 1. Receive order
 2. Call enrichment service (`/mock/enrich`)
@@ -168,7 +168,7 @@ Steps:
 
 **Purpose:**
 
-* Measure impact of I/O-bound steps
+* Measure impact of I/O-bound tasks
 * Simulate real-world service orchestration
 
 **Characteristics:**
@@ -179,32 +179,32 @@ Steps:
 
 ---
 
-### 4. Persistence Stress Workflow (Step Count)
+### 4. Persistence Stress Workflow (Task Count)
 
 ## Purpose
 
-This workflow family isolates **persistence overhead per step** by:
+This workflow family isolates **persistence overhead per task** by:
 
 * keeping payload size **small and constant**
-* increasing the number of sequential steps
+* increasing the number of sequential tasks
 * forcing **frequent persistence checkpoints**
 
 This allows measuring:
 
-* step transition cost
-* persistence write amplification (per step)
+* task transition cost
+* persistence write amplification (per task)
 * throughput degradation under high checkpoint frequency
 
-Unlike the JSON workflow (payload stress), this focuses on **cost per step**, not cost per byte.
+Unlike the JSON workflow (payload stress), this focuses on **cost per task**, not cost per byte.
 
 ---
 
 ## Workflow Shape
 
-* 20 / 50 / 100 sequential steps
-* each step performs a small `set(...)` transformation
+* 20 / 50 / 100 sequential tasks
+* each task performs a small `set(...)` transformation
 * payload remains constant (no amplification)
-* each step is persisted independently
+* each task is persisted independently
 
 Endpoints:
 
@@ -263,7 +263,7 @@ mvn clean package -Predis -Dquarkus.profile=redis
 **Description:**
 
 * State stored in Redis
-* Each workflow step persisted as a key (`:do/*`)
+* Each workflow task persisted as a key (`:do/*`)
 
 **Characteristics:**
 
@@ -274,9 +274,9 @@ mvn clean package -Predis -Dquarkus.profile=redis
 
 **Important behavior:**
 
-* Each step is persisted individually
+* Each task is persisted individually
 * Workflow root key may be deleted after completion
-* Step keys remain (no TTL by default)
+* Task keys remain (no TTL by default)
 
 ---
 
@@ -459,49 +459,49 @@ Compare across:
 
 ---
 
-## 💡 Deeper Insights: Cost per KB vs Cost per Step
+## 💡 Deeper Insights: Cost per KB vs Cost per Task
 
 This benchmark isolates two orthogonal scaling dimensions:
 
 * **Payload size (JSON workflow)** → memory / serialization / persistence volume
-* **Step count (order workflow)** → persistence frequency / overhead
+* **Task count (order workflow)** → persistence frequency / overhead
 
 These behave very differently under load.
 
 ---
 
-## 1. Cost per Step (Persistence Frequency)
+## 1. Cost per Task (Persistence Frequency)
 
-> Each additional step introduces a **fixed overhead**: persistence + transition + scheduling.
+> Each additional task introduces a **fixed overhead**: persistence + transition + scheduling.
 
 This overhead is:
 
 * relatively small at low load
 * becomes dominant under high concurrency
 
-> Cost-per-step is low in isolation, but scales poorly with concurrency due to contention on persistence and execution resources.
+> Cost-per-task is low in isolation, but scales poorly with concurrency due to contention on persistence and execution resources.
 
-### Cost per Step across persistence modes
+### Cost per Task across persistence modes
 
-![Cost per Step vs. Latency](docs/images/cost_per_step_20_150_rps.png)
-![Cost per Step log scale](docs/images/cost_per_step_150rps_log.png)
+![Cost per Task vs. Latency](docs/images/cost_per_task_20_150_rps.png)
+![Cost per Task log scale](docs/images/cost_per_task_150rps_log.png)
 
-- Baseline orchestration cost (without persistence) ≈ **0.045 ms/step**
+- Baseline orchestration cost (without persistence) ≈ **0.045 ms/task**
 
 #### Persistence overhead
 
-| Mode | Cost per step |
+| Mode | Cost per task |
 |------|--------------|
 | None / File | ~0.04 ms |
 | Redis (stable) | ~0.5–1 ms |
 | JPA (stable) | ~2–10 ms |
 | Saturated systems | 10–100 ms |
 
-**File (MVStore)** is the best choice for step-heavy workflows; no saturation observed up to 100 steps at 150 req/s.
+**File (MVStore)** is the best choice for task-heavy workflows; no saturation observed up to 100 tasks at 150 req/s.
 
-**Redis** shows a good balance; safe at 20–50 steps under high rate, but 100 steps becomes a real pressure point.
+**Redis** shows a good balance; safe at 20–50 tasks under high rate, but 100 tasks becomes a real pressure point.
 
-**JPA** has an acceptable for short workflows, but not a good fit for high-throughput step-heavy orchestration once step counts reach 50+.
+**JPA** has an acceptable for short workflows, but not a good fit for high-throughput task-heavy orchestration once task counts reach 50+.
 
 ---
 
@@ -542,7 +542,7 @@ Using a workflow without persistence:
 
 | Dimension     | Behavior                     | Bottleneck Type        |
 | ------------- | ---------------------------- | ---------------------- |
-| Cost per step | fixed overhead per step      | persistence frequency  |
+| Cost per task | fixed overhead per task      | persistence frequency  |
 | Cost per KB   | proportional to payload size | serialization + db I/O |
 
 ---
@@ -552,7 +552,7 @@ Using a workflow without persistence:
 Worst-case scenario:
 
 * large payload
-* many steps
+* many tasks
 * high request rate
 
 ➡️ leads to:
@@ -574,9 +574,9 @@ Worst-case scenario:
 * two factors dominate scalability:
 
   * **state size**
-  * **number of steps**
+  * **number of tasks**
 
 > The system scales well when **one dimension is controlled**,
-> but combining **large payloads + many steps + high rate** quickly reaches system limits.
+> but combining **large payloads + many tasks + high rate** quickly reaches system limits.
 
 ---

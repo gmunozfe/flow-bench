@@ -11,7 +11,7 @@ public class OrderWorkflow20 extends AbstractOrderWorkflow {
     }
 
     @Override
-    protected int stepCount() {
+    protected int taskCount() {
         return 20;
     }
 }

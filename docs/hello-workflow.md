@@ -3,7 +3,7 @@
 ## Overview
 
 The **Hello Workflow** is the simplest workflow in this benchmark suite.  
-It consists of a single step that produces a static message:
+It consists of a single task that produces a static message:
 
 This workflow is used to measure:
 

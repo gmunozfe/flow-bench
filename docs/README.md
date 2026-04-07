@@ -5,8 +5,8 @@ This section contains detailed benchmark results for the `flow-bench` project.
 ## Contents
 
 - [Hello Workflow](hello-workflow.md)
-- [Order Workflow (3 steps)](order-workflow.md)
-- [Order Workflow (20 steps)](order20-workflow.md)
+- [Order Workflow (3 tasks)](order-workflow.md)
+- [Order Workflow (20 tasks)](order20-workflow.md)
 - [Persistence Comparison](persistence-comparison.md)
 
 ## Summary

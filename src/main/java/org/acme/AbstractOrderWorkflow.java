@@ -15,15 +15,15 @@ public abstract class AbstractOrderWorkflow extends Flow {
 
     protected abstract String workflowName();
 
-    protected abstract int stepCount();
+    protected abstract int taskCount();
 
     @Override
     public Workflow descriptor() {
         FuncWorkflowBuilder builder = FuncWorkflowBuilder.workflow(workflowName());
 
         List<Consumer<FuncTaskItemListBuilder>> tasks = new ArrayList<>();
-        for (String status : statuses(stepCount())) {
-            tasks.add(set(stepExpr(status)));
+        for (String status : statuses(taskCount())) {
+            tasks.add(set(taskExpr(status)));
         }
 
         @SuppressWarnings("unchecked")
@@ -70,7 +70,7 @@ public abstract class AbstractOrderWorkflow extends Flow {
         return result;
     }
 
-    protected String stepExpr(String status) {
+    protected String taskExpr(String status) {
         return """
             {
               orderId: .orderId,

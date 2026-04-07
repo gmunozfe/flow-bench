@@ -1,4 +1,4 @@
-# Order Workflow (20 Steps)
+# Order Workflow (20 Tasks)
 
 ## 📊 Results
 
@@ -14,11 +14,11 @@
 ## 🧠 Analysis
 
 ### Scaling effect
-- Increasing steps → more persistence operations
+- Increasing tasks → more persistence operations
 - Clear separation between persistence strategies
 
 ### Redis
-- Handles multi-step workflows efficiently
+- Handles multi-task workflows efficiently
 - Maintains low latency despite more writes
 
 ### MVStore
