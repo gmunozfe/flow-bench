@@ -20,7 +20,7 @@ public class MockExternalCallResource {
 
     @POST
     @Blocking
-    public Map<String, Object> enrich(Map<String, Object> input,
+    public Map<String, Object> call(Map<String, Object> input,
                                       @QueryParam("delayMs") Integer delayMs) throws InterruptedException {
         int delay = delayMs != null ? delayMs : 10;
 

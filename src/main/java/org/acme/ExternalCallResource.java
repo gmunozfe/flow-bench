@@ -1,6 +1,6 @@
 package org.acme;
 
-import org.acme.model.OrderEnrichmentRequest;
+import org.acme.model.ExternalCallRequest;
 import org.jboss.resteasy.reactive.ResponseStatus;
 
 import io.smallrye.mutiny.Uni;
@@ -23,7 +23,7 @@ public class ExternalCallResource {
 
     @POST
     @ResponseStatus(200)
-    public Uni<Object> start(OrderEnrichmentRequest request) {
+    public Uni<Object> start(ExternalCallRequest request) {
         return workflow
                 .startInstance(request)
                 .onItem()

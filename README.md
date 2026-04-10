@@ -153,7 +153,7 @@ From measurements:
 
 ---
 
-### 3. `OrderEnrichmentWorkflow`
+### 3. `ExternalCallWorkflow`
 
 **Description:**
 
@@ -162,7 +162,7 @@ From measurements:
 Tasks:
 
 1. Receive order
-2. Call enrichment service (`/mock/enrich`)
+2. Call external call service (`/mock/external`)
 3. Merge response into workflow state
 4. Complete workflow
 
@@ -569,7 +569,7 @@ Worst-case scenario:
 
 * Workflow complexity directly impacts persistence cost
 * Redis provides the best balance between speed and persistence (needs to be refined still)
-* External calls (enrichment workflow) introduce latency variability
+* External calls (external call workflow) introduce latency variability
 * Persistence strategy must match system requirements
 * two factors dominate scalability:
 
