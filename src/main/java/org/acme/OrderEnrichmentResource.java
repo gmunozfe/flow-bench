@@ -1,5 +1,9 @@
 package org.acme;
 
+import org.acme.model.OrderEnrichmentRequest;
+import org.jboss.resteasy.reactive.ResponseStatus;
+
+import io.smallrye.mutiny.Uni;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
@@ -8,12 +12,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-import org.acme.model.OrderRequest;
-import org.jboss.resteasy.reactive.ResponseStatus;
-
-import io.smallrye.mutiny.Uni;
-
-@Path("/bench/order-enrich")
+@Path("/bench/enrichment")
 @ApplicationScoped
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
@@ -24,7 +23,7 @@ public class OrderEnrichmentResource {
 
     @POST
     @ResponseStatus(200)
-    public Uni<Object> start(OrderRequest request) {
+    public Uni<Object> start(OrderEnrichmentRequest request) {
         return workflow
                 .startInstance(request)
                 .onItem()
