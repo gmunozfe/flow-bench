@@ -7,7 +7,7 @@ const DURATION = __ENV.DURATION || '30s';
 const DELAY_MS = Number(__ENV.DELAY_MS || '10');
 const BASE_URL = __ENV.BASE_URL || 'http://localhost:8080';
 
-const flow_overhead_ms = new Trend('flow_overhead_ms');
+const external_call_overhead_ms = new Trend('external_call_overhead_ms');
 
 export const options = {
   scenarios: {
@@ -39,7 +39,7 @@ export default function () {
     delayMs: DELAY_MS,
   });
 
-  const res = http.post(`${BASE_URL}/bench/enrichment`, payload, {
+  const res = http.post(`${BASE_URL}/bench/external`, payload, {
     headers: { 'Content-Type': 'application/json' },
   });
 
@@ -78,5 +78,5 @@ export default function () {
       ? res.timings.duration
       : 0;
 
-  flow_overhead_ms.add(duration - DELAY_MS);
+  external_call_overhead_ms.add(duration - DELAY_MS);
 }

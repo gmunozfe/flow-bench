@@ -12,11 +12,11 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/mock/enrich")
+@Path("/mock/external")
 @ApplicationScoped
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class MockEnrichmentResource {
+public class MockExternalCallResource {
 
     @POST
     @Blocking

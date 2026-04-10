@@ -10,11 +10,11 @@ import io.serverlessworkflow.api.types.Workflow;
 import io.serverlessworkflow.fluent.func.FuncWorkflowBuilder;
 
 @ApplicationScoped
-public class OrderEnrichmentWorkflow extends Flow {
+public class ExternalCallWorkflow extends Flow {
 
     @Override
     public Workflow descriptor() {
-        return FuncWorkflowBuilder.workflow("order-enrichment-workflow")
+        return FuncWorkflowBuilder.workflow("order-external-call-workflow")
                 .tasks(
                         set("""
                             {
@@ -27,7 +27,7 @@ public class OrderEnrichmentWorkflow extends Flow {
                             """),
                         post(
                             "${ . }",
-                            "${ \"http://localhost:8080/mock/enrich?delayMs=\" + ((.delayMs // 10) | tostring) }"
+                            "${ \"http://localhost:8080/mock/external?delayMs=\" + ((.delayMs // 10) | tostring) }"
                         ),
                         set("""
                             {

@@ -12,14 +12,14 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/bench/enrichment")
+@Path("/bench/external")
 @ApplicationScoped
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class OrderEnrichmentResource {
+public class ExternalCallResource {
 
     @Inject
-    OrderEnrichmentWorkflow workflow;
+    ExternalCallWorkflow workflow;
 
     @POST
     @ResponseStatus(200)
