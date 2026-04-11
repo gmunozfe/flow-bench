@@ -19,16 +19,16 @@ public class TaskOutputDataFactory {
     @PostConstruct
     void init() {
         // Add the sizes you want ready at startup.
-       /* prebuiltBySizeKb.put(100, buildPrebuiltTaskOutput(100));
+        prebuiltBySizeKb.put(100, buildPrebuiltTaskOutput(100));
         prebuiltBySizeKb.put(250, buildPrebuiltTaskOutput(250));
         prebuiltBySizeKb.put(500, buildPrebuiltTaskOutput(500));
         prebuiltBySizeKb.put(1000, buildPrebuiltTaskOutput(1000));
         prebuiltBySizeKb.put(2500, buildPrebuiltTaskOutput(2500));
         prebuiltBySizeKb.put(5000, buildPrebuiltTaskOutput(5000));
 	prebuiltBySizeKb.put(10000, buildPrebuiltTaskOutput(10000));
-	prebuiltBySizeKb.put(20000, buildPrebuiltTaskOutput(20000));*/
+	prebuiltBySizeKb.put(20000, buildPrebuiltTaskOutput(20000));
 	//prebuiltBySizeKb.put(50000, buildPrebuiltTaskOutput(50000));
-	prebuiltBySizeKb.put(100000, buildPrebuiltTaskOutput(100000));
+	//prebuiltBySizeKb.put(100000, buildPrebuiltTaskOutput(100000));
     }
 
     public Map<String, Object> getPrebuiltTaskOutput(int sizeKb) {
