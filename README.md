@@ -1,6 +1,4 @@
----
-
-# 📘 Quarkus Flow Benchmark
+# 🚀 Quarkus Flow Benchmark
 
 This project benchmarks **Quarkus Flow** performance across different workflow patterns and persistence strategies.
 
