@@ -1,9 +1,18 @@
 services:
+  redis:
+    image: redis:7.2
+    container_name: flow-bench-redis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+
   valkey:
     image: valkey/valkey:8
     container_name: flow-bench-valkey
     ports:
-      - "6379:6379"
+      - "6380:6379"
     command: ["valkey-server", "--save", "60", "1", "--appendonly", "yes"]
     volumes:
       - valkey-data:/data
@@ -21,5 +30,6 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
 volumes:
+  redis-data:
   valkey-data:
   postgres-data:
