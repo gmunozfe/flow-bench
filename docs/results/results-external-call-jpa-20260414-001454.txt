@@ -1,0 +1,1478 @@
+========================================
+🚀 External Call Benchmark Suite
+========================================
+Mode: jpa
+Started at: Tue Apr 14 12:14:54 AM CEST 2026
+
+----- SYSTEM INFO -----
+Linux li-3f7fa6cc-284c-11b2-a85c-ccb792864af1.ibm.com 6.14.11-300.fc42.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Jun 10 16:24:16 UTC 2025 x86_64 GNU/Linux
+
+CPU:
+Model name:                              12th Gen Intel(R) Core(TM) i7-12800H
+
+Memory:
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi        24Gi        29Gi       2.5Gi        12Gi        38Gi
+Swap:          8.0Gi       6.7Gi       1.3Gi
+
+-----------------------
+
+===== ZONE 1: LIGHT LOAD (20 req/s) =====
+
+========================================
+RUN: RATE=20 | DELAY_MS=50
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 002/010 VUs, 18 complete and 0 interrupted iterations
+external_call_test   [   3% ] 002/010 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 001/010 VUs, 39 complete and 0 interrupted iterations
+external_call_test   [   7% ] 001/010 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 59 complete and 0 interrupted iterations
+external_call_test   [  10% ] 001/010 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 79 complete and 0 interrupted iterations
+external_call_test   [  13% ] 001/010 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 001/010 VUs, 99 complete and 0 interrupted iterations
+external_call_test   [  17% ] 001/010 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 001/010 VUs, 119 complete and 0 interrupted iterations
+external_call_test   [  20% ] 001/010 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 139 complete and 0 interrupted iterations
+external_call_test   [  23% ] 001/010 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 159 complete and 0 interrupted iterations
+external_call_test   [  27% ] 001/010 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 001/010 VUs, 179 complete and 0 interrupted iterations
+external_call_test   [  30% ] 001/010 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 199 complete and 0 interrupted iterations
+external_call_test   [  33% ] 001/010 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 001/010 VUs, 219 complete and 0 interrupted iterations
+external_call_test   [  37% ] 001/010 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 001/010 VUs, 239 complete and 0 interrupted iterations
+external_call_test   [  40% ] 001/010 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 001/010 VUs, 259 complete and 0 interrupted iterations
+external_call_test   [  43% ] 001/010 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 001/010 VUs, 279 complete and 0 interrupted iterations
+external_call_test   [  47% ] 001/010 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 299 complete and 0 interrupted iterations
+external_call_test   [  50% ] 001/010 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 001/010 VUs, 319 complete and 0 interrupted iterations
+external_call_test   [  53% ] 001/010 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 001/010 VUs, 339 complete and 0 interrupted iterations
+external_call_test   [  57% ] 001/010 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 359 complete and 0 interrupted iterations
+external_call_test   [  60% ] 001/010 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 001/010 VUs, 379 complete and 0 interrupted iterations
+external_call_test   [  63% ] 001/010 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 399 complete and 0 interrupted iterations
+external_call_test   [  67% ] 001/010 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 419 complete and 0 interrupted iterations
+external_call_test   [  70% ] 001/010 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 439 complete and 0 interrupted iterations
+external_call_test   [  73% ] 001/010 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 001/010 VUs, 459 complete and 0 interrupted iterations
+external_call_test   [  77% ] 001/010 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 479 complete and 0 interrupted iterations
+external_call_test   [  80% ] 001/010 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 001/010 VUs, 499 complete and 0 interrupted iterations
+external_call_test   [  83% ] 001/010 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 001/010 VUs, 519 complete and 0 interrupted iterations
+external_call_test   [  87% ] 001/010 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 001/010 VUs, 539 complete and 0 interrupted iterations
+external_call_test   [  90% ] 001/010 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 559 complete and 0 interrupted iterations
+external_call_test   [  93% ] 001/010 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 579 complete and 0 interrupted iterations
+external_call_test   [  97% ] 001/010 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 599 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 001/010 VUs  30.0s/30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 5409    179.792139/s
+    checks_succeeded...: 100.00% 5409 out of 5409
+    checks_failed......: 0.00%   0 out of 5409
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=30.78939 min=11.759783 med=29.416842 max=350.162581 p(90)=38.085277 p(95)=43.219158
+
+    HTTP
+    http_req_duration..............: avg=80.78ms  min=61.75ms   med=79.41ms   max=400.16ms   p(90)=88.08ms   p(95)=93.21ms  
+      { expected_response:true }...: avg=80.78ms  min=61.75ms   med=79.41ms   max=400.16ms   p(90)=88.08ms   p(95)=93.21ms  
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    19.976904/s
+
+    EXECUTION
+    iteration_duration.............: avg=81.16ms  min=61.93ms   med=79.78ms   max=400.65ms   p(90)=88.4ms    p(95)=93.64ms  
+    iterations.....................: 601    19.976904/s
+    vus............................: 1      min=1        max=2 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 144 kB 4.8 kB/s
+    data_sent......................: 124 kB 4.1 kB/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 601 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/010 VUs  30s  20.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=20 | DELAY_MS=200
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 004/010 VUs, 16 complete and 0 interrupted iterations
+external_call_test   [   3% ] 004/010 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 004/010 VUs, 36 complete and 0 interrupted iterations
+external_call_test   [   7% ] 004/010 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 004/010 VUs, 56 complete and 0 interrupted iterations
+external_call_test   [  10% ] 004/010 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 004/010 VUs, 76 complete and 0 interrupted iterations
+external_call_test   [  13% ] 004/010 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 004/010 VUs, 96 complete and 0 interrupted iterations
+external_call_test   [  17% ] 004/010 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 004/010 VUs, 116 complete and 0 interrupted iterations
+external_call_test   [  20% ] 004/010 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 004/010 VUs, 136 complete and 0 interrupted iterations
+external_call_test   [  23% ] 004/010 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 004/010 VUs, 156 complete and 0 interrupted iterations
+external_call_test   [  27% ] 004/010 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 004/010 VUs, 176 complete and 0 interrupted iterations
+external_call_test   [  30% ] 004/010 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 004/010 VUs, 196 complete and 0 interrupted iterations
+external_call_test   [  33% ] 004/010 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 004/010 VUs, 216 complete and 0 interrupted iterations
+external_call_test   [  37% ] 004/010 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 004/010 VUs, 236 complete and 0 interrupted iterations
+external_call_test   [  40% ] 004/010 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 004/010 VUs, 256 complete and 0 interrupted iterations
+external_call_test   [  43% ] 004/010 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 004/010 VUs, 276 complete and 0 interrupted iterations
+external_call_test   [  47% ] 004/010 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 004/010 VUs, 296 complete and 0 interrupted iterations
+external_call_test   [  50% ] 004/010 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 004/010 VUs, 316 complete and 0 interrupted iterations
+external_call_test   [  53% ] 004/010 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 004/010 VUs, 336 complete and 0 interrupted iterations
+external_call_test   [  57% ] 004/010 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 004/010 VUs, 356 complete and 0 interrupted iterations
+external_call_test   [  60% ] 004/010 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 004/010 VUs, 376 complete and 0 interrupted iterations
+external_call_test   [  63% ] 004/010 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 004/010 VUs, 396 complete and 0 interrupted iterations
+external_call_test   [  67% ] 004/010 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 004/010 VUs, 416 complete and 0 interrupted iterations
+external_call_test   [  70% ] 004/010 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 004/010 VUs, 436 complete and 0 interrupted iterations
+external_call_test   [  73% ] 004/010 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 004/010 VUs, 456 complete and 0 interrupted iterations
+external_call_test   [  77% ] 004/010 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 004/010 VUs, 476 complete and 0 interrupted iterations
+external_call_test   [  80% ] 004/010 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 004/010 VUs, 496 complete and 0 interrupted iterations
+external_call_test   [  83% ] 004/010 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 004/010 VUs, 516 complete and 0 interrupted iterations
+external_call_test   [  87% ] 004/010 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 004/010 VUs, 536 complete and 0 interrupted iterations
+external_call_test   [  90% ] 004/010 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 004/010 VUs, 556 complete and 0 interrupted iterations
+external_call_test   [  93% ] 004/010 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 004/010 VUs, 576 complete and 0 interrupted iterations
+external_call_test   [  97% ] 004/010 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 004/010 VUs, 596 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 004/010 VUs  30.0s/30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 5400    178.937813/s
+    checks_succeeded...: 100.00% 5400 out of 5400
+    checks_failed......: 0.00%   0 out of 5400
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=24.245268 min=9.831422 med=24.957147 max=36.87451 p(90)=30.04413 p(95)=31.569807
+
+    HTTP
+    http_req_duration..............: avg=224.24ms  min=209.83ms med=224.95ms  max=236.87ms p(90)=230.04ms p(95)=231.56ms 
+      { expected_response:true }...: avg=224.24ms  min=209.83ms med=224.95ms  max=236.87ms p(90)=230.04ms p(95)=231.56ms 
+    http_req_failed................: 0.00%  0 out of 600
+    http_reqs......................: 600    19.881979/s
+
+    EXECUTION
+    iteration_duration.............: avg=224.65ms  min=210.02ms med=225.37ms  max=237.49ms p(90)=230.54ms p(95)=232.07ms 
+    iterations.....................: 600    19.881979/s
+    vus............................: 4      min=4        max=4 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 145 kB 4.8 kB/s
+    data_sent......................: 125 kB 4.1 kB/s
+
+
+
+
+running (0m30.2s), 000/010 VUs, 600 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/010 VUs  30s  20.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=20 | DELAY_MS=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 015/015 VUs, 0 complete and 0 interrupted iterations
+external_call_test   [   3% ] 015/015 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 017/018 VUs, 15 complete and 0 interrupted iterations
+external_call_test   [   7% ] 017/018 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 018/020 VUs, 32 complete and 0 interrupted iterations
+external_call_test   [  10% ] 019/020 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 019/021 VUs, 50 complete and 0 interrupted iterations
+external_call_test   [  13% ] 019/021 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 020/021 VUs, 69 complete and 0 interrupted iterations
+external_call_test   [  17% ] 020/021 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 020/021 VUs, 89 complete and 0 interrupted iterations
+external_call_test   [  20% ] 020/021 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 020/021 VUs, 109 complete and 0 interrupted iterations
+external_call_test   [  23% ] 020/021 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 020/021 VUs, 129 complete and 0 interrupted iterations
+external_call_test   [  27% ] 020/021 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 020/021 VUs, 149 complete and 0 interrupted iterations
+external_call_test   [  30% ] 020/021 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 020/021 VUs, 169 complete and 0 interrupted iterations
+external_call_test   [  33% ] 020/021 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 020/021 VUs, 189 complete and 0 interrupted iterations
+external_call_test   [  37% ] 020/021 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 020/021 VUs, 209 complete and 0 interrupted iterations
+external_call_test   [  40% ] 020/021 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 020/021 VUs, 229 complete and 0 interrupted iterations
+external_call_test   [  43% ] 020/021 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 020/021 VUs, 249 complete and 0 interrupted iterations
+external_call_test   [  47% ] 020/021 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 020/021 VUs, 269 complete and 0 interrupted iterations
+external_call_test   [  50% ] 020/021 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 020/021 VUs, 289 complete and 0 interrupted iterations
+external_call_test   [  53% ] 020/021 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 020/021 VUs, 309 complete and 0 interrupted iterations
+external_call_test   [  57% ] 020/021 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 020/021 VUs, 329 complete and 0 interrupted iterations
+external_call_test   [  60% ] 020/021 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 020/021 VUs, 349 complete and 0 interrupted iterations
+external_call_test   [  63% ] 020/021 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 020/021 VUs, 369 complete and 0 interrupted iterations
+external_call_test   [  67% ] 020/021 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 020/021 VUs, 389 complete and 0 interrupted iterations
+external_call_test   [  70% ] 020/021 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 020/021 VUs, 409 complete and 0 interrupted iterations
+external_call_test   [  73% ] 020/021 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 020/021 VUs, 429 complete and 0 interrupted iterations
+external_call_test   [  77% ] 020/021 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 020/021 VUs, 449 complete and 0 interrupted iterations
+external_call_test   [  80% ] 020/021 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 020/021 VUs, 469 complete and 0 interrupted iterations
+external_call_test   [  83% ] 020/021 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 020/021 VUs, 489 complete and 0 interrupted iterations
+external_call_test   [  87% ] 020/021 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 020/021 VUs, 509 complete and 0 interrupted iterations
+external_call_test   [  90% ] 020/021 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 021/021 VUs, 529 complete and 0 interrupted iterations
+external_call_test   [  93% ] 021/021 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 020/021 VUs, 549 complete and 0 interrupted iterations
+external_call_test   [  97% ] 020/021 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 020/021 VUs, 569 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 020/021 VUs  30.0s/30s  20.00 iters/s
+
+running (0m31.0s), 001/021 VUs, 589 complete and 0 interrupted iterations
+external_call_test ↓ [ 100% ] 021/021 VUs  30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 5310    171.160628/s
+    checks_succeeded...: 100.00% 5310 out of 5310
+    checks_failed......: 0.00%   0 out of 5310
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=22.276742 min=10.090905 med=22.540453 max=37.606277 p(90)=26.60942 p(95)=27.553529
+
+    HTTP
+    http_req_duration..............: avg=1.02s     min=1.01s     med=1.02s     max=1.03s     p(90)=1.02s    p(95)=1.02s    
+      { expected_response:true }...: avg=1.02s     min=1.01s     med=1.02s     max=1.03s     p(90)=1.02s    p(95)=1.02s    
+    http_req_failed................: 0.00%  0 out of 590
+    http_reqs......................: 590    19.017848/s
+
+    EXECUTION
+    dropped_iterations.............: 11     0.35457/s
+    iteration_duration.............: avg=1.02s     min=1.01s     med=1.02s     max=1.03s     p(90)=1.02s    p(95)=1.02s    
+    iterations.....................: 590    19.017848/s
+    vus............................: 1      min=1        max=21
+    vus_max........................: 21     min=15       max=21
+
+    NETWORK
+    data_received..................: 143 kB 4.6 kB/s
+    data_sent......................: 123 kB 4.0 kB/s
+
+
+
+
+running (0m31.0s), 000/021 VUs, 590 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/021 VUs  30s  20.00 iters/s
+
+----------------------------------------
+===== ZONE 2: MEDIUM LOAD (50 req/s) =====
+
+========================================
+RUN: RATE=50 | DELAY_MS=50
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 50.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 003/010 VUs, 47 complete and 0 interrupted iterations
+external_call_test   [   3% ] 003/010 VUs  01.0s/30s  50.00 iters/s
+
+running (0m02.0s), 003/010 VUs, 97 complete and 0 interrupted iterations
+external_call_test   [   7% ] 003/010 VUs  02.0s/30s  50.00 iters/s
+
+running (0m03.0s), 003/010 VUs, 147 complete and 0 interrupted iterations
+external_call_test   [  10% ] 003/010 VUs  03.0s/30s  50.00 iters/s
+
+running (0m04.0s), 003/010 VUs, 197 complete and 0 interrupted iterations
+external_call_test   [  13% ] 003/010 VUs  04.0s/30s  50.00 iters/s
+
+running (0m05.0s), 003/010 VUs, 247 complete and 0 interrupted iterations
+external_call_test   [  17% ] 003/010 VUs  05.0s/30s  50.00 iters/s
+
+running (0m06.0s), 003/010 VUs, 297 complete and 0 interrupted iterations
+external_call_test   [  20% ] 003/010 VUs  06.0s/30s  50.00 iters/s
+
+running (0m07.0s), 003/010 VUs, 347 complete and 0 interrupted iterations
+external_call_test   [  23% ] 003/010 VUs  07.0s/30s  50.00 iters/s
+
+running (0m08.0s), 003/010 VUs, 397 complete and 0 interrupted iterations
+external_call_test   [  27% ] 003/010 VUs  08.0s/30s  50.00 iters/s
+
+running (0m09.0s), 003/010 VUs, 447 complete and 0 interrupted iterations
+external_call_test   [  30% ] 003/010 VUs  09.0s/30s  50.00 iters/s
+
+running (0m10.0s), 003/010 VUs, 497 complete and 0 interrupted iterations
+external_call_test   [  33% ] 003/010 VUs  10.0s/30s  50.00 iters/s
+
+running (0m11.0s), 003/010 VUs, 547 complete and 0 interrupted iterations
+external_call_test   [  37% ] 003/010 VUs  11.0s/30s  50.00 iters/s
+
+running (0m12.0s), 003/010 VUs, 597 complete and 0 interrupted iterations
+external_call_test   [  40% ] 003/010 VUs  12.0s/30s  50.00 iters/s
+
+running (0m13.0s), 003/010 VUs, 647 complete and 0 interrupted iterations
+external_call_test   [  43% ] 003/010 VUs  13.0s/30s  50.00 iters/s
+
+running (0m14.0s), 003/010 VUs, 697 complete and 0 interrupted iterations
+external_call_test   [  47% ] 003/010 VUs  14.0s/30s  50.00 iters/s
+
+running (0m15.0s), 003/010 VUs, 747 complete and 0 interrupted iterations
+external_call_test   [  50% ] 003/010 VUs  15.0s/30s  50.00 iters/s
+
+running (0m16.0s), 003/010 VUs, 797 complete and 0 interrupted iterations
+external_call_test   [  53% ] 003/010 VUs  16.0s/30s  50.00 iters/s
+
+running (0m17.0s), 003/010 VUs, 847 complete and 0 interrupted iterations
+external_call_test   [  57% ] 003/010 VUs  17.0s/30s  50.00 iters/s
+
+running (0m18.0s), 003/010 VUs, 897 complete and 0 interrupted iterations
+external_call_test   [  60% ] 003/010 VUs  18.0s/30s  50.00 iters/s
+
+running (0m19.0s), 003/010 VUs, 947 complete and 0 interrupted iterations
+external_call_test   [  63% ] 003/010 VUs  19.0s/30s  50.00 iters/s
+
+running (0m20.0s), 003/010 VUs, 997 complete and 0 interrupted iterations
+external_call_test   [  67% ] 003/010 VUs  20.0s/30s  50.00 iters/s
+
+running (0m21.0s), 003/010 VUs, 1047 complete and 0 interrupted iterations
+external_call_test   [  70% ] 003/010 VUs  21.0s/30s  50.00 iters/s
+
+running (0m22.0s), 003/010 VUs, 1097 complete and 0 interrupted iterations
+external_call_test   [  73% ] 003/010 VUs  22.0s/30s  50.00 iters/s
+
+running (0m23.0s), 003/010 VUs, 1147 complete and 0 interrupted iterations
+external_call_test   [  77% ] 003/010 VUs  23.0s/30s  50.00 iters/s
+
+running (0m24.0s), 003/010 VUs, 1197 complete and 0 interrupted iterations
+external_call_test   [  80% ] 003/010 VUs  24.0s/30s  50.00 iters/s
+
+running (0m25.0s), 003/010 VUs, 1247 complete and 0 interrupted iterations
+external_call_test   [  83% ] 003/010 VUs  25.0s/30s  50.00 iters/s
+
+running (0m26.0s), 003/010 VUs, 1297 complete and 0 interrupted iterations
+external_call_test   [  87% ] 003/010 VUs  26.0s/30s  50.00 iters/s
+
+running (0m27.0s), 003/010 VUs, 1347 complete and 0 interrupted iterations
+external_call_test   [  90% ] 003/010 VUs  27.0s/30s  50.00 iters/s
+
+running (0m28.0s), 003/010 VUs, 1397 complete and 0 interrupted iterations
+external_call_test   [  93% ] 003/010 VUs  28.0s/30s  50.00 iters/s
+
+running (0m29.0s), 003/010 VUs, 1447 complete and 0 interrupted iterations
+external_call_test   [  97% ] 003/010 VUs  29.0s/30s  50.00 iters/s
+
+running (0m30.0s), 003/010 VUs, 1497 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 003/010 VUs  30.0s/30s  50.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 13509   449.220948/s
+    checks_succeeded...: 100.00% 13509 out of 13509
+    checks_failed......: 0.00%   0 out of 13509
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=20.375656 min=8.582885 med=21.763195 max=40.62516 p(90)=25.00266 p(95)=25.624558
+
+    HTTP
+    http_req_duration..............: avg=70.37ms   min=58.58ms  med=71.76ms   max=90.62ms  p(90)=75ms     p(95)=75.62ms  
+      { expected_response:true }...: avg=70.37ms   min=58.58ms  med=71.76ms   max=90.62ms  p(90)=75ms     p(95)=75.62ms  
+    http_req_failed................: 0.00%  0 out of 1501
+    http_reqs......................: 1501   49.913439/s
+
+    EXECUTION
+    iteration_duration.............: avg=70.74ms   min=58.8ms   med=72.18ms   max=91.1ms   p(90)=75.41ms  p(95)=76.05ms  
+    iterations.....................: 1501   49.913439/s
+    vus............................: 3      min=3         max=3 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 361 kB 12 kB/s
+    data_sent......................: 311 kB 10 kB/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 1501 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/010 VUs  30s  50.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=50 | DELAY_MS=200
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 50.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 011/012 VUs, 37 complete and 0 interrupted iterations
+external_call_test   [   3% ] 011/012 VUs  01.0s/30s  50.00 iters/s
+
+running (0m02.0s), 010/012 VUs, 88 complete and 0 interrupted iterations
+external_call_test   [   7% ] 010/012 VUs  02.0s/30s  50.00 iters/s
+
+running (0m03.0s), 010/012 VUs, 138 complete and 0 interrupted iterations
+external_call_test   [  10% ] 010/012 VUs  03.0s/30s  50.00 iters/s
+
+running (0m04.0s), 011/012 VUs, 187 complete and 0 interrupted iterations
+external_call_test   [  13% ] 011/012 VUs  04.0s/30s  50.00 iters/s
+
+running (0m05.0s), 011/012 VUs, 237 complete and 0 interrupted iterations
+external_call_test   [  17% ] 011/012 VUs  05.0s/30s  50.00 iters/s
+
+running (0m06.0s), 011/012 VUs, 287 complete and 0 interrupted iterations
+external_call_test   [  20% ] 011/012 VUs  06.0s/30s  50.00 iters/s
+
+running (0m07.0s), 010/012 VUs, 338 complete and 0 interrupted iterations
+external_call_test   [  23% ] 010/012 VUs  07.0s/30s  50.00 iters/s
+
+running (0m08.0s), 011/012 VUs, 387 complete and 0 interrupted iterations
+external_call_test   [  27% ] 011/012 VUs  08.0s/30s  50.00 iters/s
+
+running (0m09.0s), 011/012 VUs, 437 complete and 0 interrupted iterations
+external_call_test   [  30% ] 011/012 VUs  09.0s/30s  50.00 iters/s
+
+running (0m10.0s), 010/012 VUs, 488 complete and 0 interrupted iterations
+external_call_test   [  33% ] 010/012 VUs  10.0s/30s  50.00 iters/s
+
+running (0m11.0s), 011/012 VUs, 537 complete and 0 interrupted iterations
+external_call_test   [  37% ] 011/012 VUs  11.0s/30s  50.00 iters/s
+
+running (0m12.0s), 010/012 VUs, 588 complete and 0 interrupted iterations
+external_call_test   [  40% ] 010/012 VUs  12.0s/30s  50.00 iters/s
+
+running (0m13.0s), 010/012 VUs, 638 complete and 0 interrupted iterations
+external_call_test   [  43% ] 010/012 VUs  13.0s/30s  50.00 iters/s
+
+running (0m14.0s), 011/012 VUs, 687 complete and 0 interrupted iterations
+external_call_test   [  47% ] 011/012 VUs  14.0s/30s  50.00 iters/s
+
+running (0m15.0s), 011/012 VUs, 737 complete and 0 interrupted iterations
+external_call_test   [  50% ] 011/012 VUs  15.0s/30s  50.00 iters/s
+
+running (0m16.0s), 011/012 VUs, 787 complete and 0 interrupted iterations
+external_call_test   [  53% ] 011/012 VUs  16.0s/30s  50.00 iters/s
+
+running (0m17.0s), 011/012 VUs, 837 complete and 0 interrupted iterations
+external_call_test   [  57% ] 011/012 VUs  17.0s/30s  50.00 iters/s
+
+running (0m18.0s), 011/012 VUs, 887 complete and 0 interrupted iterations
+external_call_test   [  60% ] 011/012 VUs  18.0s/30s  50.00 iters/s
+
+running (0m19.0s), 011/012 VUs, 937 complete and 0 interrupted iterations
+external_call_test   [  63% ] 011/012 VUs  19.0s/30s  50.00 iters/s
+
+running (0m20.0s), 010/012 VUs, 988 complete and 0 interrupted iterations
+external_call_test   [  67% ] 010/012 VUs  20.0s/30s  50.00 iters/s
+
+running (0m21.0s), 011/012 VUs, 1037 complete and 0 interrupted iterations
+external_call_test   [  70% ] 011/012 VUs  21.0s/30s  50.00 iters/s
+
+running (0m22.0s), 011/012 VUs, 1087 complete and 0 interrupted iterations
+external_call_test   [  73% ] 011/012 VUs  22.0s/30s  50.00 iters/s
+
+running (0m23.0s), 011/012 VUs, 1137 complete and 0 interrupted iterations
+external_call_test   [  77% ] 011/012 VUs  23.0s/30s  50.00 iters/s
+
+running (0m24.0s), 010/012 VUs, 1188 complete and 0 interrupted iterations
+external_call_test   [  80% ] 010/012 VUs  24.0s/30s  50.00 iters/s
+
+running (0m25.0s), 011/012 VUs, 1237 complete and 0 interrupted iterations
+external_call_test   [  83% ] 011/012 VUs  25.0s/30s  50.00 iters/s
+
+running (0m26.0s), 011/012 VUs, 1287 complete and 0 interrupted iterations
+external_call_test   [  87% ] 011/012 VUs  26.0s/30s  50.00 iters/s
+
+running (0m27.0s), 010/012 VUs, 1338 complete and 0 interrupted iterations
+external_call_test   [  90% ] 010/012 VUs  27.0s/30s  50.00 iters/s
+
+running (0m28.0s), 011/012 VUs, 1387 complete and 0 interrupted iterations
+external_call_test   [  93% ] 011/012 VUs  28.0s/30s  50.00 iters/s
+
+running (0m29.0s), 011/012 VUs, 1437 complete and 0 interrupted iterations
+external_call_test   [  97% ] 011/012 VUs  29.0s/30s  50.00 iters/s
+
+running (0m30.0s), 010/012 VUs, 1488 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 010/012 VUs  30.0s/30s  50.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 13491   446.498952/s
+    checks_succeeded...: 100.00% 13491 out of 13491
+    checks_failed......: 0.00%   0 out of 13491
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=17.944778 min=7.116391 med=18.366516 max=30.714914 p(90)=21.549683 p(95)=22.499001
+
+    HTTP
+    http_req_duration..............: avg=217.94ms  min=207.11ms med=218.36ms  max=230.71ms  p(90)=221.54ms  p(95)=222.49ms 
+      { expected_response:true }...: avg=217.94ms  min=207.11ms med=218.36ms  max=230.71ms  p(90)=221.54ms  p(95)=222.49ms 
+    http_req_failed................: 0.00%  0 out of 1499
+    http_reqs......................: 1499   49.610995/s
+
+    EXECUTION
+    dropped_iterations.............: 2      0.066192/s
+    iteration_duration.............: avg=218.27ms  min=207.25ms med=218.71ms  max=231.01ms  p(90)=221.89ms  p(95)=222.86ms 
+    iterations.....................: 1499   49.610995/s
+    vus............................: 10     min=10        max=11
+    vus_max........................: 12     min=12        max=12
+
+    NETWORK
+    data_received..................: 361 kB 12 kB/s
+    data_sent......................: 312 kB 10 kB/s
+
+
+
+
+running (0m30.2s), 000/012 VUs, 1499 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/012 VUs  30s  50.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=50 | DELAY_MS=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 50.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 030/030 VUs, 0 complete and 0 interrupted iterations
+external_call_test   [   3% ] 030/030 VUs  01.0s/30s  50.00 iters/s
+
+running (0m02.0s), 040/041 VUs, 29 complete and 0 interrupted iterations
+external_call_test   [   7% ] 040/041 VUs  02.0s/30s  50.00 iters/s
+
+running (0m03.0s), 046/046 VUs, 68 complete and 0 interrupted iterations
+external_call_test   [  10% ] 046/046 VUs  03.0s/30s  50.00 iters/s
+
+running (0m04.0s), 048/049 VUs, 113 complete and 0 interrupted iterations
+external_call_test   [  13% ] 048/049 VUs  04.0s/30s  50.00 iters/s
+
+running (0m05.0s), 049/051 VUs, 160 complete and 0 interrupted iterations
+external_call_test   [  17% ] 049/051 VUs  05.0s/30s  50.00 iters/s
+
+running (0m06.0s), 050/052 VUs, 208 complete and 0 interrupted iterations
+external_call_test   [  20% ] 050/052 VUs  06.0s/30s  50.00 iters/s
+
+running (0m07.0s), 050/052 VUs, 258 complete and 0 interrupted iterations
+external_call_test   [  23% ] 050/052 VUs  07.0s/30s  50.00 iters/s
+
+running (0m08.0s), 051/052 VUs, 307 complete and 0 interrupted iterations
+external_call_test   [  27% ] 051/052 VUs  08.0s/30s  50.00 iters/s
+
+running (0m09.0s), 051/052 VUs, 357 complete and 0 interrupted iterations
+external_call_test   [  30% ] 051/052 VUs  09.0s/30s  50.00 iters/s
+
+running (0m10.0s), 051/052 VUs, 407 complete and 0 interrupted iterations
+external_call_test   [  33% ] 051/052 VUs  10.0s/30s  50.00 iters/s
+
+running (0m11.0s), 051/052 VUs, 457 complete and 0 interrupted iterations
+external_call_test   [  37% ] 051/052 VUs  11.0s/30s  50.00 iters/s
+
+running (0m12.0s), 051/052 VUs, 507 complete and 0 interrupted iterations
+external_call_test   [  40% ] 051/052 VUs  12.0s/30s  50.00 iters/s
+
+running (0m13.0s), 051/052 VUs, 557 complete and 0 interrupted iterations
+external_call_test   [  43% ] 051/052 VUs  13.0s/30s  50.00 iters/s
+
+running (0m14.0s), 050/053 VUs, 607 complete and 0 interrupted iterations
+external_call_test   [  47% ] 050/053 VUs  14.0s/30s  50.00 iters/s
+
+running (0m15.0s), 051/053 VUs, 656 complete and 0 interrupted iterations
+external_call_test   [  50% ] 051/053 VUs  15.0s/30s  50.00 iters/s
+
+running (0m16.0s), 051/053 VUs, 706 complete and 0 interrupted iterations
+external_call_test   [  53% ] 051/053 VUs  16.0s/30s  50.00 iters/s
+
+running (0m17.0s), 051/053 VUs, 756 complete and 0 interrupted iterations
+external_call_test   [  57% ] 051/053 VUs  17.0s/30s  50.00 iters/s
+
+running (0m18.0s), 051/053 VUs, 806 complete and 0 interrupted iterations
+external_call_test   [  60% ] 051/053 VUs  18.0s/30s  50.00 iters/s
+
+running (0m19.0s), 051/053 VUs, 856 complete and 0 interrupted iterations
+external_call_test   [  63% ] 051/053 VUs  19.0s/30s  50.00 iters/s
+
+running (0m20.0s), 051/053 VUs, 906 complete and 0 interrupted iterations
+external_call_test   [  67% ] 051/053 VUs  20.0s/30s  50.00 iters/s
+
+running (0m21.0s), 051/053 VUs, 956 complete and 0 interrupted iterations
+external_call_test   [  70% ] 051/053 VUs  21.0s/30s  50.00 iters/s
+
+running (0m22.0s), 051/053 VUs, 1006 complete and 0 interrupted iterations
+external_call_test   [  73% ] 051/053 VUs  22.0s/30s  50.00 iters/s
+
+running (0m23.0s), 051/053 VUs, 1056 complete and 0 interrupted iterations
+external_call_test   [  77% ] 051/053 VUs  23.0s/30s  50.00 iters/s
+
+running (0m24.0s), 051/053 VUs, 1106 complete and 0 interrupted iterations
+external_call_test   [  80% ] 051/053 VUs  24.0s/30s  50.00 iters/s
+
+running (0m25.0s), 051/053 VUs, 1156 complete and 0 interrupted iterations
+external_call_test   [  83% ] 051/053 VUs  25.0s/30s  50.00 iters/s
+
+running (0m26.0s), 051/053 VUs, 1206 complete and 0 interrupted iterations
+external_call_test   [  87% ] 051/053 VUs  26.0s/30s  50.00 iters/s
+
+running (0m27.0s), 051/053 VUs, 1256 complete and 0 interrupted iterations
+external_call_test   [  90% ] 051/053 VUs  27.0s/30s  50.00 iters/s
+
+running (0m28.0s), 052/053 VUs, 1305 complete and 0 interrupted iterations
+external_call_test   [  93% ] 052/053 VUs  28.0s/30s  50.00 iters/s
+
+running (0m29.0s), 051/053 VUs, 1356 complete and 0 interrupted iterations
+external_call_test   [  97% ] 051/053 VUs  29.0s/30s  50.00 iters/s
+
+running (0m30.0s), 052/053 VUs, 1405 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 052/053 VUs  30.0s/30s  50.00 iters/s
+
+running (0m31.0s), 002/053 VUs, 1455 complete and 0 interrupted iterations
+external_call_test ↓ [ 100% ] 052/053 VUs  30s  50.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 13113   422.503653/s
+    checks_succeeded...: 100.00% 13113 out of 13113
+    checks_failed......: 0.00%   0 out of 13113
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=29.28525 min=12.5635 med=28.168732 max=58.70366 p(90)=41.698267 p(95)=46.622242
+
+    HTTP
+    http_req_duration..............: avg=1.02s    min=1.01s   med=1.02s     max=1.05s    p(90)=1.04s     p(95)=1.04s    
+      { expected_response:true }...: avg=1.02s    min=1.01s   med=1.02s     max=1.05s    p(90)=1.04s     p(95)=1.04s    
+    http_req_failed................: 0.00%  0 out of 1457
+    http_reqs......................: 1457   46.94485/s
+
+    EXECUTION
+    dropped_iterations.............: 43     1.385469/s
+    iteration_duration.............: avg=1.02s    min=1.01s   med=1.02s     max=1.05s    p(90)=1.04s     p(95)=1.04s    
+    iterations.....................: 1457   46.94485/s
+    vus............................: 2      min=2         max=52
+    vus_max........................: 53     min=30        max=53
+
+    NETWORK
+    data_received..................: 352 kB 11 kB/s
+    data_sent......................: 304 kB 9.8 kB/s
+
+
+
+
+running (0m31.0s), 000/053 VUs, 1457 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/053 VUs  30s  50.00 iters/s
+
+----------------------------------------
+===== ZONE 3: HIGH LOAD (150 req/s) =====
+
+========================================
+RUN: RATE=150 | DELAY_MS=50
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 009/011 VUs, 140 complete and 0 interrupted iterations
+external_call_test   [   3% ] 009/011 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 009/012 VUs, 289 complete and 0 interrupted iterations
+external_call_test   [   7% ] 009/012 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 010/012 VUs, 438 complete and 0 interrupted iterations
+external_call_test   [  10% ] 010/012 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 010/013 VUs, 587 complete and 0 interrupted iterations
+external_call_test   [  13% ] 010/013 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 009/013 VUs, 738 complete and 0 interrupted iterations
+external_call_test   [  17% ] 009/013 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 010/013 VUs, 887 complete and 0 interrupted iterations
+external_call_test   [  20% ] 010/013 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 009/013 VUs, 1038 complete and 0 interrupted iterations
+external_call_test   [  23% ] 009/013 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 010/013 VUs, 1187 complete and 0 interrupted iterations
+external_call_test   [  27% ] 010/013 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 010/013 VUs, 1337 complete and 0 interrupted iterations
+external_call_test   [  30% ] 010/013 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 010/013 VUs, 1487 complete and 0 interrupted iterations
+external_call_test   [  33% ] 010/013 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 009/013 VUs, 1638 complete and 0 interrupted iterations
+external_call_test   [  37% ] 009/013 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 009/013 VUs, 1788 complete and 0 interrupted iterations
+external_call_test   [  40% ] 009/013 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 009/013 VUs, 1938 complete and 0 interrupted iterations
+external_call_test   [  43% ] 009/013 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 008/013 VUs, 2089 complete and 0 interrupted iterations
+external_call_test   [  47% ] 008/013 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 009/013 VUs, 2238 complete and 0 interrupted iterations
+external_call_test   [  50% ] 009/013 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 009/013 VUs, 2388 complete and 0 interrupted iterations
+external_call_test   [  53% ] 009/013 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 009/013 VUs, 2538 complete and 0 interrupted iterations
+external_call_test   [  57% ] 009/013 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 009/013 VUs, 2688 complete and 0 interrupted iterations
+external_call_test   [  60% ] 009/013 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 009/013 VUs, 2838 complete and 0 interrupted iterations
+external_call_test   [  63% ] 009/013 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 009/013 VUs, 2988 complete and 0 interrupted iterations
+external_call_test   [  67% ] 009/013 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 012/014 VUs, 3134 complete and 0 interrupted iterations
+external_call_test   [  70% ] 012/014 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 009/014 VUs, 3287 complete and 0 interrupted iterations
+external_call_test   [  73% ] 009/014 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 010/014 VUs, 3436 complete and 0 interrupted iterations
+external_call_test   [  77% ] 010/014 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 009/014 VUs, 3587 complete and 0 interrupted iterations
+external_call_test   [  80% ] 009/014 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 010/014 VUs, 3736 complete and 0 interrupted iterations
+external_call_test   [  83% ] 010/014 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 010/014 VUs, 3886 complete and 0 interrupted iterations
+external_call_test   [  87% ] 010/014 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 009/014 VUs, 4037 complete and 0 interrupted iterations
+external_call_test   [  90% ] 009/014 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 009/014 VUs, 4187 complete and 0 interrupted iterations
+external_call_test   [  93% ] 009/014 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 010/014 VUs, 4336 complete and 0 interrupted iterations
+external_call_test   [  97% ] 010/014 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 009/014 VUs, 4487 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 009/014 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 40473   1346.415355/s
+    checks_succeeded...: 100.00% 40473 out of 40473
+    checks_failed......: 0.00%   0 out of 40473
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=14.337309 min=6.7965  med=15.06353 max=61.4206  p(90)=19.09295 p(95)=20.006111
+
+    HTTP
+    http_req_duration..............: avg=64.33ms   min=56.79ms med=65.06ms  max=111.42ms p(90)=69.09ms  p(95)=70ms     
+      { expected_response:true }...: avg=64.33ms   min=56.79ms med=65.06ms  max=111.42ms p(90)=69.09ms  p(95)=70ms     
+    http_req_failed................: 0.00%  0 out of 4497
+    http_reqs......................: 4497   149.601706/s
+
+    EXECUTION
+    dropped_iterations.............: 4      0.133068/s
+    iteration_duration.............: avg=64.57ms   min=56.9ms  med=65.35ms  max=111.87ms p(90)=69.4ms   p(95)=70.33ms  
+    iterations.....................: 4497   149.601706/s
+    vus............................: 9      min=8         max=12
+    vus_max........................: 14     min=11        max=14
+
+    NETWORK
+    data_received..................: 1.1 MB 36 kB/s
+    data_sent......................: 934 kB 31 kB/s
+
+
+
+
+running (0m30.1s), 000/014 VUs, 4497 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/014 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | DELAY_MS=200
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 031/033 VUs, 96 complete and 0 interrupted iterations
+external_call_test   [   3% ] 031/033 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 033/034 VUs, 243 complete and 0 interrupted iterations
+external_call_test   [   7% ] 033/034 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 032/035 VUs, 393 complete and 0 interrupted iterations
+external_call_test   [  10% ] 032/035 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 032/035 VUs, 543 complete and 0 interrupted iterations
+external_call_test   [  13% ] 032/035 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 033/035 VUs, 692 complete and 0 interrupted iterations
+external_call_test   [  17% ] 033/035 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 033/035 VUs, 842 complete and 0 interrupted iterations
+external_call_test   [  20% ] 033/035 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 033/035 VUs, 992 complete and 0 interrupted iterations
+external_call_test   [  23% ] 033/035 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 032/035 VUs, 1143 complete and 0 interrupted iterations
+external_call_test   [  27% ] 032/035 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 032/035 VUs, 1293 complete and 0 interrupted iterations
+external_call_test   [  30% ] 032/035 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 033/035 VUs, 1442 complete and 0 interrupted iterations
+external_call_test   [  33% ] 033/035 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 031/035 VUs, 1594 complete and 0 interrupted iterations
+external_call_test   [  37% ] 031/035 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 032/035 VUs, 1743 complete and 0 interrupted iterations
+external_call_test   [  40% ] 032/035 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 032/035 VUs, 1893 complete and 0 interrupted iterations
+external_call_test   [  43% ] 032/035 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 033/035 VUs, 2042 complete and 0 interrupted iterations
+external_call_test   [  47% ] 033/035 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 032/035 VUs, 2193 complete and 0 interrupted iterations
+external_call_test   [  50% ] 032/035 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 031/035 VUs, 2344 complete and 0 interrupted iterations
+external_call_test   [  53% ] 031/035 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 033/035 VUs, 2492 complete and 0 interrupted iterations
+external_call_test   [  57% ] 033/035 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 032/035 VUs, 2643 complete and 0 interrupted iterations
+external_call_test   [  60% ] 032/035 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 033/035 VUs, 2792 complete and 0 interrupted iterations
+external_call_test   [  63% ] 033/035 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 033/035 VUs, 2942 complete and 0 interrupted iterations
+external_call_test   [  67% ] 033/035 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 029/037 VUs, 3094 complete and 0 interrupted iterations
+external_call_test   [  70% ] 029/037 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 031/037 VUs, 3242 complete and 0 interrupted iterations
+external_call_test   [  73% ] 031/037 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 031/037 VUs, 3392 complete and 0 interrupted iterations
+external_call_test   [  77% ] 031/037 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 031/037 VUs, 3542 complete and 0 interrupted iterations
+external_call_test   [  80% ] 031/037 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 031/037 VUs, 3692 complete and 0 interrupted iterations
+external_call_test   [  83% ] 031/037 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 032/037 VUs, 3841 complete and 0 interrupted iterations
+external_call_test   [  87% ] 032/037 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 032/037 VUs, 3991 complete and 0 interrupted iterations
+external_call_test   [  90% ] 032/037 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 032/037 VUs, 4141 complete and 0 interrupted iterations
+external_call_test   [  93% ] 032/037 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 032/037 VUs, 4291 complete and 0 interrupted iterations
+external_call_test   [  97% ] 032/037 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 032/037 VUs, 4441 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 032/037 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 40266   1332.483287/s
+    checks_succeeded...: 100.00% 40266 out of 40266
+    checks_failed......: 0.00%   0 out of 40266
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=15.745502 min=6.155228 med=16.709327 max=51.157458 p(90)=19.539018 p(95)=20.360995
+
+    HTTP
+    http_req_duration..............: avg=215.74ms  min=206.15ms med=216.7ms   max=251.15ms  p(90)=219.53ms  p(95)=220.36ms 
+      { expected_response:true }...: avg=215.74ms  min=206.15ms med=216.7ms   max=251.15ms  p(90)=219.53ms  p(95)=220.36ms 
+    http_req_failed................: 0.00%  0 out of 4474
+    http_reqs......................: 4474   148.053699/s
+
+    EXECUTION
+    dropped_iterations.............: 27     0.893485/s
+    iteration_duration.............: avg=216.02ms  min=206.3ms  med=217ms     max=251.33ms  p(90)=219.85ms  p(95)=220.69ms 
+    iterations.....................: 4474   148.053699/s
+    vus............................: 32     min=30        max=33
+    vus_max........................: 37     min=33        max=37
+
+    NETWORK
+    data_received..................: 1.1 MB 36 kB/s
+    data_sent......................: 931 kB 31 kB/s
+
+
+
+
+running (0m30.2s), 000/037 VUs, 4474 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/037 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | DELAY_MS=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-external-call.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * external_call_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 080/080 VUs, 0 complete and 0 interrupted iterations
+external_call_test   [   3% ] 080/080 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 130/130 VUs, 50 complete and 0 interrupted iterations
+external_call_test   [   7% ] 130/130 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 180/180 VUs, 100 complete and 0 interrupted iterations
+external_call_test   [  10% ] 180/180 VUs  03.0s/30s  150.00 iters/s
+time="2026-04-14T00:19:02+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=external_call_test
+
+running (0m04.0s), 200/200 VUs, 150 complete and 0 interrupted iterations
+external_call_test   [  13% ] 200/200 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 200/200 VUs, 200 complete and 0 interrupted iterations
+external_call_test   [  17% ] 200/200 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 200/200 VUs, 250 complete and 0 interrupted iterations
+external_call_test   [  20% ] 200/200 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 200/200 VUs, 300 complete and 0 interrupted iterations
+external_call_test   [  23% ] 200/200 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 200/200 VUs, 350 complete and 0 interrupted iterations
+external_call_test   [  27% ] 200/200 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 200/200 VUs, 400 complete and 0 interrupted iterations
+external_call_test   [  30% ] 200/200 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 200/200 VUs, 450 complete and 0 interrupted iterations
+external_call_test   [  33% ] 200/200 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 200/200 VUs, 500 complete and 0 interrupted iterations
+external_call_test   [  37% ] 200/200 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 200/200 VUs, 550 complete and 0 interrupted iterations
+external_call_test   [  40% ] 200/200 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 200/200 VUs, 600 complete and 0 interrupted iterations
+external_call_test   [  43% ] 200/200 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 200/200 VUs, 650 complete and 0 interrupted iterations
+external_call_test   [  47% ] 200/200 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 200/200 VUs, 700 complete and 0 interrupted iterations
+external_call_test   [  50% ] 200/200 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 200/200 VUs, 750 complete and 0 interrupted iterations
+external_call_test   [  53% ] 200/200 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 200/200 VUs, 800 complete and 0 interrupted iterations
+external_call_test   [  57% ] 200/200 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 200/200 VUs, 850 complete and 0 interrupted iterations
+external_call_test   [  60% ] 200/200 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 200/200 VUs, 900 complete and 0 interrupted iterations
+external_call_test   [  63% ] 200/200 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 200/200 VUs, 950 complete and 0 interrupted iterations
+external_call_test   [  67% ] 200/200 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 200/200 VUs, 1000 complete and 0 interrupted iterations
+external_call_test   [  70% ] 200/200 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 200/200 VUs, 1050 complete and 0 interrupted iterations
+external_call_test   [  73% ] 200/200 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 200/200 VUs, 1100 complete and 0 interrupted iterations
+external_call_test   [  77% ] 200/200 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 200/200 VUs, 1150 complete and 0 interrupted iterations
+external_call_test   [  80% ] 200/200 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 200/200 VUs, 1200 complete and 0 interrupted iterations
+external_call_test   [  83% ] 200/200 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 200/200 VUs, 1250 complete and 0 interrupted iterations
+external_call_test   [  87% ] 200/200 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 200/200 VUs, 1300 complete and 0 interrupted iterations
+external_call_test   [  90% ] 200/200 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 200/200 VUs, 1350 complete and 0 interrupted iterations
+external_call_test   [  93% ] 200/200 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 200/200 VUs, 1400 complete and 0 interrupted iterations
+external_call_test   [  97% ] 200/200 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 200/200 VUs, 1450 complete and 0 interrupted iterations
+external_call_test   [ 100% ] 200/200 VUs  30s  150.00 iters/s
+
+running (0m31.0s), 150/200 VUs, 1500 complete and 0 interrupted iterations
+external_call_test ↓ [ 100% ] 200/200 VUs  30s  150.00 iters/s
+
+running (0m32.0s), 100/200 VUs, 1550 complete and 0 interrupted iterations
+external_call_test ↓ [ 100% ] 200/200 VUs  30s  150.00 iters/s
+
+running (0m33.0s), 050/200 VUs, 1600 complete and 0 interrupted iterations
+external_call_test ↓ [ 100% ] 200/200 VUs  30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 14850   441.2924/s
+    checks_succeeded...: 100.00% 14850 out of 14850
+    checks_failed......: 0.00%   0 out of 14850
+
+    ✓ status 200
+    ✓ completed
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+    ✓ delayMs matches
+    ✓ risk present
+    ✓ segment present
+    ✓ source present
+
+    CUSTOM
+    external_call_overhead_ms......: avg=2660.146014 min=15.35005 med=2996.288475 max=3016.100234 p(90)=3004.046353 p(95)=3006.005865
+
+    HTTP
+    http_req_duration..............: avg=3.66s       min=1.01s    med=3.99s       max=4.01s       p(90)=4s          p(95)=4s         
+      { expected_response:true }...: avg=3.66s       min=1.01s    med=3.99s       max=4.01s       p(90)=4s          p(95)=4s         
+    http_req_failed................: 0.00%  0 out of 1650
+    http_reqs......................: 1650   49.032489/s
+
+    EXECUTION
+    dropped_iterations.............: 2851   84.722197/s
+    iteration_duration.............: avg=3.66s       min=1.01s    med=3.99s       max=4.01s       p(90)=4s          p(95)=4s         
+    iterations.....................: 1650   49.032489/s
+    vus............................: 50     min=50        max=200
+    vus_max........................: 200    min=80        max=200
+
+    NETWORK
+    data_received..................: 398 kB 12 kB/s
+    data_sent......................: 343 kB 10 kB/s
+
+
+
+
+running (0m33.7s), 000/200 VUs, 1650 complete and 0 interrupted iterations
+external_call_test ✓ [ 100% ] 000/200 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+Finished at: Tue Apr 14 12:19:32 AM CEST 2026
+========================================

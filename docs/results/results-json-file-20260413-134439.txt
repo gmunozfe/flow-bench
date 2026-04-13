@@ -1,0 +1,1848 @@
+========================================
+🚀 JSON Benchmark Suite
+========================================
+Mode: file
+Started at: Mon Apr 13 01:44:39 PM CEST 2026
+
+----- SYSTEM INFO -----
+Linux li-3f7fa6cc-284c-11b2-a85c-ccb792864af1.ibm.com 6.14.11-300.fc42.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Jun 10 16:24:16 UTC 2025 x86_64 GNU/Linux
+
+CPU:
+Model name:                              12th Gen Intel(R) Core(TM) i7-12800H
+
+Memory:
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi        23Gi        25Gi       4.1Gi        19Gi        39Gi
+Swap:          8.0Gi       1.7Gi       6.3Gi
+
+-----------------------
+
+
+========================================
+RUN: RATE=20 | ITEMS=1000 | ITERATIONS=10
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/010 VUs, 20 complete and 0 interrupted iterations
+json_test   [   3% ] 000/010 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 000/010 VUs, 40 complete and 0 interrupted iterations
+json_test   [   7% ] 000/010 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 000/010 VUs, 60 complete and 0 interrupted iterations
+json_test   [  10% ] 000/010 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 000/010 VUs, 80 complete and 0 interrupted iterations
+json_test   [  13% ] 000/010 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 000/010 VUs, 100 complete and 0 interrupted iterations
+json_test   [  17% ] 000/010 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 000/010 VUs, 120 complete and 0 interrupted iterations
+json_test   [  20% ] 000/010 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 000/010 VUs, 140 complete and 0 interrupted iterations
+json_test   [  23% ] 000/010 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 000/010 VUs, 160 complete and 0 interrupted iterations
+json_test   [  27% ] 000/010 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 000/010 VUs, 180 complete and 0 interrupted iterations
+json_test   [  30% ] 000/010 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 000/010 VUs, 200 complete and 0 interrupted iterations
+json_test   [  33% ] 000/010 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 000/010 VUs, 220 complete and 0 interrupted iterations
+json_test   [  37% ] 000/010 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 000/010 VUs, 240 complete and 0 interrupted iterations
+json_test   [  40% ] 000/010 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 000/010 VUs, 260 complete and 0 interrupted iterations
+json_test   [  43% ] 000/010 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 000/010 VUs, 280 complete and 0 interrupted iterations
+json_test   [  47% ] 000/010 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 000/010 VUs, 300 complete and 0 interrupted iterations
+json_test   [  50% ] 000/010 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 000/010 VUs, 320 complete and 0 interrupted iterations
+json_test   [  53% ] 000/010 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 000/010 VUs, 340 complete and 0 interrupted iterations
+json_test   [  57% ] 000/010 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 000/010 VUs, 360 complete and 0 interrupted iterations
+json_test   [  60% ] 000/010 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 000/010 VUs, 380 complete and 0 interrupted iterations
+json_test   [  63% ] 000/010 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 000/010 VUs, 400 complete and 0 interrupted iterations
+json_test   [  67% ] 000/010 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 000/010 VUs, 420 complete and 0 interrupted iterations
+json_test   [  70% ] 000/010 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 000/010 VUs, 440 complete and 0 interrupted iterations
+json_test   [  73% ] 000/010 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 000/010 VUs, 460 complete and 0 interrupted iterations
+json_test   [  77% ] 000/010 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 000/010 VUs, 480 complete and 0 interrupted iterations
+json_test   [  80% ] 000/010 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 000/010 VUs, 500 complete and 0 interrupted iterations
+json_test   [  83% ] 000/010 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 000/010 VUs, 520 complete and 0 interrupted iterations
+json_test   [  87% ] 000/010 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 000/010 VUs, 540 complete and 0 interrupted iterations
+json_test   [  90% ] 000/010 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 000/010 VUs, 560 complete and 0 interrupted iterations
+json_test   [  93% ] 000/010 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 000/010 VUs, 580 complete and 0 interrupted iterations
+json_test   [  97% ] 000/010 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 000/010 VUs, 600 complete and 0 interrupted iterations
+json_test   [ 100% ] 000/010 VUs  30.0s/30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    100.141812/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=9.91ms  min=5.65ms med=7.65ms max=317.63ms p(90)=9.28ms p(95)=11.29ms
+      { expected_response:true }...: avg=9.91ms  min=5.65ms med=7.65ms max=317.63ms p(90)=9.28ms p(95)=11.29ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    20.028362/s
+
+    EXECUTION
+    iteration_duration.............: avg=10.08ms min=5.8ms  med=7.8ms  max=318.15ms p(90)=9.46ms p(95)=11.5ms 
+    iterations.....................: 601    20.028362/s
+    vus............................: 0      min=0        max=0 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 116 kB 3.9 kB/s
+    data_sent......................: 98 kB  3.3 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 601 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  20.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=20 | ITEMS=1000 | ITERATIONS=100
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/010 VUs, 20 complete and 0 interrupted iterations
+json_test   [   3% ] 000/010 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 000/010 VUs, 40 complete and 0 interrupted iterations
+json_test   [   7% ] 000/010 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 000/010 VUs, 60 complete and 0 interrupted iterations
+json_test   [  10% ] 000/010 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 000/010 VUs, 80 complete and 0 interrupted iterations
+json_test   [  13% ] 000/010 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 000/010 VUs, 100 complete and 0 interrupted iterations
+json_test   [  17% ] 000/010 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 000/010 VUs, 120 complete and 0 interrupted iterations
+json_test   [  20% ] 000/010 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 000/010 VUs, 140 complete and 0 interrupted iterations
+json_test   [  23% ] 000/010 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 000/010 VUs, 160 complete and 0 interrupted iterations
+json_test   [  27% ] 000/010 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 000/010 VUs, 180 complete and 0 interrupted iterations
+json_test   [  30% ] 000/010 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 000/010 VUs, 200 complete and 0 interrupted iterations
+json_test   [  33% ] 000/010 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 000/010 VUs, 220 complete and 0 interrupted iterations
+json_test   [  37% ] 000/010 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 000/010 VUs, 240 complete and 0 interrupted iterations
+json_test   [  40% ] 000/010 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 000/010 VUs, 260 complete and 0 interrupted iterations
+json_test   [  43% ] 000/010 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 000/010 VUs, 280 complete and 0 interrupted iterations
+json_test   [  47% ] 000/010 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 000/010 VUs, 300 complete and 0 interrupted iterations
+json_test   [  50% ] 000/010 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 000/010 VUs, 320 complete and 0 interrupted iterations
+json_test   [  53% ] 000/010 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 000/010 VUs, 340 complete and 0 interrupted iterations
+json_test   [  57% ] 000/010 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 000/010 VUs, 360 complete and 0 interrupted iterations
+json_test   [  60% ] 000/010 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 000/010 VUs, 380 complete and 0 interrupted iterations
+json_test   [  63% ] 000/010 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 000/010 VUs, 400 complete and 0 interrupted iterations
+json_test   [  67% ] 000/010 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 000/010 VUs, 420 complete and 0 interrupted iterations
+json_test   [  70% ] 000/010 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 000/010 VUs, 440 complete and 0 interrupted iterations
+json_test   [  73% ] 000/010 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 000/010 VUs, 460 complete and 0 interrupted iterations
+json_test   [  77% ] 000/010 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 000/010 VUs, 480 complete and 0 interrupted iterations
+json_test   [  80% ] 000/010 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 000/010 VUs, 500 complete and 0 interrupted iterations
+json_test   [  83% ] 000/010 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 000/010 VUs, 520 complete and 0 interrupted iterations
+json_test   [  87% ] 000/010 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 000/010 VUs, 540 complete and 0 interrupted iterations
+json_test   [  90% ] 000/010 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 000/010 VUs, 560 complete and 0 interrupted iterations
+json_test   [  93% ] 000/010 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 000/010 VUs, 580 complete and 0 interrupted iterations
+json_test   [  97% ] 000/010 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 000/010 VUs, 600 complete and 0 interrupted iterations
+json_test   [ 100% ] 000/010 VUs  30.0s/30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    100.050955/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=30.56ms min=24.83ms med=29.9ms  max=54.61ms p(90)=34.58ms p(95)=36.11ms
+      { expected_response:true }...: avg=30.56ms min=24.83ms med=29.9ms  max=54.61ms p(90)=34.58ms p(95)=36.11ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    20.010191/s
+
+    EXECUTION
+    iteration_duration.............: avg=30.74ms min=24.96ms med=30.07ms max=54.77ms p(90)=34.77ms p(95)=36.26ms
+    iterations.....................: 601    20.010191/s
+    vus............................: 0      min=0        max=0 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 118 kB 3.9 kB/s
+    data_sent......................: 99 kB  3.3 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 601 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  20.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=20 | ITEMS=1000 | ITERATIONS=300
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 001/010 VUs, 19 complete and 0 interrupted iterations
+json_test   [   3% ] 001/010 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 001/010 VUs, 39 complete and 0 interrupted iterations
+json_test   [   7% ] 001/010 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 59 complete and 0 interrupted iterations
+json_test   [  10% ] 001/010 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 79 complete and 0 interrupted iterations
+json_test   [  13% ] 001/010 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 001/010 VUs, 99 complete and 0 interrupted iterations
+json_test   [  17% ] 001/010 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 001/010 VUs, 119 complete and 0 interrupted iterations
+json_test   [  20% ] 001/010 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 139 complete and 0 interrupted iterations
+json_test   [  23% ] 001/010 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 159 complete and 0 interrupted iterations
+json_test   [  27% ] 001/010 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 001/010 VUs, 179 complete and 0 interrupted iterations
+json_test   [  30% ] 001/010 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 199 complete and 0 interrupted iterations
+json_test   [  33% ] 001/010 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 001/010 VUs, 219 complete and 0 interrupted iterations
+json_test   [  37% ] 001/010 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 001/010 VUs, 239 complete and 0 interrupted iterations
+json_test   [  40% ] 001/010 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 001/010 VUs, 259 complete and 0 interrupted iterations
+json_test   [  43% ] 001/010 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 001/010 VUs, 279 complete and 0 interrupted iterations
+json_test   [  47% ] 001/010 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 299 complete and 0 interrupted iterations
+json_test   [  50% ] 001/010 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 001/010 VUs, 319 complete and 0 interrupted iterations
+json_test   [  53% ] 001/010 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 001/010 VUs, 339 complete and 0 interrupted iterations
+json_test   [  57% ] 001/010 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 359 complete and 0 interrupted iterations
+json_test   [  60% ] 001/010 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 001/010 VUs, 379 complete and 0 interrupted iterations
+json_test   [  63% ] 001/010 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 399 complete and 0 interrupted iterations
+json_test   [  67% ] 001/010 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 419 complete and 0 interrupted iterations
+json_test   [  70% ] 001/010 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 439 complete and 0 interrupted iterations
+json_test   [  73% ] 001/010 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 001/010 VUs, 459 complete and 0 interrupted iterations
+json_test   [  77% ] 001/010 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 479 complete and 0 interrupted iterations
+json_test   [  80% ] 001/010 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 001/010 VUs, 499 complete and 0 interrupted iterations
+json_test   [  83% ] 001/010 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 001/010 VUs, 519 complete and 0 interrupted iterations
+json_test   [  87% ] 001/010 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 001/010 VUs, 539 complete and 0 interrupted iterations
+json_test   [  90% ] 001/010 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 559 complete and 0 interrupted iterations
+json_test   [  93% ] 001/010 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 579 complete and 0 interrupted iterations
+json_test   [  97% ] 001/010 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 599 complete and 0 interrupted iterations
+json_test   [ 100% ] 001/010 VUs  30.0s/30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3005    99.904371/s
+    checks_succeeded...: 100.00% 3005 out of 3005
+    checks_failed......: 0.00%   0 out of 3005
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=79.04ms min=70.79ms med=77.27ms max=147.39ms p(90)=84.95ms p(95)=87.76ms
+      { expected_response:true }...: avg=79.04ms min=70.79ms med=77.27ms max=147.39ms p(90)=84.95ms p(95)=87.76ms
+    http_req_failed................: 0.00%  0 out of 601
+    http_reqs......................: 601    19.980874/s
+
+    EXECUTION
+    iteration_duration.............: avg=79.23ms min=70.97ms med=77.46ms max=147.58ms p(90)=85.12ms p(95)=87.93ms
+    iterations.....................: 601    19.980874/s
+    vus............................: 1      min=1        max=1 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 118 kB 3.9 kB/s
+    data_sent......................: 99 kB  3.3 kB/s
+
+
+
+
+running (0m30.1s), 000/010 VUs, 601 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  20.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | ITEMS=1000 | ITERATIONS=10
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 001/010 VUs, 149 complete and 0 interrupted iterations
+json_test   [   3% ] 001/010 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 000/010 VUs, 300 complete and 0 interrupted iterations
+json_test   [   7% ] 000/010 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 449 complete and 0 interrupted iterations
+json_test   [  10% ] 001/010 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 599 complete and 0 interrupted iterations
+json_test   [  13% ] 001/010 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 001/010 VUs, 749 complete and 0 interrupted iterations
+json_test   [  17% ] 001/010 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 001/010 VUs, 899 complete and 0 interrupted iterations
+json_test   [  20% ] 001/010 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 1049 complete and 0 interrupted iterations
+json_test   [  23% ] 001/010 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 1199 complete and 0 interrupted iterations
+json_test   [  27% ] 001/010 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 001/010 VUs, 1349 complete and 0 interrupted iterations
+json_test   [  30% ] 001/010 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 1499 complete and 0 interrupted iterations
+json_test   [  33% ] 001/010 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 001/010 VUs, 1649 complete and 0 interrupted iterations
+json_test   [  37% ] 001/010 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 001/010 VUs, 1799 complete and 0 interrupted iterations
+json_test   [  40% ] 001/010 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 001/010 VUs, 1949 complete and 0 interrupted iterations
+json_test   [  43% ] 001/010 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 001/010 VUs, 2099 complete and 0 interrupted iterations
+json_test   [  47% ] 001/010 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 2249 complete and 0 interrupted iterations
+json_test   [  50% ] 001/010 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 001/010 VUs, 2399 complete and 0 interrupted iterations
+json_test   [  53% ] 001/010 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 001/010 VUs, 2549 complete and 0 interrupted iterations
+json_test   [  57% ] 001/010 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 2699 complete and 0 interrupted iterations
+json_test   [  60% ] 001/010 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 001/010 VUs, 2849 complete and 0 interrupted iterations
+json_test   [  63% ] 001/010 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 2999 complete and 0 interrupted iterations
+json_test   [  67% ] 001/010 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 3149 complete and 0 interrupted iterations
+json_test   [  70% ] 001/010 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 3299 complete and 0 interrupted iterations
+json_test   [  73% ] 001/010 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 001/010 VUs, 3449 complete and 0 interrupted iterations
+json_test   [  77% ] 001/010 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 3599 complete and 0 interrupted iterations
+json_test   [  80% ] 001/010 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 001/010 VUs, 3749 complete and 0 interrupted iterations
+json_test   [  83% ] 001/010 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 001/010 VUs, 3899 complete and 0 interrupted iterations
+json_test   [  87% ] 001/010 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 001/010 VUs, 4049 complete and 0 interrupted iterations
+json_test   [  90% ] 001/010 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 000/010 VUs, 4200 complete and 0 interrupted iterations
+json_test   [  93% ] 000/010 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 4349 complete and 0 interrupted iterations
+json_test   [  97% ] 001/010 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 4499 complete and 0 interrupted iterations
+json_test   [ 100% ] 001/010 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22505   750.014241/s
+    checks_succeeded...: 100.00% 22505 out of 22505
+    checks_failed......: 0.00%   0 out of 22505
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=6.6ms  min=4.36ms med=6.08ms max=13.37ms p(90)=8.63ms p(95)=9.52ms
+      { expected_response:true }...: avg=6.6ms  min=4.36ms med=6.08ms max=13.37ms p(90)=8.63ms p(95)=9.52ms
+    http_req_failed................: 0.00%  0 out of 4501
+    http_reqs......................: 4501   150.002848/s
+
+    EXECUTION
+    iteration_duration.............: avg=6.75ms min=4.44ms med=6.22ms max=13.6ms  p(90)=8.81ms p(95)=9.73ms
+    iterations.....................: 4501   150.002848/s
+    vus............................: 1      min=0         max=1 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 25 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4501 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | ITEMS=1000 | ITERATIONS=30
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 002/010 VUs, 148 complete and 0 interrupted iterations
+json_test   [   3% ] 002/010 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 002/010 VUs, 298 complete and 0 interrupted iterations
+json_test   [   7% ] 002/010 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 002/010 VUs, 448 complete and 0 interrupted iterations
+json_test   [  10% ] 002/010 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 599 complete and 0 interrupted iterations
+json_test   [  13% ] 001/010 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 002/010 VUs, 748 complete and 0 interrupted iterations
+json_test   [  17% ] 002/010 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 002/010 VUs, 898 complete and 0 interrupted iterations
+json_test   [  20% ] 002/010 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 002/010 VUs, 1048 complete and 0 interrupted iterations
+json_test   [  23% ] 002/010 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 1199 complete and 0 interrupted iterations
+json_test   [  27% ] 001/010 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 002/010 VUs, 1348 complete and 0 interrupted iterations
+json_test   [  30% ] 002/010 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 002/010 VUs, 1498 complete and 0 interrupted iterations
+json_test   [  33% ] 002/010 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 002/010 VUs, 1648 complete and 0 interrupted iterations
+json_test   [  37% ] 002/010 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 002/010 VUs, 1798 complete and 0 interrupted iterations
+json_test   [  40% ] 002/010 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 002/010 VUs, 1948 complete and 0 interrupted iterations
+json_test   [  43% ] 002/010 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 002/010 VUs, 2098 complete and 0 interrupted iterations
+json_test   [  47% ] 002/010 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 2249 complete and 0 interrupted iterations
+json_test   [  50% ] 001/010 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 002/010 VUs, 2398 complete and 0 interrupted iterations
+json_test   [  53% ] 002/010 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 002/010 VUs, 2548 complete and 0 interrupted iterations
+json_test   [  57% ] 002/010 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 2699 complete and 0 interrupted iterations
+json_test   [  60% ] 001/010 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 002/010 VUs, 2848 complete and 0 interrupted iterations
+json_test   [  63% ] 002/010 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 2999 complete and 0 interrupted iterations
+json_test   [  67% ] 001/010 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 3149 complete and 0 interrupted iterations
+json_test   [  70% ] 001/010 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 3299 complete and 0 interrupted iterations
+json_test   [  73% ] 001/010 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 002/010 VUs, 3448 complete and 0 interrupted iterations
+json_test   [  77% ] 002/010 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 3599 complete and 0 interrupted iterations
+json_test   [  80% ] 001/010 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 002/010 VUs, 3748 complete and 0 interrupted iterations
+json_test   [  83% ] 002/010 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 002/010 VUs, 3898 complete and 0 interrupted iterations
+json_test   [  87% ] 002/010 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 002/010 VUs, 4048 complete and 0 interrupted iterations
+json_test   [  90% ] 002/010 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 4199 complete and 0 interrupted iterations
+json_test   [  93% ] 001/010 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 4349 complete and 0 interrupted iterations
+json_test   [  97% ] 001/010 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 002/010 VUs, 4498 complete and 0 interrupted iterations
+json_test   [ 100% ] 002/010 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22505   749.827461/s
+    checks_succeeded...: 100.00% 22505 out of 22505
+    checks_failed......: 0.00%   0 out of 22505
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=12.3ms  min=9.82ms med=12.06ms max=21.82ms p(90)=13.9ms  p(95)=14.82ms
+      { expected_response:true }...: avg=12.3ms  min=9.82ms med=12.06ms max=21.82ms p(90)=13.9ms  p(95)=14.82ms
+    http_req_failed................: 0.00%  0 out of 4501
+    http_reqs......................: 4501   149.965492/s
+
+    EXECUTION
+    iteration_duration.............: avg=12.46ms min=9.97ms med=12.22ms max=22.04ms p(90)=14.06ms p(95)=14.98ms
+    iterations.....................: 4501   149.965492/s
+    vus............................: 2      min=1         max=2 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4501 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | ITEMS=1000 | ITERATIONS=60
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 004/010 VUs, 146 complete and 0 interrupted iterations
+json_test   [   3% ] 004/010 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 003/010 VUs, 297 complete and 0 interrupted iterations
+json_test   [   7% ] 003/010 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 004/010 VUs, 446 complete and 0 interrupted iterations
+json_test   [  10% ] 004/010 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 003/010 VUs, 597 complete and 0 interrupted iterations
+json_test   [  13% ] 003/010 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 004/010 VUs, 746 complete and 0 interrupted iterations
+json_test   [  17% ] 004/010 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 003/010 VUs, 897 complete and 0 interrupted iterations
+json_test   [  20% ] 003/010 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 003/010 VUs, 1047 complete and 0 interrupted iterations
+json_test   [  23% ] 003/010 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 003/010 VUs, 1197 complete and 0 interrupted iterations
+json_test   [  27% ] 003/010 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 003/010 VUs, 1347 complete and 0 interrupted iterations
+json_test   [  30% ] 003/010 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 003/010 VUs, 1497 complete and 0 interrupted iterations
+json_test   [  33% ] 003/010 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 003/010 VUs, 1647 complete and 0 interrupted iterations
+json_test   [  37% ] 003/010 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 003/010 VUs, 1797 complete and 0 interrupted iterations
+json_test   [  40% ] 003/010 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 004/010 VUs, 1946 complete and 0 interrupted iterations
+json_test   [  43% ] 004/010 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 004/010 VUs, 2096 complete and 0 interrupted iterations
+json_test   [  47% ] 004/010 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 003/010 VUs, 2247 complete and 0 interrupted iterations
+json_test   [  50% ] 003/010 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 003/010 VUs, 2397 complete and 0 interrupted iterations
+json_test   [  53% ] 003/010 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 004/010 VUs, 2546 complete and 0 interrupted iterations
+json_test   [  57% ] 004/010 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 003/010 VUs, 2697 complete and 0 interrupted iterations
+json_test   [  60% ] 003/010 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 004/010 VUs, 2846 complete and 0 interrupted iterations
+json_test   [  63% ] 004/010 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 003/010 VUs, 2997 complete and 0 interrupted iterations
+json_test   [  67% ] 003/010 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 003/010 VUs, 3147 complete and 0 interrupted iterations
+json_test   [  70% ] 003/010 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 003/010 VUs, 3297 complete and 0 interrupted iterations
+json_test   [  73% ] 003/010 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 003/010 VUs, 3447 complete and 0 interrupted iterations
+json_test   [  77% ] 003/010 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 003/010 VUs, 3597 complete and 0 interrupted iterations
+json_test   [  80% ] 003/010 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 003/010 VUs, 3747 complete and 0 interrupted iterations
+json_test   [  83% ] 003/010 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 003/010 VUs, 3897 complete and 0 interrupted iterations
+json_test   [  87% ] 003/010 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 003/010 VUs, 4047 complete and 0 interrupted iterations
+json_test   [  90% ] 003/010 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 004/010 VUs, 4196 complete and 0 interrupted iterations
+json_test   [  93% ] 004/010 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 004/010 VUs, 4346 complete and 0 interrupted iterations
+json_test   [  97% ] 004/010 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 003/010 VUs, 4497 complete and 0 interrupted iterations
+json_test   [ 100% ] 003/010 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22505   749.600049/s
+    checks_succeeded...: 100.00% 22505 out of 22505
+    checks_failed......: 0.00%   0 out of 22505
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=24.02ms min=19.15ms med=23.39ms max=41.22ms p(90)=27.57ms p(95)=29.93ms
+      { expected_response:true }...: avg=24.02ms min=19.15ms med=23.39ms max=41.22ms p(90)=27.57ms p(95)=29.93ms
+    http_req_failed................: 0.00%  0 out of 4501
+    http_reqs......................: 4501   149.92001/s
+
+    EXECUTION
+    iteration_duration.............: avg=24.2ms  min=19.35ms med=23.58ms max=41.45ms p(90)=27.73ms p(95)=30.13ms
+    iterations.....................: 4501   149.92001/s
+    vus............................: 3      min=3         max=4 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 4501 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | ITEMS=1000 | ITERATIONS=80
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 007/010 VUs, 143 complete and 0 interrupted iterations
+json_test   [   3% ] 007/010 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 005/010 VUs, 295 complete and 0 interrupted iterations
+json_test   [   7% ] 005/010 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 004/010 VUs, 446 complete and 0 interrupted iterations
+json_test   [  10% ] 004/010 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 005/010 VUs, 595 complete and 0 interrupted iterations
+json_test   [  13% ] 005/010 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 006/010 VUs, 744 complete and 0 interrupted iterations
+json_test   [  17% ] 006/010 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 006/010 VUs, 894 complete and 0 interrupted iterations
+json_test   [  20% ] 006/010 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 004/010 VUs, 1046 complete and 0 interrupted iterations
+json_test   [  23% ] 004/010 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 005/010 VUs, 1195 complete and 0 interrupted iterations
+json_test   [  27% ] 005/010 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 005/010 VUs, 1345 complete and 0 interrupted iterations
+json_test   [  30% ] 005/010 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 005/010 VUs, 1495 complete and 0 interrupted iterations
+json_test   [  33% ] 005/010 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 005/010 VUs, 1645 complete and 0 interrupted iterations
+json_test   [  37% ] 005/010 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 004/010 VUs, 1796 complete and 0 interrupted iterations
+json_test   [  40% ] 004/010 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 005/010 VUs, 1945 complete and 0 interrupted iterations
+json_test   [  43% ] 005/010 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 005/010 VUs, 2095 complete and 0 interrupted iterations
+json_test   [  47% ] 005/010 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 005/010 VUs, 2245 complete and 0 interrupted iterations
+json_test   [  50% ] 005/010 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 004/010 VUs, 2396 complete and 0 interrupted iterations
+json_test   [  53% ] 004/010 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 005/010 VUs, 2545 complete and 0 interrupted iterations
+json_test   [  57% ] 005/010 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 005/010 VUs, 2695 complete and 0 interrupted iterations
+json_test   [  60% ] 005/010 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 006/010 VUs, 2844 complete and 0 interrupted iterations
+json_test   [  63% ] 006/010 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 005/010 VUs, 2995 complete and 0 interrupted iterations
+json_test   [  67% ] 005/010 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 005/010 VUs, 3145 complete and 0 interrupted iterations
+json_test   [  70% ] 005/010 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 005/010 VUs, 3295 complete and 0 interrupted iterations
+json_test   [  73% ] 005/010 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 005/010 VUs, 3445 complete and 0 interrupted iterations
+json_test   [  77% ] 005/010 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 005/010 VUs, 3595 complete and 0 interrupted iterations
+json_test   [  80% ] 005/010 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 005/010 VUs, 3745 complete and 0 interrupted iterations
+json_test   [  83% ] 005/010 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 005/010 VUs, 3895 complete and 0 interrupted iterations
+json_test   [  87% ] 005/010 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 006/010 VUs, 4044 complete and 0 interrupted iterations
+json_test   [  90% ] 006/010 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 005/010 VUs, 4195 complete and 0 interrupted iterations
+json_test   [  93% ] 005/010 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 009/011 VUs, 4340 complete and 0 interrupted iterations
+json_test   [  97% ] 009/011 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 006/011 VUs, 4493 complete and 0 interrupted iterations
+json_test   [ 100% ] 006/011 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22500   749.212773/s
+    checks_succeeded...: 100.00% 22500 out of 22500
+    checks_failed......: 0.00%   0 out of 22500
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=33.87ms min=24.68ms med=32.61ms max=76.22ms p(90)=39.54ms p(95)=42.38ms
+      { expected_response:true }...: avg=33.87ms min=24.68ms med=32.61ms max=76.22ms p(90)=39.54ms p(95)=42.38ms
+    http_req_failed................: 0.00%  0 out of 4500
+    http_reqs......................: 4500   149.842555/s
+
+    EXECUTION
+    dropped_iterations.............: 1      0.033298/s
+    iteration_duration.............: avg=34.07ms min=25.31ms med=32.81ms max=76.52ms p(90)=39.73ms p(95)=42.59ms
+    iterations.....................: 4500   149.842555/s
+    vus............................: 6      min=4         max=9 
+    vus_max........................: 11     min=10        max=11
+
+    NETWORK
+    data_received..................: 869 kB 29 kB/s
+    data_sent......................: 734 kB 24 kB/s
+
+
+
+
+running (0m30.0s), 000/011 VUs, 4500 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/011 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=150 | ITEMS=1000 | ITERATIONS=100
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 150.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 007/013 VUs, 140 complete and 0 interrupted iterations
+json_test   [   3% ] 007/013 VUs  01.0s/30s  150.00 iters/s
+
+running (0m02.0s), 007/013 VUs, 290 complete and 0 interrupted iterations
+json_test   [   7% ] 007/013 VUs  02.0s/30s  150.00 iters/s
+
+running (0m03.0s), 006/013 VUs, 441 complete and 0 interrupted iterations
+json_test   [  10% ] 006/013 VUs  03.0s/30s  150.00 iters/s
+
+running (0m04.0s), 008/013 VUs, 589 complete and 0 interrupted iterations
+json_test   [  13% ] 008/013 VUs  04.0s/30s  150.00 iters/s
+
+running (0m05.0s), 008/013 VUs, 739 complete and 0 interrupted iterations
+json_test   [  17% ] 008/013 VUs  05.0s/30s  150.00 iters/s
+
+running (0m06.0s), 006/013 VUs, 891 complete and 0 interrupted iterations
+json_test   [  20% ] 006/013 VUs  06.0s/30s  150.00 iters/s
+
+running (0m07.0s), 006/013 VUs, 1041 complete and 0 interrupted iterations
+json_test   [  23% ] 006/013 VUs  07.0s/30s  150.00 iters/s
+
+running (0m08.0s), 006/013 VUs, 1191 complete and 0 interrupted iterations
+json_test   [  27% ] 006/013 VUs  08.0s/30s  150.00 iters/s
+
+running (0m09.0s), 007/013 VUs, 1340 complete and 0 interrupted iterations
+json_test   [  30% ] 007/013 VUs  09.0s/30s  150.00 iters/s
+
+running (0m10.0s), 007/013 VUs, 1490 complete and 0 interrupted iterations
+json_test   [  33% ] 007/013 VUs  10.0s/30s  150.00 iters/s
+
+running (0m11.0s), 005/013 VUs, 1642 complete and 0 interrupted iterations
+json_test   [  37% ] 005/013 VUs  11.0s/30s  150.00 iters/s
+
+running (0m12.0s), 007/013 VUs, 1790 complete and 0 interrupted iterations
+json_test   [  40% ] 007/013 VUs  12.0s/30s  150.00 iters/s
+
+running (0m13.0s), 006/013 VUs, 1941 complete and 0 interrupted iterations
+json_test   [  43% ] 006/013 VUs  13.0s/30s  150.00 iters/s
+
+running (0m14.0s), 006/013 VUs, 2091 complete and 0 interrupted iterations
+json_test   [  47% ] 006/013 VUs  14.0s/30s  150.00 iters/s
+
+running (0m15.0s), 006/013 VUs, 2241 complete and 0 interrupted iterations
+json_test   [  50% ] 006/013 VUs  15.0s/30s  150.00 iters/s
+
+running (0m16.0s), 006/013 VUs, 2391 complete and 0 interrupted iterations
+json_test   [  53% ] 006/013 VUs  16.0s/30s  150.00 iters/s
+
+running (0m17.0s), 007/013 VUs, 2540 complete and 0 interrupted iterations
+json_test   [  57% ] 007/013 VUs  17.0s/30s  150.00 iters/s
+
+running (0m18.0s), 006/013 VUs, 2691 complete and 0 interrupted iterations
+json_test   [  60% ] 006/013 VUs  18.0s/30s  150.00 iters/s
+
+running (0m19.0s), 006/013 VUs, 2841 complete and 0 interrupted iterations
+json_test   [  63% ] 006/013 VUs  19.0s/30s  150.00 iters/s
+
+running (0m20.0s), 006/013 VUs, 2991 complete and 0 interrupted iterations
+json_test   [  67% ] 006/013 VUs  20.0s/30s  150.00 iters/s
+
+running (0m21.0s), 006/013 VUs, 3141 complete and 0 interrupted iterations
+json_test   [  70% ] 006/013 VUs  21.0s/30s  150.00 iters/s
+
+running (0m22.0s), 006/013 VUs, 3291 complete and 0 interrupted iterations
+json_test   [  73% ] 006/013 VUs  22.0s/30s  150.00 iters/s
+
+running (0m23.0s), 007/013 VUs, 3440 complete and 0 interrupted iterations
+json_test   [  77% ] 007/013 VUs  23.0s/30s  150.00 iters/s
+
+running (0m24.0s), 007/013 VUs, 3590 complete and 0 interrupted iterations
+json_test   [  80% ] 007/013 VUs  24.0s/30s  150.00 iters/s
+
+running (0m25.0s), 006/013 VUs, 3741 complete and 0 interrupted iterations
+json_test   [  83% ] 006/013 VUs  25.0s/30s  150.00 iters/s
+
+running (0m26.0s), 006/013 VUs, 3891 complete and 0 interrupted iterations
+json_test   [  87% ] 006/013 VUs  26.0s/30s  150.00 iters/s
+
+running (0m27.0s), 007/013 VUs, 4040 complete and 0 interrupted iterations
+json_test   [  90% ] 007/013 VUs  27.0s/30s  150.00 iters/s
+
+running (0m28.0s), 006/013 VUs, 4191 complete and 0 interrupted iterations
+json_test   [  93% ] 006/013 VUs  28.0s/30s  150.00 iters/s
+
+running (0m29.0s), 007/013 VUs, 4340 complete and 0 interrupted iterations
+json_test   [  97% ] 007/013 VUs  29.0s/30s  150.00 iters/s
+
+running (0m30.0s), 006/013 VUs, 4491 complete and 0 interrupted iterations
+json_test   [ 100% ] 006/013 VUs  30.0s/30s  150.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 22490   748.746565/s
+    checks_succeeded...: 100.00% 22490 out of 22490
+    checks_failed......: 0.00%   0 out of 22490
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=44.21ms min=35.37ms med=42.72ms max=86.86ms p(90)=51.5ms  p(95)=54.09ms
+      { expected_response:true }...: avg=44.21ms min=35.37ms med=42.72ms max=86.86ms p(90)=51.5ms  p(95)=54.09ms
+    http_req_failed................: 0.00%  0 out of 4498
+    http_reqs......................: 4498   149.749313/s
+
+    EXECUTION
+    dropped_iterations.............: 3      0.099877/s
+    iteration_duration.............: avg=44.43ms min=35.71ms med=42.95ms max=87.1ms  p(90)=51.74ms p(95)=54.28ms
+    iterations.....................: 4498   149.749313/s
+    vus............................: 6      min=5         max=8 
+    vus_max........................: 13     min=13        max=13
+
+    NETWORK
+    data_received..................: 882 kB 29 kB/s
+    data_sent......................: 738 kB 25 kB/s
+
+
+
+
+running (0m30.0s), 000/013 VUs, 4498 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/013 VUs  30s  150.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=5 | ITEMS=1000 | ITERATIONS=300
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/010 VUs, 5 complete and 0 interrupted iterations
+json_test   [   3% ] 000/010 VUs  01.0s/30s  5.00 iters/s
+
+running (0m02.0s), 000/010 VUs, 10 complete and 0 interrupted iterations
+json_test   [   7% ] 000/010 VUs  02.0s/30s  5.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 15 complete and 0 interrupted iterations
+json_test   [  10% ] 001/010 VUs  03.0s/30s  5.00 iters/s
+
+running (0m04.0s), 000/010 VUs, 20 complete and 0 interrupted iterations
+json_test   [  13% ] 000/010 VUs  04.0s/30s  5.00 iters/s
+
+running (0m05.0s), 000/010 VUs, 25 complete and 0 interrupted iterations
+json_test   [  17% ] 000/010 VUs  05.0s/30s  5.00 iters/s
+
+running (0m06.0s), 000/010 VUs, 30 complete and 0 interrupted iterations
+json_test   [  20% ] 000/010 VUs  06.0s/30s  5.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 35 complete and 0 interrupted iterations
+json_test   [  23% ] 001/010 VUs  07.0s/30s  5.00 iters/s
+
+running (0m08.0s), 000/010 VUs, 40 complete and 0 interrupted iterations
+json_test   [  27% ] 000/010 VUs  08.0s/30s  5.00 iters/s
+
+running (0m09.0s), 000/010 VUs, 45 complete and 0 interrupted iterations
+json_test   [  30% ] 000/010 VUs  09.0s/30s  5.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 50 complete and 0 interrupted iterations
+json_test   [  33% ] 001/010 VUs  10.0s/30s  5.00 iters/s
+
+running (0m11.0s), 000/010 VUs, 55 complete and 0 interrupted iterations
+json_test   [  37% ] 000/010 VUs  11.0s/30s  5.00 iters/s
+
+running (0m12.0s), 000/010 VUs, 60 complete and 0 interrupted iterations
+json_test   [  40% ] 000/010 VUs  12.0s/30s  5.00 iters/s
+
+running (0m13.0s), 000/010 VUs, 65 complete and 0 interrupted iterations
+json_test   [  43% ] 000/010 VUs  13.0s/30s  5.00 iters/s
+
+running (0m14.0s), 000/010 VUs, 70 complete and 0 interrupted iterations
+json_test   [  47% ] 000/010 VUs  14.0s/30s  5.00 iters/s
+
+running (0m15.0s), 000/010 VUs, 75 complete and 0 interrupted iterations
+json_test   [  50% ] 000/010 VUs  15.0s/30s  5.00 iters/s
+
+running (0m16.0s), 000/010 VUs, 80 complete and 0 interrupted iterations
+json_test   [  53% ] 000/010 VUs  16.0s/30s  5.00 iters/s
+
+running (0m17.0s), 000/010 VUs, 85 complete and 0 interrupted iterations
+json_test   [  57% ] 000/010 VUs  17.0s/30s  5.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 90 complete and 0 interrupted iterations
+json_test   [  60% ] 001/010 VUs  18.0s/30s  5.00 iters/s
+
+running (0m19.0s), 000/010 VUs, 95 complete and 0 interrupted iterations
+json_test   [  63% ] 000/010 VUs  19.0s/30s  5.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 100 complete and 0 interrupted iterations
+json_test   [  67% ] 001/010 VUs  20.0s/30s  5.00 iters/s
+
+running (0m21.0s), 000/010 VUs, 105 complete and 0 interrupted iterations
+json_test   [  70% ] 000/010 VUs  21.0s/30s  5.00 iters/s
+
+running (0m22.0s), 000/010 VUs, 110 complete and 0 interrupted iterations
+json_test   [  73% ] 000/010 VUs  22.0s/30s  5.00 iters/s
+
+running (0m23.0s), 000/010 VUs, 115 complete and 0 interrupted iterations
+json_test   [  77% ] 000/010 VUs  23.0s/30s  5.00 iters/s
+
+running (0m24.0s), 000/010 VUs, 120 complete and 0 interrupted iterations
+json_test   [  80% ] 000/010 VUs  24.0s/30s  5.00 iters/s
+
+running (0m25.0s), 000/010 VUs, 125 complete and 0 interrupted iterations
+json_test   [  83% ] 000/010 VUs  25.0s/30s  5.00 iters/s
+
+running (0m26.0s), 000/010 VUs, 130 complete and 0 interrupted iterations
+json_test   [  87% ] 000/010 VUs  26.0s/30s  5.00 iters/s
+
+running (0m27.0s), 000/010 VUs, 135 complete and 0 interrupted iterations
+json_test   [  90% ] 000/010 VUs  27.0s/30s  5.00 iters/s
+
+running (0m28.0s), 000/010 VUs, 140 complete and 0 interrupted iterations
+json_test   [  93% ] 000/010 VUs  28.0s/30s  5.00 iters/s
+
+running (0m29.0s), 000/010 VUs, 145 complete and 0 interrupted iterations
+json_test   [  97% ] 000/010 VUs  29.0s/30s  5.00 iters/s
+
+running (0m30.0s), 000/010 VUs, 150 complete and 0 interrupted iterations
+json_test   [ 100% ] 000/010 VUs  30.0s/30s  5.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 750     24.999713/s
+    checks_succeeded...: 100.00% 750 out of 750
+    checks_failed......: 0.00%   0 out of 750
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=84.5ms  min=71.69ms med=84.24ms max=129.06ms p(90)=91.7ms  p(95)=92.8ms 
+      { expected_response:true }...: avg=84.5ms  min=71.69ms med=84.24ms max=129.06ms p(90)=91.7ms  p(95)=92.8ms 
+    http_req_failed................: 0.00% 0 out of 150
+    http_reqs......................: 150   4.999943/s
+
+    EXECUTION
+    iteration_duration.............: avg=84.96ms min=72.01ms med=84.6ms  max=129.29ms p(90)=92.12ms p(95)=93.96ms
+    iterations.....................: 150   4.999943/s
+    vus............................: 0     min=0        max=1 
+    vus_max........................: 10    min=10       max=10
+
+    NETWORK
+    data_received..................: 29 kB 980 B/s
+    data_sent......................: 25 kB 820 B/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 150 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  5.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=5 | ITEMS=1000 | ITERATIONS=600
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/010 VUs, 5 complete and 0 interrupted iterations
+json_test   [   3% ] 000/010 VUs  01.0s/30s  5.00 iters/s
+
+running (0m02.0s), 000/010 VUs, 10 complete and 0 interrupted iterations
+json_test   [   7% ] 000/010 VUs  02.0s/30s  5.00 iters/s
+
+running (0m03.0s), 000/010 VUs, 15 complete and 0 interrupted iterations
+json_test   [  10% ] 000/010 VUs  03.0s/30s  5.00 iters/s
+
+running (0m04.0s), 000/010 VUs, 20 complete and 0 interrupted iterations
+json_test   [  13% ] 000/010 VUs  04.0s/30s  5.00 iters/s
+
+running (0m05.0s), 000/010 VUs, 25 complete and 0 interrupted iterations
+json_test   [  17% ] 000/010 VUs  05.0s/30s  5.00 iters/s
+
+running (0m06.0s), 000/010 VUs, 30 complete and 0 interrupted iterations
+json_test   [  20% ] 000/010 VUs  06.0s/30s  5.00 iters/s
+
+running (0m07.0s), 000/010 VUs, 35 complete and 0 interrupted iterations
+json_test   [  23% ] 000/010 VUs  07.0s/30s  5.00 iters/s
+
+running (0m08.0s), 000/010 VUs, 40 complete and 0 interrupted iterations
+json_test   [  27% ] 000/010 VUs  08.0s/30s  5.00 iters/s
+
+running (0m09.0s), 000/010 VUs, 45 complete and 0 interrupted iterations
+json_test   [  30% ] 000/010 VUs  09.0s/30s  5.00 iters/s
+
+running (0m10.0s), 000/010 VUs, 50 complete and 0 interrupted iterations
+json_test   [  33% ] 000/010 VUs  10.0s/30s  5.00 iters/s
+
+running (0m11.0s), 000/010 VUs, 55 complete and 0 interrupted iterations
+json_test   [  37% ] 000/010 VUs  11.0s/30s  5.00 iters/s
+
+running (0m12.0s), 000/010 VUs, 60 complete and 0 interrupted iterations
+json_test   [  40% ] 000/010 VUs  12.0s/30s  5.00 iters/s
+
+running (0m13.0s), 000/010 VUs, 65 complete and 0 interrupted iterations
+json_test   [  43% ] 000/010 VUs  13.0s/30s  5.00 iters/s
+
+running (0m14.0s), 000/010 VUs, 70 complete and 0 interrupted iterations
+json_test   [  47% ] 000/010 VUs  14.0s/30s  5.00 iters/s
+
+running (0m15.0s), 000/010 VUs, 75 complete and 0 interrupted iterations
+json_test   [  50% ] 000/010 VUs  15.0s/30s  5.00 iters/s
+
+running (0m16.0s), 000/010 VUs, 80 complete and 0 interrupted iterations
+json_test   [  53% ] 000/010 VUs  16.0s/30s  5.00 iters/s
+
+running (0m17.0s), 000/010 VUs, 85 complete and 0 interrupted iterations
+json_test   [  57% ] 000/010 VUs  17.0s/30s  5.00 iters/s
+
+running (0m18.0s), 000/010 VUs, 90 complete and 0 interrupted iterations
+json_test   [  60% ] 000/010 VUs  18.0s/30s  5.00 iters/s
+
+running (0m19.0s), 000/010 VUs, 95 complete and 0 interrupted iterations
+json_test   [  63% ] 000/010 VUs  19.0s/30s  5.00 iters/s
+
+running (0m20.0s), 000/010 VUs, 100 complete and 0 interrupted iterations
+json_test   [  67% ] 000/010 VUs  20.0s/30s  5.00 iters/s
+
+running (0m21.0s), 000/010 VUs, 105 complete and 0 interrupted iterations
+json_test   [  70% ] 000/010 VUs  21.0s/30s  5.00 iters/s
+
+running (0m22.0s), 000/010 VUs, 110 complete and 0 interrupted iterations
+json_test   [  73% ] 000/010 VUs  22.0s/30s  5.00 iters/s
+
+running (0m23.0s), 000/010 VUs, 115 complete and 0 interrupted iterations
+json_test   [  77% ] 000/010 VUs  23.0s/30s  5.00 iters/s
+
+running (0m24.0s), 000/010 VUs, 120 complete and 0 interrupted iterations
+json_test   [  80% ] 000/010 VUs  24.0s/30s  5.00 iters/s
+
+running (0m25.0s), 000/010 VUs, 125 complete and 0 interrupted iterations
+json_test   [  83% ] 000/010 VUs  25.0s/30s  5.00 iters/s
+
+running (0m26.0s), 000/010 VUs, 130 complete and 0 interrupted iterations
+json_test   [  87% ] 000/010 VUs  26.0s/30s  5.00 iters/s
+
+running (0m27.0s), 000/010 VUs, 135 complete and 0 interrupted iterations
+json_test   [  90% ] 000/010 VUs  27.0s/30s  5.00 iters/s
+
+running (0m28.0s), 000/010 VUs, 140 complete and 0 interrupted iterations
+json_test   [  93% ] 000/010 VUs  28.0s/30s  5.00 iters/s
+
+running (0m29.0s), 000/010 VUs, 145 complete and 0 interrupted iterations
+json_test   [  97% ] 000/010 VUs  29.0s/30s  5.00 iters/s
+
+running (0m30.0s), 000/010 VUs, 150 complete and 0 interrupted iterations
+json_test   [ 100% ] 000/010 VUs  30.0s/30s  5.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 755     25.038248/s
+    checks_succeeded...: 100.00% 755 out of 755
+    checks_failed......: 0.00%   0 out of 755
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=152.26ms min=136.66ms med=150.64ms max=169.55ms p(90)=164.69ms p(95)=166.12ms
+      { expected_response:true }...: avg=152.26ms min=136.66ms med=150.64ms max=169.55ms p(90)=164.69ms p(95)=166.12ms
+    http_req_failed................: 0.00% 0 out of 151
+    http_reqs......................: 151   5.00765/s
+
+    EXECUTION
+    iteration_duration.............: avg=152.66ms min=136.8ms  med=150.97ms max=169.91ms p(90)=165.08ms p(95)=166.74ms
+    iterations.....................: 151   5.00765/s
+    vus............................: 0     min=0        max=0 
+    vus_max........................: 10    min=10       max=10
+
+    NETWORK
+    data_received..................: 30 kB 982 B/s
+    data_sent......................: 25 kB 821 B/s
+
+
+
+
+running (0m30.2s), 000/010 VUs, 151 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  5.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=5 | ITEMS=1000 | ITERATIONS=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 001/010 VUs, 4 complete and 0 interrupted iterations
+json_test   [   3% ] 001/010 VUs  01.0s/30s  5.00 iters/s
+
+running (0m02.0s), 001/010 VUs, 9 complete and 0 interrupted iterations
+json_test   [   7% ] 001/010 VUs  02.0s/30s  5.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 14 complete and 0 interrupted iterations
+json_test   [  10% ] 001/010 VUs  03.0s/30s  5.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 19 complete and 0 interrupted iterations
+json_test   [  13% ] 001/010 VUs  04.0s/30s  5.00 iters/s
+
+running (0m05.0s), 001/010 VUs, 24 complete and 0 interrupted iterations
+json_test   [  17% ] 001/010 VUs  05.0s/30s  5.00 iters/s
+
+running (0m06.0s), 001/010 VUs, 29 complete and 0 interrupted iterations
+json_test   [  20% ] 001/010 VUs  06.0s/30s  5.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 34 complete and 0 interrupted iterations
+json_test   [  23% ] 001/010 VUs  07.0s/30s  5.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 39 complete and 0 interrupted iterations
+json_test   [  27% ] 001/010 VUs  08.0s/30s  5.00 iters/s
+
+running (0m09.0s), 001/010 VUs, 44 complete and 0 interrupted iterations
+json_test   [  30% ] 001/010 VUs  09.0s/30s  5.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 49 complete and 0 interrupted iterations
+json_test   [  33% ] 001/010 VUs  10.0s/30s  5.00 iters/s
+
+running (0m11.0s), 001/010 VUs, 54 complete and 0 interrupted iterations
+json_test   [  37% ] 001/010 VUs  11.0s/30s  5.00 iters/s
+
+running (0m12.0s), 001/010 VUs, 59 complete and 0 interrupted iterations
+json_test   [  40% ] 001/010 VUs  12.0s/30s  5.00 iters/s
+
+running (0m13.0s), 001/010 VUs, 64 complete and 0 interrupted iterations
+json_test   [  43% ] 001/010 VUs  13.0s/30s  5.00 iters/s
+
+running (0m14.0s), 001/010 VUs, 69 complete and 0 interrupted iterations
+json_test   [  47% ] 001/010 VUs  14.0s/30s  5.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 74 complete and 0 interrupted iterations
+json_test   [  50% ] 001/010 VUs  15.0s/30s  5.00 iters/s
+
+running (0m16.0s), 001/010 VUs, 79 complete and 0 interrupted iterations
+json_test   [  53% ] 001/010 VUs  16.0s/30s  5.00 iters/s
+
+running (0m17.0s), 001/010 VUs, 84 complete and 0 interrupted iterations
+json_test   [  57% ] 001/010 VUs  17.0s/30s  5.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 89 complete and 0 interrupted iterations
+json_test   [  60% ] 001/010 VUs  18.0s/30s  5.00 iters/s
+
+running (0m19.0s), 001/010 VUs, 94 complete and 0 interrupted iterations
+json_test   [  63% ] 001/010 VUs  19.0s/30s  5.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 99 complete and 0 interrupted iterations
+json_test   [  67% ] 001/010 VUs  20.0s/30s  5.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 104 complete and 0 interrupted iterations
+json_test   [  70% ] 001/010 VUs  21.0s/30s  5.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 109 complete and 0 interrupted iterations
+json_test   [  73% ] 001/010 VUs  22.0s/30s  5.00 iters/s
+
+running (0m23.0s), 001/010 VUs, 114 complete and 0 interrupted iterations
+json_test   [  77% ] 001/010 VUs  23.0s/30s  5.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 119 complete and 0 interrupted iterations
+json_test   [  80% ] 001/010 VUs  24.0s/30s  5.00 iters/s
+
+running (0m25.0s), 001/010 VUs, 124 complete and 0 interrupted iterations
+json_test   [  83% ] 001/010 VUs  25.0s/30s  5.00 iters/s
+
+running (0m26.0s), 001/010 VUs, 129 complete and 0 interrupted iterations
+json_test   [  87% ] 001/010 VUs  26.0s/30s  5.00 iters/s
+
+running (0m27.0s), 001/010 VUs, 134 complete and 0 interrupted iterations
+json_test   [  90% ] 001/010 VUs  27.0s/30s  5.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 139 complete and 0 interrupted iterations
+json_test   [  93% ] 001/010 VUs  28.0s/30s  5.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 144 complete and 0 interrupted iterations
+json_test   [  97% ] 001/010 VUs  29.0s/30s  5.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 149 complete and 0 interrupted iterations
+json_test   [ 100% ] 001/010 VUs  30.0s/30s  5.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 750     24.96742/s
+    checks_succeeded...: 100.00% 750 out of 750
+    checks_failed......: 0.00%   0 out of 750
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=247.4ms  min=228.04ms med=244.15ms max=328.94ms p(90)=264.71ms p(95)=272.86ms
+      { expected_response:true }...: avg=247.4ms  min=228.04ms med=244.15ms max=328.94ms p(90)=264.71ms p(95)=272.86ms
+    http_req_failed................: 0.00% 0 out of 150
+    http_reqs......................: 150   4.993484/s
+
+    EXECUTION
+    iteration_duration.............: avg=247.62ms min=228.21ms med=244.35ms max=329.2ms  p(90)=264.89ms p(95)=273.07ms
+    iterations.....................: 150   4.993484/s
+    vus............................: 1     min=1        max=1 
+    vus_max........................: 10    min=10       max=10
+
+    NETWORK
+    data_received..................: 30 kB 994 B/s
+    data_sent......................: 25 kB 824 B/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 150 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  5.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=1 | ITEMS=10000 | ITERATIONS=300
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-json.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * json_test: 1.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 000/010 VUs, 1 complete and 0 interrupted iterations
+json_test   [   3% ] 000/010 VUs  01.0s/30s  1.00 iters/s
+
+running (0m02.0s), 000/010 VUs, 2 complete and 0 interrupted iterations
+json_test   [   7% ] 000/010 VUs  02.0s/30s  1.00 iters/s
+
+running (0m03.0s), 000/010 VUs, 3 complete and 0 interrupted iterations
+json_test   [  10% ] 000/010 VUs  03.0s/30s  1.00 iters/s
+
+running (0m04.0s), 000/010 VUs, 4 complete and 0 interrupted iterations
+json_test   [  13% ] 000/010 VUs  04.0s/30s  1.00 iters/s
+
+running (0m05.0s), 000/010 VUs, 5 complete and 0 interrupted iterations
+json_test   [  17% ] 000/010 VUs  05.0s/30s  1.00 iters/s
+
+running (0m06.0s), 000/010 VUs, 6 complete and 0 interrupted iterations
+json_test   [  20% ] 000/010 VUs  06.0s/30s  1.00 iters/s
+
+running (0m07.0s), 000/010 VUs, 7 complete and 0 interrupted iterations
+json_test   [  23% ] 000/010 VUs  07.0s/30s  1.00 iters/s
+
+running (0m08.0s), 000/010 VUs, 8 complete and 0 interrupted iterations
+json_test   [  27% ] 000/010 VUs  08.0s/30s  1.00 iters/s
+
+running (0m09.0s), 000/010 VUs, 9 complete and 0 interrupted iterations
+json_test   [  30% ] 000/010 VUs  09.0s/30s  1.00 iters/s
+
+running (0m10.0s), 000/010 VUs, 10 complete and 0 interrupted iterations
+json_test   [  33% ] 000/010 VUs  10.0s/30s  1.00 iters/s
+
+running (0m11.0s), 000/010 VUs, 11 complete and 0 interrupted iterations
+json_test   [  37% ] 000/010 VUs  11.0s/30s  1.00 iters/s
+
+running (0m12.0s), 000/010 VUs, 12 complete and 0 interrupted iterations
+json_test   [  40% ] 000/010 VUs  12.0s/30s  1.00 iters/s
+
+running (0m13.0s), 000/010 VUs, 13 complete and 0 interrupted iterations
+json_test   [  43% ] 000/010 VUs  13.0s/30s  1.00 iters/s
+
+running (0m14.0s), 000/010 VUs, 14 complete and 0 interrupted iterations
+json_test   [  47% ] 000/010 VUs  14.0s/30s  1.00 iters/s
+
+running (0m15.0s), 000/010 VUs, 15 complete and 0 interrupted iterations
+json_test   [  50% ] 000/010 VUs  15.0s/30s  1.00 iters/s
+
+running (0m16.0s), 000/010 VUs, 16 complete and 0 interrupted iterations
+json_test   [  53% ] 000/010 VUs  16.0s/30s  1.00 iters/s
+
+running (0m17.0s), 000/010 VUs, 17 complete and 0 interrupted iterations
+json_test   [  57% ] 000/010 VUs  17.0s/30s  1.00 iters/s
+
+running (0m18.0s), 000/010 VUs, 18 complete and 0 interrupted iterations
+json_test   [  60% ] 000/010 VUs  18.0s/30s  1.00 iters/s
+
+running (0m19.0s), 000/010 VUs, 19 complete and 0 interrupted iterations
+json_test   [  63% ] 000/010 VUs  19.0s/30s  1.00 iters/s
+
+running (0m20.0s), 000/010 VUs, 20 complete and 0 interrupted iterations
+json_test   [  67% ] 000/010 VUs  20.0s/30s  1.00 iters/s
+
+running (0m21.0s), 000/010 VUs, 21 complete and 0 interrupted iterations
+json_test   [  70% ] 000/010 VUs  21.0s/30s  1.00 iters/s
+
+running (0m22.0s), 000/010 VUs, 22 complete and 0 interrupted iterations
+json_test   [  73% ] 000/010 VUs  22.0s/30s  1.00 iters/s
+
+running (0m23.0s), 000/010 VUs, 23 complete and 0 interrupted iterations
+json_test   [  77% ] 000/010 VUs  23.0s/30s  1.00 iters/s
+
+running (0m24.0s), 000/010 VUs, 24 complete and 0 interrupted iterations
+json_test   [  80% ] 000/010 VUs  24.0s/30s  1.00 iters/s
+
+running (0m25.0s), 000/010 VUs, 25 complete and 0 interrupted iterations
+json_test   [  83% ] 000/010 VUs  25.0s/30s  1.00 iters/s
+
+running (0m26.0s), 000/010 VUs, 26 complete and 0 interrupted iterations
+json_test   [  87% ] 000/010 VUs  26.0s/30s  1.00 iters/s
+
+running (0m27.0s), 000/010 VUs, 27 complete and 0 interrupted iterations
+json_test   [  90% ] 000/010 VUs  27.0s/30s  1.00 iters/s
+
+running (0m28.0s), 000/010 VUs, 28 complete and 0 interrupted iterations
+json_test   [  93% ] 000/010 VUs  28.0s/30s  1.00 iters/s
+
+running (0m29.0s), 000/010 VUs, 29 complete and 0 interrupted iterations
+json_test   [  97% ] 000/010 VUs  29.0s/30s  1.00 iters/s
+
+running (0m30.0s), 000/010 VUs, 30 complete and 0 interrupted iterations
+json_test   [ 100% ] 000/010 VUs  30.0s/30s  1.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 155     5.034346/s
+    checks_succeeded...: 100.00% 155 out of 155
+    checks_failed......: 0.00%   0 out of 155
+
+    ✓ status 200
+    ✓ completed
+    ✓ itemsCount matches
+    ✓ iterations match
+    ✓ totalMutationEntries matches
+
+    HTTP
+    http_req_duration..............: avg=798.07ms min=743.64ms med=787.6ms max=971.36ms p(90)=848.52ms p(95)=875.7ms 
+      { expected_response:true }...: avg=798.07ms min=743.64ms med=787.6ms max=971.36ms p(90)=848.52ms p(95)=875.7ms 
+    http_req_failed................: 0.00%  0 out of 31
+    http_reqs......................: 31     1.006869/s
+
+    EXECUTION
+    iteration_duration.............: avg=798.62ms min=744.08ms med=787.8ms max=971.56ms p(90)=848.74ms p(95)=875.93ms
+    iterations.....................: 31     1.006869/s
+    vus............................: 0      min=0       max=0 
+    vus_max........................: 10     min=10      max=10
+
+    NETWORK
+    data_received..................: 6.1 kB 199 B/s
+    data_sent......................: 5.1 kB 166 B/s
+
+
+
+
+running (0m30.8s), 000/010 VUs, 31 complete and 0 interrupted iterations
+json_test ✓ [ 100% ] 000/010 VUs  30s  1.00 iters/s
+
+----------------------------------------
+
+Finished at: Mon Apr 13 01:50:42 PM CEST 2026
+========================================

@@ -1,0 +1,1522 @@
+========================================
+🚀 TaskOutput Handling Benchmark Suite
+========================================
+Mode: jpa
+Started at: Mon Apr 13 08:36:24 PM CEST 2026
+
+----- SYSTEM INFO -----
+Linux li-3f7fa6cc-284c-11b2-a85c-ccb792864af1.ibm.com 6.14.11-300.fc42.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Jun 10 16:24:16 UTC 2025 x86_64 GNU/Linux
+
+CPU:
+Model name:                              12th Gen Intel(R) Core(TM) i7-12800H
+
+Memory:
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi        28Gi        18Gi       5.0Gi        21Gi        34Gi
+Swap:          8.0Gi       1.3Gi       6.7Gi
+
+-----------------------
+
+===== ZONE 1: 1 MB TASKOUTPUT =====
+
+========================================
+RUN: RATE=50 | PREBUILT_SIZE_KB=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 50.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 021/029 VUs, 10 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 021/029 VUs  01.0s/30s  50.00 iters/s
+
+running (0m02.0s), 004/029 VUs, 77 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 004/029 VUs  02.0s/30s  50.00 iters/s
+
+running (0m03.0s), 004/029 VUs, 127 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 004/029 VUs  03.0s/30s  50.00 iters/s
+
+running (0m04.0s), 005/029 VUs, 176 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 005/029 VUs  04.0s/30s  50.00 iters/s
+
+running (0m05.0s), 005/029 VUs, 226 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 005/029 VUs  05.0s/30s  50.00 iters/s
+
+running (0m06.0s), 005/029 VUs, 276 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 005/029 VUs  06.0s/30s  50.00 iters/s
+
+running (0m07.0s), 006/029 VUs, 325 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 006/029 VUs  07.0s/30s  50.00 iters/s
+
+running (0m08.0s), 005/029 VUs, 376 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 005/029 VUs  08.0s/30s  50.00 iters/s
+
+running (0m09.0s), 004/029 VUs, 427 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 004/029 VUs  09.0s/30s  50.00 iters/s
+
+running (0m10.0s), 004/029 VUs, 477 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 004/029 VUs  10.0s/30s  50.00 iters/s
+
+running (0m11.0s), 005/029 VUs, 526 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 005/029 VUs  11.0s/30s  50.00 iters/s
+
+running (0m12.0s), 004/029 VUs, 577 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 004/029 VUs  12.0s/30s  50.00 iters/s
+
+running (0m13.0s), 004/029 VUs, 627 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 004/029 VUs  13.0s/30s  50.00 iters/s
+
+running (0m14.0s), 005/029 VUs, 676 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 005/029 VUs  14.0s/30s  50.00 iters/s
+
+running (0m15.0s), 005/029 VUs, 726 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 005/029 VUs  15.0s/30s  50.00 iters/s
+
+running (0m16.0s), 006/029 VUs, 775 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 006/029 VUs  16.0s/30s  50.00 iters/s
+
+running (0m17.0s), 004/029 VUs, 827 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 004/029 VUs  17.0s/30s  50.00 iters/s
+
+running (0m18.0s), 004/029 VUs, 877 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 004/029 VUs  18.0s/30s  50.00 iters/s
+
+running (0m19.0s), 004/029 VUs, 927 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 004/029 VUs  19.0s/30s  50.00 iters/s
+
+running (0m20.0s), 004/029 VUs, 977 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 004/029 VUs  20.0s/30s  50.00 iters/s
+
+running (0m21.0s), 005/029 VUs, 1026 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 005/029 VUs  21.0s/30s  50.00 iters/s
+
+running (0m22.0s), 006/029 VUs, 1075 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 006/029 VUs  22.0s/30s  50.00 iters/s
+
+running (0m23.0s), 004/029 VUs, 1127 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 004/029 VUs  23.0s/30s  50.00 iters/s
+
+running (0m24.0s), 004/029 VUs, 1177 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 004/029 VUs  24.0s/30s  50.00 iters/s
+
+running (0m25.0s), 004/029 VUs, 1227 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 004/029 VUs  25.0s/30s  50.00 iters/s
+
+running (0m26.0s), 004/029 VUs, 1277 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 004/029 VUs  26.0s/30s  50.00 iters/s
+
+running (0m27.0s), 004/029 VUs, 1327 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 004/029 VUs  27.0s/30s  50.00 iters/s
+
+running (0m28.0s), 006/029 VUs, 1375 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 006/029 VUs  28.0s/30s  50.00 iters/s
+
+running (0m29.0s), 005/029 VUs, 1426 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 005/029 VUs  29.0s/30s  50.00 iters/s
+
+running (0m30.0s), 004/029 VUs, 1477 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 004/029 VUs  30.0s/30s  50.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 4443    147.763938/s
+    checks_succeeded...: 100.00% 4443 out of 4443
+    checks_failed......: 0.00%   0 out of 4443
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=106.7ms  min=73.73ms med=91.37ms max=1.03s p(90)=113.48ms p(95)=126.76ms
+      { expected_response:true }...: avg=106.7ms  min=73.73ms med=91.37ms max=1.03s p(90)=113.48ms p(95)=126.76ms
+    http_req_failed................: 0.00%  0 out of 1481
+    http_reqs......................: 1481   49.254646/s
+
+    EXECUTION
+    dropped_iterations.............: 19     0.631896/s
+    iteration_duration.............: avg=114.93ms min=79.89ms med=99.25ms max=1.04s p(90)=122.34ms p(95)=137.13ms
+    iterations.....................: 1481   49.254646/s
+    vus............................: 4      min=4         max=21
+    vus_max........................: 29     min=29        max=29
+
+    NETWORK
+    data_received..................: 1.6 GB 53 MB/s
+    data_sent......................: 258 kB 8.6 kB/s
+
+
+
+
+running (0m30.1s), 000/029 VUs, 1481 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/029 VUs  30s  50.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=100 | PREBUILT_SIZE_KB=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 100.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 022/022 VUs, 66 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 022/022 VUs  01.0s/30s  100.00 iters/s
+
+running (0m02.0s), 032/034 VUs, 144 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 032/034 VUs  02.0s/30s  100.00 iters/s
+
+running (0m03.0s), 041/041 VUs, 228 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 041/041 VUs  03.0s/30s  100.00 iters/s
+
+running (0m04.0s), 042/045 VUs, 320 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 042/045 VUs  04.0s/30s  100.00 iters/s
+
+running (0m05.0s), 053/054 VUs, 401 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 053/054 VUs  05.0s/30s  100.00 iters/s
+
+running (0m06.0s), 056/059 VUs, 493 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 056/059 VUs  06.0s/30s  100.00 iters/s
+
+running (0m07.0s), 065/065 VUs, 577 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 065/065 VUs  07.0s/30s  100.00 iters/s
+
+running (0m08.0s), 076/078 VUs, 651 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 076/078 VUs  08.0s/30s  100.00 iters/s
+
+running (0m09.0s), 087/090 VUs, 728 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 087/090 VUs  09.0s/30s  100.00 iters/s
+
+running (0m10.0s), 087/093 VUs, 825 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 087/093 VUs  10.0s/30s  100.00 iters/s
+
+running (0m11.0s), 091/097 VUs, 918 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 091/097 VUs  11.0s/30s  100.00 iters/s
+
+running (0m12.0s), 099/102 VUs, 1004 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 099/102 VUs  12.0s/30s  100.00 iters/s
+
+running (0m13.0s), 104/108 VUs, 1094 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 104/108 VUs  13.0s/30s  100.00 iters/s
+
+running (0m14.0s), 112/112 VUs, 1181 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 112/112 VUs  14.0s/30s  100.00 iters/s
+
+running (0m15.0s), 112/115 VUs, 1278 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 112/115 VUs  15.0s/30s  100.00 iters/s
+
+running (0m16.0s), 102/124 VUs, 1371 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 102/124 VUs  16.0s/30s  100.00 iters/s
+
+running (0m17.0s), 120/124 VUs, 1453 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 120/124 VUs  17.0s/30s  100.00 iters/s
+
+running (0m18.0s), 127/130 VUs, 1539 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 127/130 VUs  18.0s/30s  100.00 iters/s
+
+running (0m19.0s), 127/130 VUs, 1639 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 127/130 VUs  19.0s/30s  100.00 iters/s
+
+running (0m20.0s), 134/138 VUs, 1724 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 134/138 VUs  20.0s/30s  100.00 iters/s
+
+running (0m21.0s), 140/147 VUs, 1808 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 140/147 VUs  21.0s/30s  100.00 iters/s
+
+running (0m22.0s), 145/151 VUs, 1898 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 145/151 VUs  22.0s/30s  100.00 iters/s
+
+running (0m23.0s), 152/158 VUs, 1986 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 152/158 VUs  23.0s/30s  100.00 iters/s
+
+running (0m24.0s), 156/160 VUs, 2079 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 156/160 VUs  24.0s/30s  100.00 iters/s
+
+running (0m25.0s), 166/169 VUs, 2160 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 166/169 VUs  25.0s/30s  100.00 iters/s
+
+running (0m26.0s), 169/174 VUs, 2252 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 169/174 VUs  26.0s/30s  100.00 iters/s
+
+running (0m27.0s), 176/180 VUs, 2339 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 176/180 VUs  27.0s/30s  100.00 iters/s
+
+running (0m28.0s), 189/189 VUs, 2417 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 189/189 VUs  28.0s/30s  100.00 iters/s
+
+running (0m29.0s), 184/193 VUs, 2515 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 184/193 VUs  29.0s/30s  100.00 iters/s
+time="2026-04-13T20:37:24+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=taskoutput_persistence_test
+
+running (0m30.0s), 199/200 VUs, 2590 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 199/200 VUs  30.0s/30s  100.00 iters/s
+
+running (0m31.0s), 094/200 VUs, 2696 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 200/200 VUs  30s  100.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 8370    265.506844/s
+    checks_succeeded...: 100.00% 8370 out of 8370
+    checks_failed......: 0.00%   0 out of 8370
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=1.2s  min=98.63ms  med=1.17s max=3.24s p(90)=2s    p(95)=2.2s 
+      { expected_response:true }...: avg=1.2s  min=98.63ms  med=1.17s max=3.24s p(90)=2s    p(95)=2.2s 
+    http_req_failed................: 0.00%  0 out of 2790
+    http_reqs......................: 2790   88.502281/s
+
+    EXECUTION
+    dropped_iterations.............: 211    6.693183/s
+    iteration_duration.............: avg=1.23s min=111.87ms med=1.21s max=3.25s p(90)=2.03s p(95)=2.23s
+    iterations.....................: 2790   88.502281/s
+    vus............................: 94     min=22        max=199
+    vus_max........................: 200    min=22        max=200
+
+    NETWORK
+    data_received..................: 3.0 GB 95 MB/s
+    data_sent......................: 486 kB 15 kB/s
+
+
+
+
+running (0m31.5s), 000/200 VUs, 2790 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/200 VUs  30s  100.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=200 | PREBUILT_SIZE_KB=1000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 200.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 072/073 VUs, 56 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 072/073 VUs  01.0s/30s  200.00 iters/s
+
+running (0m02.0s), 123/125 VUs, 137 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 123/125 VUs  02.0s/30s  200.00 iters/s
+
+running (0m03.0s), 181/182 VUs, 209 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 181/182 VUs  03.0s/30s  200.00 iters/s
+time="2026-04-13T20:37:29+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=taskoutput_persistence_test
+
+running (0m04.0s), 200/200 VUs, 293 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 200/200 VUs  04.0s/30s  200.00 iters/s
+
+running (0m05.0s), 200/200 VUs, 377 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 200/200 VUs  05.0s/30s  200.00 iters/s
+
+running (0m06.0s), 198/200 VUs, 475 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 198/200 VUs  06.0s/30s  200.00 iters/s
+
+running (0m07.0s), 199/200 VUs, 559 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 199/200 VUs  07.0s/30s  200.00 iters/s
+
+running (0m08.0s), 199/200 VUs, 650 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 199/200 VUs  08.0s/30s  200.00 iters/s
+
+running (0m09.0s), 200/200 VUs, 736 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 200/200 VUs  09.0s/30s  200.00 iters/s
+
+running (0m10.0s), 200/200 VUs, 838 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 200/200 VUs  10.0s/30s  200.00 iters/s
+
+running (0m11.0s), 200/200 VUs, 924 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 200/200 VUs  11.0s/30s  200.00 iters/s
+
+running (0m12.0s), 198/200 VUs, 1006 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 198/200 VUs  12.0s/30s  200.00 iters/s
+
+running (0m13.0s), 198/200 VUs, 1103 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 198/200 VUs  13.0s/30s  200.00 iters/s
+
+running (0m14.0s), 196/200 VUs, 1192 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 196/200 VUs  14.0s/30s  200.00 iters/s
+
+running (0m15.0s), 200/200 VUs, 1276 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 200/200 VUs  15.0s/30s  200.00 iters/s
+
+running (0m16.0s), 200/200 VUs, 1367 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 200/200 VUs  16.0s/30s  200.00 iters/s
+
+running (0m17.0s), 200/200 VUs, 1457 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 200/200 VUs  17.0s/30s  200.00 iters/s
+
+running (0m18.0s), 200/200 VUs, 1542 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 200/200 VUs  18.0s/30s  200.00 iters/s
+
+running (0m19.0s), 192/200 VUs, 1641 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 192/200 VUs  19.0s/30s  200.00 iters/s
+
+running (0m20.0s), 200/200 VUs, 1725 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 200/200 VUs  20.0s/30s  200.00 iters/s
+
+running (0m21.0s), 200/200 VUs, 1818 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 200/200 VUs  21.0s/30s  200.00 iters/s
+
+running (0m22.0s), 199/200 VUs, 1901 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 199/200 VUs  22.0s/30s  200.00 iters/s
+
+running (0m23.0s), 200/200 VUs, 1990 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 200/200 VUs  23.0s/30s  200.00 iters/s
+
+running (0m24.0s), 200/200 VUs, 2069 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 200/200 VUs  24.0s/30s  200.00 iters/s
+
+running (0m25.0s), 200/200 VUs, 2155 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 200/200 VUs  25.0s/30s  200.00 iters/s
+
+running (0m26.0s), 200/200 VUs, 2223 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 200/200 VUs  26.0s/30s  200.00 iters/s
+
+running (0m27.0s), 200/200 VUs, 2307 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 200/200 VUs  27.0s/30s  200.00 iters/s
+
+running (0m28.0s), 198/200 VUs, 2397 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 198/200 VUs  28.0s/30s  200.00 iters/s
+
+running (0m29.0s), 200/200 VUs, 2471 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 200/200 VUs  29.0s/30s  200.00 iters/s
+
+running (0m30.0s), 199/200 VUs, 2567 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 199/200 VUs  30s  200.00 iters/s
+
+running (0m31.0s), 097/200 VUs, 2669 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 199/200 VUs  30s  200.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 8298    263.292395/s
+    checks_succeeded...: 100.00% 8298 out of 8298
+    checks_failed......: 0.00%   0 out of 8298
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=2.08s min=97.87ms  med=2.13s max=4.16s p(90)=2.76s p(95)=2.97s
+      { expected_response:true }...: avg=2.08s min=97.87ms  med=2.13s max=4.16s p(90)=2.76s p(95)=2.97s
+    http_req_failed................: 0.00%  0 out of 2766
+    http_reqs......................: 2766   87.764132/s
+
+    EXECUTION
+    dropped_iterations.............: 3230   102.486676/s
+    iteration_duration.............: avg=2.11s min=112.21ms med=2.15s max=4.27s p(90)=2.79s p(95)=2.99s
+    iterations.....................: 2766   87.764132/s
+    vus............................: 97     min=72        max=200
+    vus_max........................: 200    min=73        max=200
+
+    NETWORK
+    data_received..................: 3.0 GB 94 MB/s
+    data_sent......................: 481 kB 15 kB/s
+
+
+
+
+running (0m31.5s), 000/200 VUs, 2766 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/200 VUs  30s  200.00 iters/s
+
+----------------------------------------
+===== ZONE 2: 5 MB TASKOUTPUT =====
+
+========================================
+RUN: RATE=10 | PREBUILT_SIZE_KB=5000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 10.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 005/010 VUs, 5 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 005/010 VUs  01.0s/30s  10.00 iters/s
+
+running (0m02.0s), 005/010 VUs, 15 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 005/010 VUs  02.0s/30s  10.00 iters/s
+
+running (0m03.0s), 005/010 VUs, 25 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 005/010 VUs  03.0s/30s  10.00 iters/s
+
+running (0m04.0s), 006/010 VUs, 34 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 006/010 VUs  04.0s/30s  10.00 iters/s
+
+running (0m05.0s), 005/010 VUs, 45 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 005/010 VUs  05.0s/30s  10.00 iters/s
+
+running (0m06.0s), 005/010 VUs, 55 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 005/010 VUs  06.0s/30s  10.00 iters/s
+
+running (0m07.0s), 005/010 VUs, 65 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 005/010 VUs  07.0s/30s  10.00 iters/s
+
+running (0m08.0s), 005/010 VUs, 75 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 005/010 VUs  08.0s/30s  10.00 iters/s
+
+running (0m09.0s), 005/010 VUs, 85 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 005/010 VUs  09.0s/30s  10.00 iters/s
+
+running (0m10.0s), 005/010 VUs, 95 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 005/010 VUs  10.0s/30s  10.00 iters/s
+
+running (0m11.0s), 005/010 VUs, 105 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 005/010 VUs  11.0s/30s  10.00 iters/s
+
+running (0m12.0s), 005/010 VUs, 115 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 005/010 VUs  12.0s/30s  10.00 iters/s
+
+running (0m13.0s), 005/010 VUs, 125 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 005/010 VUs  13.0s/30s  10.00 iters/s
+
+running (0m14.0s), 004/010 VUs, 136 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 004/010 VUs  14.0s/30s  10.00 iters/s
+
+running (0m15.0s), 004/010 VUs, 146 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 004/010 VUs  15.0s/30s  10.00 iters/s
+
+running (0m16.0s), 005/010 VUs, 155 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 005/010 VUs  16.0s/30s  10.00 iters/s
+
+running (0m17.0s), 005/010 VUs, 165 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 005/010 VUs  17.0s/30s  10.00 iters/s
+
+running (0m18.0s), 004/010 VUs, 176 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 004/010 VUs  18.0s/30s  10.00 iters/s
+
+running (0m19.0s), 005/010 VUs, 185 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 005/010 VUs  19.0s/30s  10.00 iters/s
+
+running (0m20.0s), 004/010 VUs, 196 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 004/010 VUs  20.0s/30s  10.00 iters/s
+
+running (0m21.0s), 005/010 VUs, 205 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 005/010 VUs  21.0s/30s  10.00 iters/s
+
+running (0m22.0s), 005/010 VUs, 215 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 005/010 VUs  22.0s/30s  10.00 iters/s
+
+running (0m23.0s), 004/010 VUs, 226 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 004/010 VUs  23.0s/30s  10.00 iters/s
+
+running (0m24.0s), 004/010 VUs, 236 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 004/010 VUs  24.0s/30s  10.00 iters/s
+
+running (0m25.0s), 004/010 VUs, 246 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 004/010 VUs  25.0s/30s  10.00 iters/s
+
+running (0m26.0s), 004/010 VUs, 256 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 004/010 VUs  26.0s/30s  10.00 iters/s
+
+running (0m27.0s), 005/010 VUs, 265 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 005/010 VUs  27.0s/30s  10.00 iters/s
+
+running (0m28.0s), 005/010 VUs, 275 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 005/010 VUs  28.0s/30s  10.00 iters/s
+
+running (0m29.0s), 004/010 VUs, 286 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 004/010 VUs  29.0s/30s  10.00 iters/s
+
+running (0m30.0s), 004/010 VUs, 296 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 004/010 VUs  30.0s/30s  10.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 903     29.674197/s
+    checks_succeeded...: 100.00% 903 out of 903
+    checks_failed......: 0.00%   0 out of 903
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=476.01ms min=398.15ms med=468.32ms max=626.31ms p(90)=524.12ms p(95)=549.2ms 
+      { expected_response:true }...: avg=476.01ms min=398.15ms med=468.32ms max=626.31ms p(90)=524.12ms p(95)=549.2ms 
+    http_req_failed................: 0.00%  0 out of 301
+    http_reqs......................: 301    9.891399/s
+
+    EXECUTION
+    iteration_duration.............: avg=519.53ms min=430ms    med=512.58ms max=683.09ms p(90)=572.32ms p(95)=603.14ms
+    iterations.....................: 301    9.891399/s
+    vus............................: 4      min=4        max=6 
+    vus_max........................: 10     min=10       max=10
+
+    NETWORK
+    data_received..................: 1.6 GB 53 MB/s
+    data_sent......................: 52 kB  1.7 kB/s
+
+
+
+
+running (0m30.4s), 000/010 VUs, 301 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/010 VUs  30s  10.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=20 | PREBUILT_SIZE_KB=5000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 20.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 011/012 VUs, 7 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 011/012 VUs  01.0s/30s  20.00 iters/s
+
+running (0m02.0s), 015/015 VUs, 20 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 015/015 VUs  02.0s/30s  20.00 iters/s
+
+running (0m03.0s), 015/018 VUs, 37 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 015/018 VUs  03.0s/30s  20.00 iters/s
+
+running (0m04.0s), 020/020 VUs, 50 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 020/020 VUs  04.0s/30s  20.00 iters/s
+
+running (0m05.0s), 022/025 VUs, 63 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 022/025 VUs  05.0s/30s  20.00 iters/s
+
+running (0m06.0s), 024/027 VUs, 80 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 024/027 VUs  06.0s/30s  20.00 iters/s
+
+running (0m07.0s), 024/028 VUs, 98 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 024/028 VUs  07.0s/30s  20.00 iters/s
+
+running (0m08.0s), 031/032 VUs, 107 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 031/032 VUs  08.0s/30s  20.00 iters/s
+
+running (0m09.0s), 035/036 VUs, 119 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 035/036 VUs  09.0s/30s  20.00 iters/s
+
+running (0m10.0s), 039/040 VUs, 131 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 039/040 VUs  10.0s/30s  20.00 iters/s
+
+running (0m11.0s), 043/043 VUs, 144 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 043/043 VUs  11.0s/30s  20.00 iters/s
+
+running (0m12.0s), 050/052 VUs, 148 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 050/052 VUs  12.0s/30s  20.00 iters/s
+
+running (0m13.0s), 054/058 VUs, 158 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 054/058 VUs  13.0s/30s  20.00 iters/s
+
+running (0m14.0s), 058/060 VUs, 172 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 058/060 VUs  14.0s/30s  20.00 iters/s
+
+running (0m15.0s), 064/066 VUs, 180 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 064/066 VUs  15.0s/30s  20.00 iters/s
+
+running (0m16.0s), 066/070 VUs, 194 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 066/070 VUs  16.0s/30s  20.00 iters/s
+
+running (0m17.0s), 076/076 VUs, 198 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 076/076 VUs  17.0s/30s  20.00 iters/s
+
+running (0m18.0s), 082/083 VUs, 205 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 082/083 VUs  18.0s/30s  20.00 iters/s
+
+running (0m19.0s), 086/086 VUs, 218 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 086/086 VUs  19.0s/30s  20.00 iters/s
+
+running (0m20.0s), 092/092 VUs, 226 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 092/092 VUs  20.0s/30s  20.00 iters/s
+
+running (0m21.0s), 101/102 VUs, 227 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 101/102 VUs  21.0s/30s  20.00 iters/s
+
+running (0m22.0s), 104/104 VUs, 242 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 104/104 VUs  22.0s/30s  20.00 iters/s
+
+running (0m23.0s), 104/107 VUs, 259 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 104/107 VUs  23.0s/30s  20.00 iters/s
+
+running (0m24.0s), 112/112 VUs, 266 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 112/112 VUs  24.0s/30s  20.00 iters/s
+
+running (0m25.0s), 118/118 VUs, 274 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 118/118 VUs  25.0s/30s  20.00 iters/s
+
+running (0m26.0s), 124/124 VUs, 282 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 124/124 VUs  26.0s/30s  20.00 iters/s
+
+running (0m27.0s), 128/128 VUs, 294 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 128/128 VUs  27.0s/30s  20.00 iters/s
+
+running (0m28.0s), 130/134 VUs, 306 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 130/134 VUs  28.0s/30s  20.00 iters/s
+
+running (0m29.0s), 139/139 VUs, 312 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 139/139 VUs  29.0s/30s  20.00 iters/s
+
+running (0m30.0s), 145/147 VUs, 318 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 145/147 VUs  30s  20.00 iters/s
+
+running (0m31.0s), 136/147 VUs, 328 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m32.0s), 119/147 VUs, 345 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m33.0s), 105/147 VUs, 359 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m34.0s), 102/147 VUs, 362 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m35.0s), 092/147 VUs, 372 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m36.0s), 077/147 VUs, 387 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m37.0s), 064/147 VUs, 400 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m38.0s), 049/147 VUs, 415 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+running (0m39.0s), 029/147 VUs, 435 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 146/147 VUs  30s  20.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1392    35.367095/s
+    checks_succeeded...: 100.00% 1392 out of 1392
+    checks_failed......: 0.00%   0 out of 1392
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=6.12s min=387.74ms med=6.13s max=15.22s p(90)=11.4s  p(95)=12.45s
+      { expected_response:true }...: avg=6.12s min=387.74ms med=6.13s max=15.22s p(90)=11.4s  p(95)=12.45s
+    http_req_failed................: 0.00%  0 out of 464
+    http_reqs......................: 464    11.789032/s
+
+    EXECUTION
+    dropped_iterations.............: 137    3.480813/s
+    iteration_duration.............: avg=6.22s min=439.23ms med=6.23s max=15.32s p(90)=11.47s p(95)=12.55s
+    iterations.....................: 464    11.789032/s
+    vus............................: 29     min=11       max=145
+    vus_max........................: 147    min=12       max=147
+
+    NETWORK
+    data_received..................: 2.5 GB 64 MB/s
+    data_sent......................: 81 kB  2.1 kB/s
+
+
+
+
+running (0m39.4s), 000/147 VUs, 464 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/147 VUs  30s  20.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=30 | PREBUILT_SIZE_KB=5000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 30.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 020/020 VUs, 0 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 020/020 VUs  01.0s/30s  30.00 iters/s
+
+running (0m02.0s), 029/029 VUs, 12 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 029/029 VUs  02.0s/30s  30.00 iters/s
+
+running (0m03.0s), 040/041 VUs, 19 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 040/041 VUs  03.0s/30s  30.00 iters/s
+
+running (0m04.0s), 052/053 VUs, 25 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 052/053 VUs  04.0s/30s  30.00 iters/s
+
+running (0m05.0s), 061/062 VUs, 37 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 061/062 VUs  05.0s/30s  30.00 iters/s
+
+running (0m06.0s), 073/074 VUs, 43 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 073/074 VUs  06.0s/30s  30.00 iters/s
+
+running (0m07.0s), 085/086 VUs, 49 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 085/086 VUs  07.0s/30s  30.00 iters/s
+
+running (0m08.0s), 098/099 VUs, 53 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 098/099 VUs  08.0s/30s  30.00 iters/s
+
+running (0m09.0s), 108/109 VUs, 63 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 108/109 VUs  09.0s/30s  30.00 iters/s
+
+running (0m10.0s), 119/120 VUs, 71 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 119/120 VUs  10.0s/30s  30.00 iters/s
+
+running (0m11.0s), 130/130 VUs, 79 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 130/130 VUs  11.0s/30s  30.00 iters/s
+
+running (0m12.0s), 140/140 VUs, 89 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 140/140 VUs  12.0s/30s  30.00 iters/s
+
+running (0m13.0s), 151/152 VUs, 96 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 151/152 VUs  13.0s/30s  30.00 iters/s
+
+running (0m14.0s), 162/164 VUs, 103 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 162/164 VUs  14.0s/30s  30.00 iters/s
+
+running (0m15.0s), 172/172 VUs, 114 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 172/172 VUs  15.0s/30s  30.00 iters/s
+
+running (0m16.0s), 185/185 VUs, 118 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 185/185 VUs  16.0s/30s  30.00 iters/s
+
+running (0m17.0s), 196/197 VUs, 125 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 196/197 VUs  17.0s/30s  30.00 iters/s
+time="2026-04-13T20:39:25+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=taskoutput_persistence_test
+
+running (0m18.0s), 200/200 VUs, 130 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 200/200 VUs  18.0s/30s  30.00 iters/s
+
+running (0m19.0s), 200/200 VUs, 144 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 200/200 VUs  19.0s/30s  30.00 iters/s
+
+running (0m20.0s), 200/200 VUs, 147 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 200/200 VUs  20.0s/30s  30.00 iters/s
+
+running (0m21.0s), 199/200 VUs, 153 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 199/200 VUs  21.0s/30s  30.00 iters/s
+
+running (0m22.0s), 199/200 VUs, 168 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 199/200 VUs  22.0s/30s  30.00 iters/s
+
+running (0m23.0s), 200/200 VUs, 177 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 200/200 VUs  23.0s/30s  30.00 iters/s
+
+running (0m24.0s), 200/200 VUs, 184 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 200/200 VUs  24.0s/30s  30.00 iters/s
+
+running (0m25.0s), 200/200 VUs, 190 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 200/200 VUs  25.0s/30s  30.00 iters/s
+
+running (0m26.0s), 200/200 VUs, 200 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 200/200 VUs  26.0s/30s  30.00 iters/s
+
+running (0m27.0s), 199/200 VUs, 218 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 199/200 VUs  27.0s/30s  30.00 iters/s
+
+running (0m28.0s), 200/200 VUs, 223 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 200/200 VUs  28.0s/30s  30.00 iters/s
+
+running (0m29.0s), 197/200 VUs, 235 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 197/200 VUs  29.0s/30s  30.00 iters/s
+
+running (0m30.0s), 195/200 VUs, 251 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 195/200 VUs  30.0s/30s  30.00 iters/s
+
+running (0m31.0s), 192/200 VUs, 255 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m32.0s), 179/200 VUs, 268 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m33.0s), 173/200 VUs, 274 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m34.0s), 154/200 VUs, 293 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m35.0s), 140/200 VUs, 307 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m36.0s), 125/200 VUs, 322 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m37.0s), 116/200 VUs, 331 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m38.0s), 091/200 VUs, 356 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m39.0s), 079/200 VUs, 368 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m40.0s), 069/200 VUs, 378 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m41.0s), 060/200 VUs, 387 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+running (0m42.0s), 046/200 VUs, 401 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 196/200 VUs  30s  30.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1341    31.35724/s
+    checks_succeeded...: 100.00% 1341 out of 1341
+    checks_failed......: 0.00%   0 out of 1341
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=12.97s min=993.62ms med=14.25s max=23.16s p(90)=19.03s p(95)=20.1s 
+      { expected_response:true }...: avg=12.97s min=993.62ms med=14.25s max=23.16s p(90)=19.03s p(95)=20.1s 
+    http_req_failed................: 0.00%  0 out of 447
+    http_reqs......................: 447    10.452413/s
+
+    EXECUTION
+    dropped_iterations.............: 454    10.616098/s
+    iteration_duration.............: avg=13.07s min=1.09s    med=14.32s max=23.27s p(90)=19.13s p(95)=20.25s
+    iterations.....................: 447    10.452413/s
+    vus............................: 46     min=20       max=200
+    vus_max........................: 200    min=20       max=200
+
+    NETWORK
+    data_received..................: 2.4 GB 57 MB/s
+    data_sent......................: 78 kB  1.8 kB/s
+
+
+
+
+running (0m42.8s), 000/200 VUs, 447 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/200 VUs  30s  30.00 iters/s
+
+----------------------------------------
+===== ZONE 3: 20 MB TASKOUTPUT =====
+
+========================================
+RUN: RATE=1 | PREBUILT_SIZE_KB=20000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 1.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 001/010 VUs, 0 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 001/010 VUs  01.0s/30s  1.00 iters/s
+
+running (0m02.0s), 001/010 VUs, 1 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 001/010 VUs  02.0s/30s  1.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 2 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 001/010 VUs  03.0s/30s  1.00 iters/s
+
+running (0m04.0s), 002/010 VUs, 2 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 002/010 VUs  04.0s/30s  1.00 iters/s
+
+running (0m05.0s), 001/010 VUs, 4 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 001/010 VUs  05.0s/30s  1.00 iters/s
+
+running (0m06.0s), 001/010 VUs, 5 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 001/010 VUs  06.0s/30s  1.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 6 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 001/010 VUs  07.0s/30s  1.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 7 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 001/010 VUs  08.0s/30s  1.00 iters/s
+
+running (0m09.0s), 001/010 VUs, 8 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 001/010 VUs  09.0s/30s  1.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 9 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 001/010 VUs  10.0s/30s  1.00 iters/s
+
+running (0m11.0s), 001/010 VUs, 10 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 001/010 VUs  11.0s/30s  1.00 iters/s
+
+running (0m12.0s), 001/010 VUs, 11 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 001/010 VUs  12.0s/30s  1.00 iters/s
+
+running (0m13.0s), 001/010 VUs, 12 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 001/010 VUs  13.0s/30s  1.00 iters/s
+
+running (0m14.0s), 001/010 VUs, 13 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 001/010 VUs  14.0s/30s  1.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 14 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 001/010 VUs  15.0s/30s  1.00 iters/s
+
+running (0m16.0s), 001/010 VUs, 15 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 001/010 VUs  16.0s/30s  1.00 iters/s
+
+running (0m17.0s), 001/010 VUs, 16 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 001/010 VUs  17.0s/30s  1.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 17 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 001/010 VUs  18.0s/30s  1.00 iters/s
+
+running (0m19.0s), 001/010 VUs, 18 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 001/010 VUs  19.0s/30s  1.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 19 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 001/010 VUs  20.0s/30s  1.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 20 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 001/010 VUs  21.0s/30s  1.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 21 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 001/010 VUs  22.0s/30s  1.00 iters/s
+
+running (0m23.0s), 001/010 VUs, 22 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 001/010 VUs  23.0s/30s  1.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 23 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 001/010 VUs  24.0s/30s  1.00 iters/s
+
+running (0m25.0s), 001/010 VUs, 24 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 001/010 VUs  25.0s/30s  1.00 iters/s
+
+running (0m26.0s), 001/010 VUs, 25 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 001/010 VUs  26.0s/30s  1.00 iters/s
+
+running (0m27.0s), 001/010 VUs, 26 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 001/010 VUs  27.0s/30s  1.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 27 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 001/010 VUs  28.0s/30s  1.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 28 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 001/010 VUs  29.0s/30s  1.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 29 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 001/010 VUs  30.0s/30s  1.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 90      2.941163/s
+    checks_succeeded...: 100.00% 90 out of 90
+    checks_failed......: 0.00%   0 out of 90
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=1.55s min=1.37s med=1.54s max=1.87s p(90)=1.69s p(95)=1.72s
+      { expected_response:true }...: avg=1.55s min=1.37s med=1.54s max=1.87s p(90)=1.69s p(95)=1.72s
+    http_req_failed................: 0.00%  0 out of 30
+    http_reqs......................: 30     0.980388/s
+
+    EXECUTION
+    iteration_duration.............: avg=1.7s  min=1.51s med=1.69s max=2.02s p(90)=1.84s p(95)=1.86s
+    iterations.....................: 30     0.980388/s
+    vus............................: 1      min=1       max=2 
+    vus_max........................: 10     min=10      max=10
+
+    NETWORK
+    data_received..................: 650 MB 21 MB/s
+    data_sent......................: 5.3 kB 172 B/s
+
+
+
+
+running (0m30.6s), 000/010 VUs, 30 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/010 VUs  30s  1.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=2 | PREBUILT_SIZE_KB=20000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 2.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 002/010 VUs, 0 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 002/010 VUs  01.0s/30s  2.00 iters/s
+
+running (0m02.0s), 003/010 VUs, 1 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 003/010 VUs  02.0s/30s  2.00 iters/s
+
+running (0m03.0s), 005/010 VUs, 2 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 005/010 VUs  03.0s/30s  2.00 iters/s
+
+running (0m04.0s), 004/010 VUs, 4 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 004/010 VUs  04.0s/30s  2.00 iters/s
+
+running (0m05.0s), 005/010 VUs, 5 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 005/010 VUs  05.0s/30s  2.00 iters/s
+
+running (0m06.0s), 005/010 VUs, 7 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 005/010 VUs  06.0s/30s  2.00 iters/s
+
+running (0m07.0s), 004/010 VUs, 10 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 004/010 VUs  07.0s/30s  2.00 iters/s
+
+running (0m08.0s), 004/010 VUs, 12 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 004/010 VUs  08.0s/30s  2.00 iters/s
+
+running (0m09.0s), 004/010 VUs, 14 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 004/010 VUs  09.0s/30s  2.00 iters/s
+
+running (0m10.0s), 004/010 VUs, 16 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 004/010 VUs  10.0s/30s  2.00 iters/s
+
+running (0m11.0s), 004/010 VUs, 18 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 004/010 VUs  11.0s/30s  2.00 iters/s
+
+running (0m12.0s), 004/010 VUs, 20 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 004/010 VUs  12.0s/30s  2.00 iters/s
+
+running (0m13.0s), 004/010 VUs, 22 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 004/010 VUs  13.0s/30s  2.00 iters/s
+
+running (0m14.0s), 004/010 VUs, 24 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 004/010 VUs  14.0s/30s  2.00 iters/s
+
+running (0m15.0s), 004/010 VUs, 26 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 004/010 VUs  15.0s/30s  2.00 iters/s
+
+running (0m16.0s), 004/010 VUs, 28 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 004/010 VUs  16.0s/30s  2.00 iters/s
+
+running (0m17.0s), 004/010 VUs, 30 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 004/010 VUs  17.0s/30s  2.00 iters/s
+
+running (0m18.0s), 004/010 VUs, 32 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 004/010 VUs  18.0s/30s  2.00 iters/s
+
+running (0m19.0s), 004/010 VUs, 34 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 004/010 VUs  19.0s/30s  2.00 iters/s
+
+running (0m20.0s), 004/010 VUs, 36 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 004/010 VUs  20.0s/30s  2.00 iters/s
+
+running (0m21.0s), 004/010 VUs, 38 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 004/010 VUs  21.0s/30s  2.00 iters/s
+
+running (0m22.0s), 004/010 VUs, 40 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 004/010 VUs  22.0s/30s  2.00 iters/s
+
+running (0m23.0s), 004/010 VUs, 42 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 004/010 VUs  23.0s/30s  2.00 iters/s
+
+running (0m24.0s), 004/010 VUs, 44 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 004/010 VUs  24.0s/30s  2.00 iters/s
+
+running (0m25.0s), 004/010 VUs, 46 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 004/010 VUs  25.0s/30s  2.00 iters/s
+
+running (0m26.0s), 004/010 VUs, 48 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 004/010 VUs  26.0s/30s  2.00 iters/s
+
+running (0m27.0s), 004/010 VUs, 50 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 004/010 VUs  27.0s/30s  2.00 iters/s
+
+running (0m28.0s), 003/010 VUs, 53 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 003/010 VUs  28.0s/30s  2.00 iters/s
+
+running (0m29.0s), 004/010 VUs, 54 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 004/010 VUs  29.0s/30s  2.00 iters/s
+
+running (0m30.0s), 004/010 VUs, 56 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 004/010 VUs  30.0s/30s  2.00 iters/s
+
+running (0m31.0s), 003/010 VUs, 58 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 005/010 VUs  30s  2.00 iters/s
+
+running (0m32.0s), 001/010 VUs, 60 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 005/010 VUs  30s  2.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 183     5.71126/s
+    checks_succeeded...: 100.00% 183 out of 183
+    checks_failed......: 0.00%   0 out of 183
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=1.99s min=1.57s med=1.98s max=2.49s p(90)=2.2s  p(95)=2.3s 
+      { expected_response:true }...: avg=1.99s min=1.57s med=1.98s max=2.49s p(90)=2.2s  p(95)=2.3s 
+    http_req_failed................: 0.00%  0 out of 61
+    http_reqs......................: 61     1.903753/s
+
+    EXECUTION
+    iteration_duration.............: avg=2.17s min=1.78s med=2.14s max=2.74s p(90)=2.38s p(95)=2.54s
+    iterations.....................: 61     1.903753/s
+    vus............................: 1      min=1       max=5 
+    vus_max........................: 10     min=10      max=10
+
+    NETWORK
+    data_received..................: 1.3 GB 41 MB/s
+    data_sent......................: 11 kB  333 B/s
+
+
+
+
+running (0m32.0s), 000/010 VUs, 61 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/010 VUs  30s  2.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=5 | PREBUILT_SIZE_KB=20000
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-taskoutput-persistence.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * taskoutput_persistence_test: 5.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 005/010 VUs, 0 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   3% ] 005/010 VUs  01.0s/30s  5.00 iters/s
+
+running (0m02.0s), 010/010 VUs, 0 complete and 0 interrupted iterations
+taskoutput_persistence_test   [   7% ] 010/010 VUs  02.0s/30s  5.00 iters/s
+
+running (0m03.0s), 011/012 VUs, 2 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  10% ] 011/012 VUs  03.0s/30s  5.00 iters/s
+
+running (0m04.0s), 012/014 VUs, 4 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  13% ] 012/014 VUs  04.0s/30s  5.00 iters/s
+
+running (0m05.0s), 015/015 VUs, 5 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  17% ] 015/015 VUs  05.0s/30s  5.00 iters/s
+
+running (0m06.0s), 017/017 VUs, 6 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  20% ] 017/017 VUs  06.0s/30s  5.00 iters/s
+
+running (0m07.0s), 017/019 VUs, 10 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  23% ] 017/019 VUs  07.0s/30s  5.00 iters/s
+
+running (0m08.0s), 019/020 VUs, 11 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  27% ] 019/020 VUs  08.0s/30s  5.00 iters/s
+
+running (0m09.0s), 021/022 VUs, 12 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  30% ] 021/022 VUs  09.0s/30s  5.00 iters/s
+
+running (0m10.0s), 023/024 VUs, 13 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  33% ] 023/024 VUs  10.0s/30s  5.00 iters/s
+
+running (0m11.0s), 026/026 VUs, 14 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  37% ] 026/026 VUs  11.0s/30s  5.00 iters/s
+
+running (0m12.0s), 027/027 VUs, 16 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  40% ] 027/027 VUs  12.0s/30s  5.00 iters/s
+
+running (0m13.0s), 027/030 VUs, 18 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  43% ] 027/030 VUs  13.0s/30s  5.00 iters/s
+
+running (0m14.0s), 029/030 VUs, 21 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  47% ] 029/030 VUs  14.0s/30s  5.00 iters/s
+
+running (0m15.0s), 031/032 VUs, 23 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  50% ] 031/032 VUs  15.0s/30s  5.00 iters/s
+
+running (0m16.0s), 033/033 VUs, 24 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  53% ] 033/033 VUs  16.0s/30s  5.00 iters/s
+
+running (0m17.0s), 034/036 VUs, 25 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  57% ] 034/036 VUs  17.0s/30s  5.00 iters/s
+
+running (0m18.0s), 036/037 VUs, 27 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  60% ] 036/037 VUs  18.0s/30s  5.00 iters/s
+
+running (0m19.0s), 038/039 VUs, 28 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  63% ] 038/039 VUs  19.0s/30s  5.00 iters/s
+
+running (0m20.0s), 041/041 VUs, 29 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  67% ] 041/041 VUs  20.0s/30s  5.00 iters/s
+
+running (0m21.0s), 042/043 VUs, 30 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  70% ] 042/043 VUs  21.0s/30s  5.00 iters/s
+
+running (0m22.0s), 043/045 VUs, 32 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  73% ] 043/045 VUs  22.0s/30s  5.00 iters/s
+
+running (0m23.0s), 046/047 VUs, 32 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  77% ] 046/047 VUs  23.0s/30s  5.00 iters/s
+
+running (0m24.0s), 048/048 VUs, 34 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  80% ] 048/048 VUs  24.0s/30s  5.00 iters/s
+
+running (0m25.0s), 049/050 VUs, 36 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  83% ] 049/050 VUs  25.0s/30s  5.00 iters/s
+
+running (0m26.0s), 052/052 VUs, 36 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  87% ] 052/052 VUs  26.0s/30s  5.00 iters/s
+
+running (0m27.0s), 053/053 VUs, 39 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  90% ] 053/053 VUs  27.0s/30s  5.00 iters/s
+
+running (0m28.0s), 053/055 VUs, 42 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  93% ] 053/055 VUs  28.0s/30s  5.00 iters/s
+
+running (0m29.0s), 056/057 VUs, 42 complete and 0 interrupted iterations
+taskoutput_persistence_test   [  97% ] 056/057 VUs  29.0s/30s  5.00 iters/s
+
+running (0m30.0s), 058/059 VUs, 43 complete and 0 interrupted iterations
+taskoutput_persistence_test   [ 100% ] 058/059 VUs  30.0s/30s  5.00 iters/s
+
+running (0m31.0s), 057/059 VUs, 45 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m32.0s), 056/059 VUs, 46 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m33.0s), 053/059 VUs, 49 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m34.0s), 053/059 VUs, 49 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m35.0s), 053/059 VUs, 49 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m36.0s), 050/059 VUs, 52 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m37.0s), 050/059 VUs, 52 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m38.0s), 047/059 VUs, 55 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m39.0s), 046/059 VUs, 56 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m40.0s), 046/059 VUs, 56 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m41.0s), 045/059 VUs, 57 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m42.0s), 042/059 VUs, 60 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m43.0s), 042/059 VUs, 60 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m44.0s), 040/059 VUs, 62 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m45.0s), 039/059 VUs, 63 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m46.0s), 035/059 VUs, 67 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m47.0s), 032/059 VUs, 70 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m48.0s), 031/059 VUs, 71 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m49.0s), 024/059 VUs, 78 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m50.0s), 015/059 VUs, 87 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+running (0m51.0s), 001/059 VUs, 101 complete and 0 interrupted iterations
+taskoutput_persistence_test ↓ [ 100% ] 059/059 VUs  30s  5.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 306     5.995884/s
+    checks_succeeded...: 100.00% 306 out of 306
+    checks_failed......: 0.00%   0 out of 306
+
+    ✓ status 200
+    ✓ completed
+    ✓ taskOutputSizeKb matches
+
+    HTTP
+    http_req_duration..............: avg=17.74s min=2.28s med=20.78s max=31.34s p(90)=26.8s  p(95)=28.06s
+      { expected_response:true }...: avg=17.74s min=2.28s med=20.78s max=31.34s p(90)=26.8s  p(95)=28.06s
+    http_req_failed................: 0.00%  0 out of 102
+    http_reqs......................: 102    1.998628/s
+
+    EXECUTION
+    dropped_iterations.............: 49     0.960125/s
+    iteration_duration.............: avg=18.07s min=2.57s med=21.05s max=31.65s p(90)=27.15s p(95)=28.32s
+    iterations.....................: 102    1.998628/s
+    vus............................: 1      min=1        max=58
+    vus_max........................: 59     min=10       max=59
+
+    NETWORK
+    data_received..................: 2.2 GB 43 MB/s
+    data_sent......................: 18 kB  350 B/s
+
+
+
+
+running (0m51.0s), 000/059 VUs, 102 complete and 0 interrupted iterations
+taskoutput_persistence_test ✓ [ 100% ] 000/059 VUs  30s  5.00 iters/s
+
+----------------------------------------
+
+Finished at: Mon Apr 13 08:41:45 PM CEST 2026
+========================================

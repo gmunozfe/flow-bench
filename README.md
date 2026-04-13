@@ -310,7 +310,7 @@ This project can run with:
 
 - **Redis** on `localhost:6379`
 - **PostgreSQL (JPA)** on `localhost:5432`, database `flow`, user `flow`, password `flow`
-- **MVStore file persistence** at `/tmp/hello-flow.mvstore.db`
+- **MVStore file persistence** at `/tmp/flow-bench.mvstore.db`
 
 ### Start Redis and PostgreSQL
 
@@ -352,7 +352,7 @@ This gives you a brand-new Redis and PostgreSQL state the next time you start th
 MVStore is file-based, not container-based. To start with a fresh MVStore database:
 
 ```bash
-rm -f /tmp/hello-flow.mvstore.db
+rm -f /tmp/flow-bench.mvstore.db
 ```
 
 ---
@@ -367,7 +367,7 @@ java -jar target/quarkus-app/quarkus-run.jar
 
 File (MVStore):
 ```bash
-rm -f /tmp/hello-flow.mvstore.db
+rm -f /tmp/flow-bench.mvstore.db
 mvn clean package -Pfile -Dquarkus.profile=file
 java -jar -Dquarkus.profile=file target/quarkus-app/quarkus-run.jar
 ```
