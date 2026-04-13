@@ -126,7 +126,7 @@ External Call    ✓      ✓       ✓      ✓
 ### Examples
 
 | Mutations | TaskOutput Size |
-| --------: | ----------   -: |
+| --------: | --------------: |
 |       10k |          ~78 KB |
 |       30k |         ~235 KB |
 |      100k |         ~780 KB |
