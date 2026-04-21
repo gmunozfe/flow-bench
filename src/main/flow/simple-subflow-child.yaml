@@ -1,0 +1,13 @@
+document:
+  dsl: '1.0.0'
+  namespace: bench
+  name: simple-subflow-child
+  version: '1.0.0'
+
+do:
+  - completeChild:
+      set:
+        orderId: ${ .orderId }
+        amount: ${ .amount }
+        customerId: ${ .customerId }
+        childStatus: "CHILD_COMPLETED"

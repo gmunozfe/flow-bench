@@ -1,0 +1,127 @@
+document:
+  dsl: '1.0.0'
+  namespace: bench
+  name: fork-workflow-10
+  version: '1.0.0'
+
+do:
+  - initialize:
+      set:
+        orderId: ${ .orderId }
+        amount: ${ .amount }
+        customerId: ${ .customerId }
+        status: "FORK_STARTED_10"
+        subflowsCount: 10
+
+  - runSubflows:
+      fork:
+        compete: false
+        branches:
+          - subflow1:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow2:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow3:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow4:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow5:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow6:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow7:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow8:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow9:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+          - subflow10:
+              run:
+                workflow:
+                  namespace: bench
+                  name: simple-subflow-child
+                  version: '1.0.0'
+                  input:
+                    orderId: ${ .orderId }
+                    amount: ${ .amount }
+                    customerId: ${ .customerId }
+
+  - finalize:
+      set:
+        orderId: ${ [ .[] | .[] | .orderId ][0] }
+        amount: ${ [ .[] | .[] | .amount ][0] }
+        customerId: ${ [ .[] | .[] | .customerId ][0] }
+        status: "COMPLETED_10_SUBFLOWS"
+        subflowsCount: 10
