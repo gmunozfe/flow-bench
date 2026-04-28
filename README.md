@@ -414,12 +414,36 @@ mvn clean package -Predis -Dquarkus.profile=redis
 java -jar -Dquarkus.profile=redis target/quarkus-app/quarkus-run.jar
 ```
 
+Valkey:
+```bash
+docker compose up -d valkey
+mvn clean package -Predis -Dquarkus.profile=valkey
+java -jar -Dquarkus.profile=valkey target/quarkus-app/quarkus-run.jar
+```
+
+
 JPA:
 ```bash
 docker compose up -d postgres
 mvn clean package -Pjpa -Dquarkus.profile=jpa
 java -jar -Dquarkus.profile=jpa target/quarkus-app/quarkus-run.jar
 ```
+
+Infinispan standalone:
+```bash
+docker compose up -d infinispan
+mvn clean package -Pinfinispan -Dquarkus.profile=infinispan
+java -jar -Dquarkus.profile=infinispan target/quarkus-app/quarkus-run.jar
+```
+
+Infinispan clustered:
+```bash
+docker compose up -d infinispan-1 infinispan-2
+mvn clean package -Pinfinispan -Dquarkus.profile=clustered
+java -jar -Dquarkus.profile=clustered target/quarkus-app/quarkus-run.jar
+```
+
+
 ---
 
 # 🚀 Running Benchmarks
