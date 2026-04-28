@@ -8,6 +8,7 @@ The goal is to understand how different workloads behave and to isolate the cost
 * TaskOutput generation (CPU)
 * TaskOutput handling (memory / serialization)
 * External calls
+* Subflow orchestration
 * Persistence strategies
 
 This project benchmarks workflows using [k6](https://k6.io/) to analyze:
@@ -64,7 +65,7 @@ Each workflow is evaluated under each persistence strategy:
 
 ```text
                     Persistence Strategy
-Workflow        None  Redis  File  JPA  IS  IC 
+Workflow        None  Redis  File  JPA  IS  IC
 ----------------------------------------------
 Baseline         ✓     ✓      ✓     ✓    ✓   ✓
 Orchestration    ✓     ✓      ✓     ✓    ✓   ✓
