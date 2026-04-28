@@ -29,6 +29,60 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
 
+  infinispan:
+    image: quay.io/infinispan/server:latest
+    container_name: flow-bench-infinispan
+    ports:
+      - "11222:11222"
+    environment:
+      USER: admin
+      PASS: password
+    volumes:
+    - ./infinispan-transactional.xml:/opt/infinispan/server/conf/custom.xml:ro,z
+    command: ["-c", "custom.xml"]
+
+  infinispan-1:
+    image: quay.io/infinispan/server:latest
+    container_name: flow-bench-infinispan-1
+    hostname: infinispan-1
+    ports:
+      - "11222:11222"
+    environment:
+      USER: admin
+      PASS: password
+      JAVA_OPTIONS: >-
+        -Dinfinispan.node.name=infinispan-1
+        -Djgroups.dns.query=infinispan
+    volumes:
+      - ./infinispan-clustered.xml:/opt/infinispan/server/conf/custom.xml:ro,z
+    command: ["-c", "custom.xml"]
+    networks:
+      flow-bench:
+        aliases:
+          - infinispan
+  
+  infinispan-2:
+    image: quay.io/infinispan/server:latest
+    container_name: flow-bench-infinispan-2
+    hostname: infinispan-2
+    ports:
+      - "11223:11222"
+    environment:
+      USER: admin
+      PASS: password
+      JAVA_OPTIONS: >-
+        -Dinfinispan.node.name=infinispan-2
+        -Djgroups.dns.query=infinispan
+    volumes:
+      - ./infinispan-clustered.xml:/opt/infinispan/server/conf/custom.xml:ro,z
+    command: ["-c", "custom.xml"]
+    networks:
+      flow-bench:
+        aliases:
+          - infinispan
+
+networks:
+  flow-bench:
 volumes:
   redis-data:
   valkey-data:

@@ -1,0 +1,1411 @@
+========================================
+🚀 Subflow Orchestration Benchmark Suite
+========================================
+Mode: clustered
+Started at: Tue Apr 28 12:35:55 PM CEST 2026
+
+----- SYSTEM INFO -----
+Linux li-3f7fa6cc-284c-11b2-a85c-ccb792864af1.ibm.com 6.14.11-300.fc42.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Jun 10 16:24:16 UTC 2025 x86_64 GNU/Linux
+
+CPU:
+Model name:                              12th Gen Intel(R) Core(TM) i7-12800H
+
+Memory:
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi        10Gi        46Gi       1.5Gi       7.1Gi        51Gi
+Swap:          8.0Gi       1.9Gi       6.1Gi
+
+-----------------------
+
+===== ZONE 1: LOW LOAD =====
+
+========================================
+RUN: RATE=100 | SCRIPT=k6-fork3.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork3.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork3_test: 100.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 039/042 VUs, 29 complete and 0 interrupted iterations
+fork3_test   [   3% ] 039/042 VUs  01.0s/30s  100.00 iters/s
+
+running (0m02.0s), 054/054 VUs, 102 complete and 0 interrupted iterations
+fork3_test   [   7% ] 054/054 VUs  02.0s/30s  100.00 iters/s
+
+running (0m03.0s), 011/056 VUs, 243 complete and 0 interrupted iterations
+fork3_test   [  10% ] 011/056 VUs  03.0s/30s  100.00 iters/s
+
+running (0m04.0s), 002/056 VUs, 352 complete and 0 interrupted iterations
+fork3_test   [  13% ] 002/056 VUs  04.0s/30s  100.00 iters/s
+
+running (0m05.0s), 002/056 VUs, 452 complete and 0 interrupted iterations
+fork3_test   [  17% ] 002/056 VUs  05.0s/30s  100.00 iters/s
+
+running (0m06.0s), 002/056 VUs, 552 complete and 0 interrupted iterations
+fork3_test   [  20% ] 002/056 VUs  06.0s/30s  100.00 iters/s
+
+running (0m07.0s), 001/056 VUs, 653 complete and 0 interrupted iterations
+fork3_test   [  23% ] 001/056 VUs  07.0s/30s  100.00 iters/s
+
+running (0m08.0s), 001/056 VUs, 753 complete and 0 interrupted iterations
+fork3_test   [  27% ] 001/056 VUs  08.0s/30s  100.00 iters/s
+
+running (0m09.0s), 001/056 VUs, 853 complete and 0 interrupted iterations
+fork3_test   [  30% ] 001/056 VUs  09.0s/30s  100.00 iters/s
+
+running (0m10.0s), 001/056 VUs, 953 complete and 0 interrupted iterations
+fork3_test   [  33% ] 001/056 VUs  10.0s/30s  100.00 iters/s
+
+running (0m11.0s), 001/056 VUs, 1053 complete and 0 interrupted iterations
+fork3_test   [  37% ] 001/056 VUs  11.0s/30s  100.00 iters/s
+
+running (0m12.0s), 001/056 VUs, 1153 complete and 0 interrupted iterations
+fork3_test   [  40% ] 001/056 VUs  12.0s/30s  100.00 iters/s
+
+running (0m13.0s), 002/056 VUs, 1252 complete and 0 interrupted iterations
+fork3_test   [  43% ] 002/056 VUs  13.0s/30s  100.00 iters/s
+
+running (0m14.0s), 002/056 VUs, 1352 complete and 0 interrupted iterations
+fork3_test   [  47% ] 002/056 VUs  14.0s/30s  100.00 iters/s
+
+running (0m15.0s), 002/056 VUs, 1452 complete and 0 interrupted iterations
+fork3_test   [  50% ] 002/056 VUs  15.0s/30s  100.00 iters/s
+
+running (0m16.0s), 001/056 VUs, 1553 complete and 0 interrupted iterations
+fork3_test   [  53% ] 001/056 VUs  16.0s/30s  100.00 iters/s
+
+running (0m17.0s), 001/056 VUs, 1653 complete and 0 interrupted iterations
+fork3_test   [  57% ] 001/056 VUs  17.0s/30s  100.00 iters/s
+
+running (0m18.0s), 001/056 VUs, 1753 complete and 0 interrupted iterations
+fork3_test   [  60% ] 001/056 VUs  18.0s/30s  100.00 iters/s
+
+running (0m19.0s), 001/056 VUs, 1853 complete and 0 interrupted iterations
+fork3_test   [  63% ] 001/056 VUs  19.0s/30s  100.00 iters/s
+
+running (0m20.0s), 001/056 VUs, 1953 complete and 0 interrupted iterations
+fork3_test   [  67% ] 001/056 VUs  20.0s/30s  100.00 iters/s
+
+running (0m21.0s), 001/056 VUs, 2053 complete and 0 interrupted iterations
+fork3_test   [  70% ] 001/056 VUs  21.0s/30s  100.00 iters/s
+
+running (0m22.0s), 001/056 VUs, 2153 complete and 0 interrupted iterations
+fork3_test   [  73% ] 001/056 VUs  22.0s/30s  100.00 iters/s
+
+running (0m23.0s), 001/056 VUs, 2253 complete and 0 interrupted iterations
+fork3_test   [  77% ] 001/056 VUs  23.0s/30s  100.00 iters/s
+
+running (0m24.0s), 001/056 VUs, 2353 complete and 0 interrupted iterations
+fork3_test   [  80% ] 001/056 VUs  24.0s/30s  100.00 iters/s
+
+running (0m25.0s), 001/056 VUs, 2453 complete and 0 interrupted iterations
+fork3_test   [  83% ] 001/056 VUs  25.0s/30s  100.00 iters/s
+
+running (0m26.0s), 001/056 VUs, 2553 complete and 0 interrupted iterations
+fork3_test   [  87% ] 001/056 VUs  26.0s/30s  100.00 iters/s
+
+running (0m27.0s), 001/056 VUs, 2653 complete and 0 interrupted iterations
+fork3_test   [  90% ] 001/056 VUs  27.0s/30s  100.00 iters/s
+
+running (0m28.0s), 001/056 VUs, 2753 complete and 0 interrupted iterations
+fork3_test   [  93% ] 001/056 VUs  28.0s/30s  100.00 iters/s
+
+running (0m29.0s), 001/056 VUs, 2853 complete and 0 interrupted iterations
+fork3_test   [  97% ] 001/056 VUs  29.0s/30s  100.00 iters/s
+
+running (0m30.0s), 001/056 VUs, 2953 complete and 0 interrupted iterations
+fork3_test   [ 100% ] 001/056 VUs  30.0s/30s  100.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 17730   590.713362/s
+    checks_succeeded...: 100.00% 17730 out of 17730
+    checks_failed......: 0.00%   0 out of 17730
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=52.78ms min=8.93ms med=13.07ms max=764.56ms p(90)=39.05ms p(95)=486.9ms 
+      { expected_response:true }...: avg=52.78ms min=8.93ms med=13.07ms max=764.56ms p(90)=39.05ms p(95)=486.9ms 
+    http_req_failed................: 0.00%  0 out of 2955
+    http_reqs......................: 2955   98.452227/s
+
+    EXECUTION
+    dropped_iterations.............: 46     1.53259/s
+    iteration_duration.............: avg=52.97ms min=9.11ms med=13.2ms  max=765.59ms p(90)=39.35ms p(95)=487.45ms
+    iterations.....................: 2955   98.452227/s
+    vus............................: 1      min=1         max=54
+    vus_max........................: 56     min=42        max=56
+
+    NETWORK
+    data_received..................: 576 kB 19 kB/s
+    data_sent......................: 564 kB 19 kB/s
+
+
+
+
+running (0m30.0s), 000/056 VUs, 2955 complete and 0 interrupted iterations
+fork3_test ✓ [ 100% ] 000/056 VUs  30s  100.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=100 | SCRIPT=k6-fork5.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork5.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork5_test: 100.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 002/010 VUs, 98 complete and 0 interrupted iterations
+fork5_test   [   3% ] 002/010 VUs  01.0s/30s  100.00 iters/s
+
+running (0m02.0s), 001/010 VUs, 199 complete and 0 interrupted iterations
+fork5_test   [   7% ] 001/010 VUs  02.0s/30s  100.00 iters/s
+
+running (0m03.0s), 001/010 VUs, 299 complete and 0 interrupted iterations
+fork5_test   [  10% ] 001/010 VUs  03.0s/30s  100.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 399 complete and 0 interrupted iterations
+fork5_test   [  13% ] 001/010 VUs  04.0s/30s  100.00 iters/s
+
+running (0m05.0s), 001/010 VUs, 499 complete and 0 interrupted iterations
+fork5_test   [  17% ] 001/010 VUs  05.0s/30s  100.00 iters/s
+
+running (0m06.0s), 002/010 VUs, 598 complete and 0 interrupted iterations
+fork5_test   [  20% ] 002/010 VUs  06.0s/30s  100.00 iters/s
+
+running (0m07.0s), 001/010 VUs, 699 complete and 0 interrupted iterations
+fork5_test   [  23% ] 001/010 VUs  07.0s/30s  100.00 iters/s
+
+running (0m08.0s), 001/010 VUs, 799 complete and 0 interrupted iterations
+fork5_test   [  27% ] 001/010 VUs  08.0s/30s  100.00 iters/s
+
+running (0m09.0s), 001/010 VUs, 899 complete and 0 interrupted iterations
+fork5_test   [  30% ] 001/010 VUs  09.0s/30s  100.00 iters/s
+
+running (0m10.0s), 001/010 VUs, 999 complete and 0 interrupted iterations
+fork5_test   [  33% ] 001/010 VUs  10.0s/30s  100.00 iters/s
+
+running (0m11.0s), 001/010 VUs, 1099 complete and 0 interrupted iterations
+fork5_test   [  37% ] 001/010 VUs  11.0s/30s  100.00 iters/s
+
+running (0m12.0s), 001/010 VUs, 1199 complete and 0 interrupted iterations
+fork5_test   [  40% ] 001/010 VUs  12.0s/30s  100.00 iters/s
+
+running (0m13.0s), 001/010 VUs, 1299 complete and 0 interrupted iterations
+fork5_test   [  43% ] 001/010 VUs  13.0s/30s  100.00 iters/s
+
+running (0m14.0s), 002/010 VUs, 1398 complete and 0 interrupted iterations
+fork5_test   [  47% ] 002/010 VUs  14.0s/30s  100.00 iters/s
+
+running (0m15.0s), 001/010 VUs, 1499 complete and 0 interrupted iterations
+fork5_test   [  50% ] 001/010 VUs  15.0s/30s  100.00 iters/s
+
+running (0m16.0s), 001/010 VUs, 1599 complete and 0 interrupted iterations
+fork5_test   [  53% ] 001/010 VUs  16.0s/30s  100.00 iters/s
+
+running (0m17.0s), 001/010 VUs, 1699 complete and 0 interrupted iterations
+fork5_test   [  57% ] 001/010 VUs  17.0s/30s  100.00 iters/s
+
+running (0m18.0s), 001/010 VUs, 1799 complete and 0 interrupted iterations
+fork5_test   [  60% ] 001/010 VUs  18.0s/30s  100.00 iters/s
+
+running (0m19.0s), 001/010 VUs, 1899 complete and 0 interrupted iterations
+fork5_test   [  63% ] 001/010 VUs  19.0s/30s  100.00 iters/s
+
+running (0m20.0s), 001/010 VUs, 1999 complete and 0 interrupted iterations
+fork5_test   [  67% ] 001/010 VUs  20.0s/30s  100.00 iters/s
+
+running (0m21.0s), 001/010 VUs, 2099 complete and 0 interrupted iterations
+fork5_test   [  70% ] 001/010 VUs  21.0s/30s  100.00 iters/s
+
+running (0m22.0s), 001/010 VUs, 2199 complete and 0 interrupted iterations
+fork5_test   [  73% ] 001/010 VUs  22.0s/30s  100.00 iters/s
+
+running (0m23.0s), 001/010 VUs, 2299 complete and 0 interrupted iterations
+fork5_test   [  77% ] 001/010 VUs  23.0s/30s  100.00 iters/s
+
+running (0m24.0s), 001/010 VUs, 2399 complete and 0 interrupted iterations
+fork5_test   [  80% ] 001/010 VUs  24.0s/30s  100.00 iters/s
+
+running (0m25.0s), 001/010 VUs, 2499 complete and 0 interrupted iterations
+fork5_test   [  83% ] 001/010 VUs  25.0s/30s  100.00 iters/s
+
+running (0m26.0s), 002/010 VUs, 2598 complete and 0 interrupted iterations
+fork5_test   [  87% ] 002/010 VUs  26.0s/30s  100.00 iters/s
+
+running (0m27.0s), 001/010 VUs, 2699 complete and 0 interrupted iterations
+fork5_test   [  90% ] 001/010 VUs  27.0s/30s  100.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 2799 complete and 0 interrupted iterations
+fork5_test   [  93% ] 001/010 VUs  28.0s/30s  100.00 iters/s
+
+running (0m29.0s), 001/010 VUs, 2899 complete and 0 interrupted iterations
+fork5_test   [  97% ] 001/010 VUs  29.0s/30s  100.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 2999 complete and 0 interrupted iterations
+fork5_test   [ 100% ] 001/010 VUs  30.0s/30s  100.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 18000   599.955452/s
+    checks_succeeded...: 100.00% 18000 out of 18000
+    checks_failed......: 0.00%   0 out of 18000
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=14.69ms min=9.8ms  med=13.1ms  max=44.85ms p(90)=19.56ms p(95)=24.92ms
+      { expected_response:true }...: avg=14.69ms min=9.8ms  med=13.1ms  max=44.85ms p(90)=19.56ms p(95)=24.92ms
+    http_req_failed................: 0.00%  0 out of 3000
+    http_reqs......................: 3000   99.992575/s
+
+    EXECUTION
+    iteration_duration.............: avg=14.86ms min=9.92ms med=13.26ms max=45.17ms p(90)=19.79ms p(95)=25.2ms 
+    iterations.....................: 3000   99.992575/s
+    vus............................: 1      min=1         max=2 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 587 kB 20 kB/s
+    data_sent......................: 575 kB 19 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 3000 complete and 0 interrupted iterations
+fork5_test ✓ [ 100% ] 000/010 VUs  30s  100.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=100 | SCRIPT=k6-fork10.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork10.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork10_test: 100.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 003/010 VUs, 97 complete and 0 interrupted iterations
+fork10_test   [   3% ] 003/010 VUs  01.0s/30s  100.00 iters/s
+
+running (0m02.0s), 002/010 VUs, 198 complete and 0 interrupted iterations
+fork10_test   [   7% ] 002/010 VUs  02.0s/30s  100.00 iters/s
+
+running (0m03.0s), 002/010 VUs, 298 complete and 0 interrupted iterations
+fork10_test   [  10% ] 002/010 VUs  03.0s/30s  100.00 iters/s
+
+running (0m04.0s), 001/010 VUs, 399 complete and 0 interrupted iterations
+fork10_test   [  13% ] 001/010 VUs  04.0s/30s  100.00 iters/s
+
+running (0m05.0s), 002/010 VUs, 498 complete and 0 interrupted iterations
+fork10_test   [  17% ] 002/010 VUs  05.0s/30s  100.00 iters/s
+
+running (0m06.0s), 002/010 VUs, 598 complete and 0 interrupted iterations
+fork10_test   [  20% ] 002/010 VUs  06.0s/30s  100.00 iters/s
+
+running (0m07.0s), 002/010 VUs, 698 complete and 0 interrupted iterations
+fork10_test   [  23% ] 002/010 VUs  07.0s/30s  100.00 iters/s
+
+running (0m08.0s), 002/010 VUs, 798 complete and 0 interrupted iterations
+fork10_test   [  27% ] 002/010 VUs  08.0s/30s  100.00 iters/s
+
+running (0m09.0s), 002/010 VUs, 898 complete and 0 interrupted iterations
+fork10_test   [  30% ] 002/010 VUs  09.0s/30s  100.00 iters/s
+
+running (0m10.0s), 002/010 VUs, 998 complete and 0 interrupted iterations
+fork10_test   [  33% ] 002/010 VUs  10.0s/30s  100.00 iters/s
+
+running (0m11.0s), 002/010 VUs, 1098 complete and 0 interrupted iterations
+fork10_test   [  37% ] 002/010 VUs  11.0s/30s  100.00 iters/s
+
+running (0m12.0s), 002/010 VUs, 1198 complete and 0 interrupted iterations
+fork10_test   [  40% ] 002/010 VUs  12.0s/30s  100.00 iters/s
+
+running (0m13.0s), 002/010 VUs, 1298 complete and 0 interrupted iterations
+fork10_test   [  43% ] 002/010 VUs  13.0s/30s  100.00 iters/s
+
+running (0m14.0s), 002/010 VUs, 1398 complete and 0 interrupted iterations
+fork10_test   [  47% ] 002/010 VUs  14.0s/30s  100.00 iters/s
+
+running (0m15.0s), 002/010 VUs, 1498 complete and 0 interrupted iterations
+fork10_test   [  50% ] 002/010 VUs  15.0s/30s  100.00 iters/s
+
+running (0m16.0s), 002/010 VUs, 1598 complete and 0 interrupted iterations
+fork10_test   [  53% ] 002/010 VUs  16.0s/30s  100.00 iters/s
+
+running (0m17.0s), 002/010 VUs, 1698 complete and 0 interrupted iterations
+fork10_test   [  57% ] 002/010 VUs  17.0s/30s  100.00 iters/s
+
+running (0m18.0s), 002/010 VUs, 1798 complete and 0 interrupted iterations
+fork10_test   [  60% ] 002/010 VUs  18.0s/30s  100.00 iters/s
+
+running (0m19.0s), 002/010 VUs, 1898 complete and 0 interrupted iterations
+fork10_test   [  63% ] 002/010 VUs  19.0s/30s  100.00 iters/s
+
+running (0m20.0s), 002/010 VUs, 1998 complete and 0 interrupted iterations
+fork10_test   [  67% ] 002/010 VUs  20.0s/30s  100.00 iters/s
+
+running (0m21.0s), 002/010 VUs, 2098 complete and 0 interrupted iterations
+fork10_test   [  70% ] 002/010 VUs  21.0s/30s  100.00 iters/s
+
+running (0m22.0s), 002/010 VUs, 2198 complete and 0 interrupted iterations
+fork10_test   [  73% ] 002/010 VUs  22.0s/30s  100.00 iters/s
+
+running (0m23.0s), 002/010 VUs, 2298 complete and 0 interrupted iterations
+fork10_test   [  77% ] 002/010 VUs  23.0s/30s  100.00 iters/s
+
+running (0m24.0s), 002/010 VUs, 2398 complete and 0 interrupted iterations
+fork10_test   [  80% ] 002/010 VUs  24.0s/30s  100.00 iters/s
+
+running (0m25.0s), 002/010 VUs, 2498 complete and 0 interrupted iterations
+fork10_test   [  83% ] 002/010 VUs  25.0s/30s  100.00 iters/s
+
+running (0m26.0s), 002/010 VUs, 2598 complete and 0 interrupted iterations
+fork10_test   [  87% ] 002/010 VUs  26.0s/30s  100.00 iters/s
+
+running (0m27.0s), 002/010 VUs, 2698 complete and 0 interrupted iterations
+fork10_test   [  90% ] 002/010 VUs  27.0s/30s  100.00 iters/s
+
+running (0m28.0s), 001/010 VUs, 2799 complete and 0 interrupted iterations
+fork10_test   [  93% ] 001/010 VUs  28.0s/30s  100.00 iters/s
+
+running (0m29.0s), 002/010 VUs, 2898 complete and 0 interrupted iterations
+fork10_test   [  97% ] 002/010 VUs  29.0s/30s  100.00 iters/s
+
+running (0m30.0s), 001/010 VUs, 2999 complete and 0 interrupted iterations
+fork10_test   [ 100% ] 001/010 VUs  30.0s/30s  100.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 18006   599.860822/s
+    checks_succeeded...: 100.00% 18006 out of 18006
+    checks_failed......: 0.00%   0 out of 18006
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=21.34ms min=12.9ms  med=20.95ms max=47.17ms p(90)=24.65ms p(95)=26.33ms
+      { expected_response:true }...: avg=21.34ms min=12.9ms  med=20.95ms max=47.17ms p(90)=24.65ms p(95)=26.33ms
+    http_req_failed................: 0.00%  0 out of 3001
+    http_reqs......................: 3001   99.976804/s
+
+    EXECUTION
+    iteration_duration.............: avg=21.57ms min=13.07ms med=21.17ms max=47.45ms p(90)=24.86ms p(95)=26.56ms
+    iterations.....................: 3001   99.976804/s
+    vus............................: 1      min=1         max=3 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 593 kB 20 kB/s
+    data_sent......................: 578 kB 19 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 3001 complete and 0 interrupted iterations
+fork10_test ✓ [ 100% ] 000/010 VUs  30s  100.00 iters/s
+
+----------------------------------------
+===== ZONE 2: MEDIUM LOAD =====
+
+========================================
+RUN: RATE=200 | SCRIPT=k6-fork3.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork3.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork3_test: 200.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 003/010 VUs, 197 complete and 0 interrupted iterations
+fork3_test   [   3% ] 003/010 VUs  01.0s/30s  200.00 iters/s
+
+running (0m02.0s), 003/010 VUs, 397 complete and 0 interrupted iterations
+fork3_test   [   7% ] 003/010 VUs  02.0s/30s  200.00 iters/s
+
+running (0m03.0s), 004/010 VUs, 596 complete and 0 interrupted iterations
+fork3_test   [  10% ] 004/010 VUs  03.0s/30s  200.00 iters/s
+
+running (0m04.0s), 004/010 VUs, 796 complete and 0 interrupted iterations
+fork3_test   [  13% ] 004/010 VUs  04.0s/30s  200.00 iters/s
+
+running (0m05.0s), 004/010 VUs, 996 complete and 0 interrupted iterations
+fork3_test   [  17% ] 004/010 VUs  05.0s/30s  200.00 iters/s
+
+running (0m06.0s), 004/010 VUs, 1196 complete and 0 interrupted iterations
+fork3_test   [  20% ] 004/010 VUs  06.0s/30s  200.00 iters/s
+
+running (0m07.0s), 005/010 VUs, 1395 complete and 0 interrupted iterations
+fork3_test   [  23% ] 005/010 VUs  07.0s/30s  200.00 iters/s
+
+running (0m08.0s), 004/010 VUs, 1596 complete and 0 interrupted iterations
+fork3_test   [  27% ] 004/010 VUs  08.0s/30s  200.00 iters/s
+
+running (0m09.0s), 004/010 VUs, 1796 complete and 0 interrupted iterations
+fork3_test   [  30% ] 004/010 VUs  09.0s/30s  200.00 iters/s
+
+running (0m10.0s), 004/010 VUs, 1996 complete and 0 interrupted iterations
+fork3_test   [  33% ] 004/010 VUs  10.0s/30s  200.00 iters/s
+
+running (0m11.0s), 004/010 VUs, 2196 complete and 0 interrupted iterations
+fork3_test   [  37% ] 004/010 VUs  11.0s/30s  200.00 iters/s
+
+running (0m12.0s), 004/010 VUs, 2396 complete and 0 interrupted iterations
+fork3_test   [  40% ] 004/010 VUs  12.0s/30s  200.00 iters/s
+
+running (0m13.0s), 005/010 VUs, 2595 complete and 0 interrupted iterations
+fork3_test   [  43% ] 005/010 VUs  13.0s/30s  200.00 iters/s
+
+running (0m14.0s), 004/010 VUs, 2796 complete and 0 interrupted iterations
+fork3_test   [  47% ] 004/010 VUs  14.0s/30s  200.00 iters/s
+
+running (0m15.0s), 004/010 VUs, 2996 complete and 0 interrupted iterations
+fork3_test   [  50% ] 004/010 VUs  15.0s/30s  200.00 iters/s
+
+running (0m16.0s), 003/010 VUs, 3197 complete and 0 interrupted iterations
+fork3_test   [  53% ] 003/010 VUs  16.0s/30s  200.00 iters/s
+
+running (0m17.0s), 004/010 VUs, 3396 complete and 0 interrupted iterations
+fork3_test   [  57% ] 004/010 VUs  17.0s/30s  200.00 iters/s
+
+running (0m18.0s), 004/010 VUs, 3596 complete and 0 interrupted iterations
+fork3_test   [  60% ] 004/010 VUs  18.0s/30s  200.00 iters/s
+
+running (0m19.0s), 003/010 VUs, 3797 complete and 0 interrupted iterations
+fork3_test   [  63% ] 003/010 VUs  19.0s/30s  200.00 iters/s
+
+running (0m20.0s), 004/010 VUs, 3996 complete and 0 interrupted iterations
+fork3_test   [  67% ] 004/010 VUs  20.0s/30s  200.00 iters/s
+
+running (0m21.0s), 004/010 VUs, 4196 complete and 0 interrupted iterations
+fork3_test   [  70% ] 004/010 VUs  21.0s/30s  200.00 iters/s
+
+running (0m22.0s), 004/010 VUs, 4396 complete and 0 interrupted iterations
+fork3_test   [  73% ] 004/010 VUs  22.0s/30s  200.00 iters/s
+
+running (0m23.0s), 003/010 VUs, 4597 complete and 0 interrupted iterations
+fork3_test   [  77% ] 003/010 VUs  23.0s/30s  200.00 iters/s
+
+running (0m24.0s), 002/010 VUs, 4798 complete and 0 interrupted iterations
+fork3_test   [  80% ] 002/010 VUs  24.0s/30s  200.00 iters/s
+
+running (0m25.0s), 002/010 VUs, 4998 complete and 0 interrupted iterations
+fork3_test   [  83% ] 002/010 VUs  25.0s/30s  200.00 iters/s
+
+running (0m26.0s), 003/010 VUs, 5197 complete and 0 interrupted iterations
+fork3_test   [  87% ] 003/010 VUs  26.0s/30s  200.00 iters/s
+
+running (0m27.0s), 002/010 VUs, 5398 complete and 0 interrupted iterations
+fork3_test   [  90% ] 002/010 VUs  27.0s/30s  200.00 iters/s
+
+running (0m28.0s), 003/010 VUs, 5597 complete and 0 interrupted iterations
+fork3_test   [  93% ] 003/010 VUs  28.0s/30s  200.00 iters/s
+
+running (0m29.0s), 003/010 VUs, 5797 complete and 0 interrupted iterations
+fork3_test   [  97% ] 003/010 VUs  29.0s/30s  200.00 iters/s
+
+running (0m30.0s), 003/010 VUs, 5997 complete and 0 interrupted iterations
+fork3_test   [ 100% ] 003/010 VUs  30.0s/30s  200.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 36006   1199.646814/s
+    checks_succeeded...: 100.00% 36006 out of 36006
+    checks_failed......: 0.00%   0 out of 36006
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=18.26ms min=9.81ms med=18.72ms max=40.39ms p(90)=21.92ms p(95)=23.31ms
+      { expected_response:true }...: avg=18.26ms min=9.81ms med=18.72ms max=40.39ms p(90)=21.92ms p(95)=23.31ms
+    http_req_failed................: 0.00%  0 out of 6001
+    http_reqs......................: 6001   199.941136/s
+
+    EXECUTION
+    iteration_duration.............: avg=18.43ms min=9.9ms  med=18.9ms  max=40.81ms p(90)=22.12ms p(95)=23.53ms
+    iterations.....................: 6001   199.941136/s
+    vus............................: 3      min=2         max=5 
+    vus_max........................: 10     min=10        max=10
+
+    NETWORK
+    data_received..................: 1.2 MB 39 kB/s
+    data_sent......................: 1.2 MB 38 kB/s
+
+
+
+
+running (0m30.0s), 000/010 VUs, 6001 complete and 0 interrupted iterations
+fork3_test ✓ [ 100% ] 000/010 VUs  30s  200.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=200 | SCRIPT=k6-fork5.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork5.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork5_test: 200.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 004/011 VUs, 195 complete and 0 interrupted iterations
+fork5_test   [   3% ] 004/011 VUs  01.0s/30s  200.00 iters/s
+
+running (0m02.0s), 003/011 VUs, 396 complete and 0 interrupted iterations
+fork5_test   [   7% ] 003/011 VUs  02.0s/30s  200.00 iters/s
+
+running (0m03.0s), 004/011 VUs, 595 complete and 0 interrupted iterations
+fork5_test   [  10% ] 004/011 VUs  03.0s/30s  200.00 iters/s
+
+running (0m04.0s), 004/011 VUs, 795 complete and 0 interrupted iterations
+fork5_test   [  13% ] 004/011 VUs  04.0s/30s  200.00 iters/s
+
+running (0m05.0s), 003/011 VUs, 996 complete and 0 interrupted iterations
+fork5_test   [  17% ] 003/011 VUs  05.0s/30s  200.00 iters/s
+
+running (0m06.0s), 003/011 VUs, 1196 complete and 0 interrupted iterations
+fork5_test   [  20% ] 003/011 VUs  06.0s/30s  200.00 iters/s
+
+running (0m07.0s), 004/011 VUs, 1395 complete and 0 interrupted iterations
+fork5_test   [  23% ] 004/011 VUs  07.0s/30s  200.00 iters/s
+
+running (0m08.0s), 005/011 VUs, 1594 complete and 0 interrupted iterations
+fork5_test   [  27% ] 005/011 VUs  08.0s/30s  200.00 iters/s
+
+running (0m09.0s), 004/011 VUs, 1795 complete and 0 interrupted iterations
+fork5_test   [  30% ] 004/011 VUs  09.0s/30s  200.00 iters/s
+
+running (0m10.0s), 004/011 VUs, 1995 complete and 0 interrupted iterations
+fork5_test   [  33% ] 004/011 VUs  10.0s/30s  200.00 iters/s
+
+running (0m11.0s), 004/011 VUs, 2195 complete and 0 interrupted iterations
+fork5_test   [  37% ] 004/011 VUs  11.0s/30s  200.00 iters/s
+
+running (0m12.0s), 003/011 VUs, 2396 complete and 0 interrupted iterations
+fork5_test   [  40% ] 003/011 VUs  12.0s/30s  200.00 iters/s
+
+running (0m13.0s), 004/011 VUs, 2595 complete and 0 interrupted iterations
+fork5_test   [  43% ] 004/011 VUs  13.0s/30s  200.00 iters/s
+
+running (0m14.0s), 003/011 VUs, 2796 complete and 0 interrupted iterations
+fork5_test   [  47% ] 003/011 VUs  14.0s/30s  200.00 iters/s
+
+running (0m15.0s), 003/011 VUs, 2996 complete and 0 interrupted iterations
+fork5_test   [  50% ] 003/011 VUs  15.0s/30s  200.00 iters/s
+
+running (0m16.0s), 004/011 VUs, 3195 complete and 0 interrupted iterations
+fork5_test   [  53% ] 004/011 VUs  16.0s/30s  200.00 iters/s
+
+running (0m17.0s), 006/011 VUs, 3393 complete and 0 interrupted iterations
+fork5_test   [  57% ] 006/011 VUs  17.0s/30s  200.00 iters/s
+
+running (0m18.0s), 004/011 VUs, 3595 complete and 0 interrupted iterations
+fork5_test   [  60% ] 004/011 VUs  18.0s/30s  200.00 iters/s
+
+running (0m19.0s), 004/011 VUs, 3795 complete and 0 interrupted iterations
+fork5_test   [  63% ] 004/011 VUs  19.0s/30s  200.00 iters/s
+
+running (0m20.0s), 004/011 VUs, 3995 complete and 0 interrupted iterations
+fork5_test   [  67% ] 004/011 VUs  20.0s/30s  200.00 iters/s
+
+running (0m21.0s), 004/011 VUs, 4195 complete and 0 interrupted iterations
+fork5_test   [  70% ] 004/011 VUs  21.0s/30s  200.00 iters/s
+
+running (0m22.0s), 004/011 VUs, 4395 complete and 0 interrupted iterations
+fork5_test   [  73% ] 004/011 VUs  22.0s/30s  200.00 iters/s
+
+running (0m23.0s), 004/011 VUs, 4595 complete and 0 interrupted iterations
+fork5_test   [  77% ] 004/011 VUs  23.0s/30s  200.00 iters/s
+
+running (0m24.0s), 003/011 VUs, 4796 complete and 0 interrupted iterations
+fork5_test   [  80% ] 003/011 VUs  24.0s/30s  200.00 iters/s
+
+running (0m25.0s), 004/011 VUs, 4995 complete and 0 interrupted iterations
+fork5_test   [  83% ] 004/011 VUs  25.0s/30s  200.00 iters/s
+
+running (0m26.0s), 004/011 VUs, 5195 complete and 0 interrupted iterations
+fork5_test   [  87% ] 004/011 VUs  26.0s/30s  200.00 iters/s
+
+running (0m27.0s), 003/011 VUs, 5396 complete and 0 interrupted iterations
+fork5_test   [  90% ] 003/011 VUs  27.0s/30s  200.00 iters/s
+
+running (0m28.0s), 003/011 VUs, 5596 complete and 0 interrupted iterations
+fork5_test   [  93% ] 003/011 VUs  28.0s/30s  200.00 iters/s
+
+running (0m29.0s), 004/011 VUs, 5795 complete and 0 interrupted iterations
+fork5_test   [  97% ] 004/011 VUs  29.0s/30s  200.00 iters/s
+
+running (0m30.0s), 003/011 VUs, 5996 complete and 0 interrupted iterations
+fork5_test   [ 100% ] 003/011 VUs  30.0s/30s  200.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 36000   1199.335625/s
+    checks_succeeded...: 100.00% 36000 out of 36000
+    checks_failed......: 0.00%   0 out of 36000
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=18.71ms min=12.51ms med=17.97ms max=50.22ms p(90)=21.87ms p(95)=24.07ms
+      { expected_response:true }...: avg=18.71ms min=12.51ms med=17.97ms max=50.22ms p(90)=21.87ms p(95)=24.07ms
+    http_req_failed................: 0.00%  0 out of 6000
+    http_reqs......................: 6000   199.889271/s
+
+    EXECUTION
+    dropped_iterations.............: 1      0.033315/s
+    iteration_duration.............: avg=18.89ms min=12.61ms med=18.15ms max=50.97ms p(90)=22.07ms p(95)=24.31ms
+    iterations.....................: 6000   199.889271/s
+    vus............................: 3      min=3         max=6 
+    vus_max........................: 11     min=11        max=11
+
+    NETWORK
+    data_received..................: 1.2 MB 39 kB/s
+    data_sent......................: 1.2 MB 38 kB/s
+
+
+
+
+running (0m30.0s), 000/011 VUs, 6000 complete and 0 interrupted iterations
+fork5_test ✓ [ 100% ] 000/011 VUs  30s  200.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=200 | SCRIPT=k6-fork10.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork10.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork10_test: 200.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 035/044 VUs, 130 complete and 0 interrupted iterations
+fork10_test   [   3% ] 035/044 VUs  01.0s/30s  200.00 iters/s
+
+running (0m02.0s), 064/065 VUs, 280 complete and 0 interrupted iterations
+fork10_test   [   7% ] 064/065 VUs  02.0s/30s  200.00 iters/s
+
+running (0m03.0s), 073/077 VUs, 459 complete and 0 interrupted iterations
+fork10_test   [  10% ] 073/077 VUs  03.0s/30s  200.00 iters/s
+
+running (0m04.0s), 080/085 VUs, 644 complete and 0 interrupted iterations
+fork10_test   [  13% ] 080/085 VUs  04.0s/30s  200.00 iters/s
+
+running (0m05.0s), 098/099 VUs, 812 complete and 0 interrupted iterations
+fork10_test   [  17% ] 098/099 VUs  05.0s/30s  200.00 iters/s
+
+running (0m06.0s), 110/114 VUs, 985 complete and 0 interrupted iterations
+fork10_test   [  20% ] 110/114 VUs  06.0s/30s  200.00 iters/s
+
+running (0m07.0s), 128/131 VUs, 1150 complete and 0 interrupted iterations
+fork10_test   [  23% ] 128/131 VUs  07.0s/30s  200.00 iters/s
+
+running (0m08.0s), 154/157 VUs, 1298 complete and 0 interrupted iterations
+fork10_test   [  27% ] 154/157 VUs  08.0s/30s  200.00 iters/s
+
+running (0m09.0s), 177/180 VUs, 1452 complete and 0 interrupted iterations
+fork10_test   [  30% ] 177/180 VUs  09.0s/30s  200.00 iters/s
+time="2026-04-28T12:38:36+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=fork10_test
+
+running (0m10.0s), 195/200 VUs, 1605 complete and 0 interrupted iterations
+fork10_test   [  33% ] 195/200 VUs  10.0s/30s  200.00 iters/s
+
+running (0m11.0s), 200/200 VUs, 1748 complete and 0 interrupted iterations
+fork10_test   [  37% ] 200/200 VUs  11.0s/30s  200.00 iters/s
+
+running (0m12.0s), 188/200 VUs, 1916 complete and 0 interrupted iterations
+fork10_test   [  40% ] 188/200 VUs  12.0s/30s  200.00 iters/s
+
+running (0m13.0s), 190/200 VUs, 2069 complete and 0 interrupted iterations
+fork10_test   [  43% ] 190/200 VUs  13.0s/30s  200.00 iters/s
+
+running (0m14.0s), 194/200 VUs, 2222 complete and 0 interrupted iterations
+fork10_test   [  47% ] 194/200 VUs  14.0s/30s  200.00 iters/s
+
+running (0m15.0s), 194/200 VUs, 2374 complete and 0 interrupted iterations
+fork10_test   [  50% ] 194/200 VUs  15.0s/30s  200.00 iters/s
+
+running (0m16.0s), 195/200 VUs, 2525 complete and 0 interrupted iterations
+fork10_test   [  53% ] 195/200 VUs  16.0s/30s  200.00 iters/s
+
+running (0m17.0s), 194/200 VUs, 2677 complete and 0 interrupted iterations
+fork10_test   [  57% ] 194/200 VUs  17.0s/30s  200.00 iters/s
+
+running (0m18.0s), 194/200 VUs, 2826 complete and 0 interrupted iterations
+fork10_test   [  60% ] 194/200 VUs  18.0s/30s  200.00 iters/s
+
+running (0m19.0s), 192/200 VUs, 2977 complete and 0 interrupted iterations
+fork10_test   [  63% ] 192/200 VUs  19.0s/30s  200.00 iters/s
+
+running (0m20.0s), 200/200 VUs, 3132 complete and 0 interrupted iterations
+fork10_test   [  67% ] 200/200 VUs  20.0s/30s  200.00 iters/s
+
+running (0m21.0s), 199/200 VUs, 3276 complete and 0 interrupted iterations
+fork10_test   [  70% ] 199/200 VUs  21.0s/30s  200.00 iters/s
+
+running (0m22.0s), 198/200 VUs, 3437 complete and 0 interrupted iterations
+fork10_test   [  73% ] 198/200 VUs  22.0s/30s  200.00 iters/s
+
+running (0m23.0s), 182/200 VUs, 3605 complete and 0 interrupted iterations
+fork10_test   [  77% ] 182/200 VUs  23.0s/30s  200.00 iters/s
+
+running (0m24.0s), 200/200 VUs, 3755 complete and 0 interrupted iterations
+fork10_test   [  80% ] 200/200 VUs  24.0s/30s  200.00 iters/s
+
+running (0m25.0s), 190/200 VUs, 3924 complete and 0 interrupted iterations
+fork10_test   [  83% ] 190/200 VUs  25.0s/30s  200.00 iters/s
+
+running (0m26.0s), 200/200 VUs, 4056 complete and 0 interrupted iterations
+fork10_test   [  87% ] 200/200 VUs  26.0s/30s  200.00 iters/s
+
+running (0m27.0s), 191/200 VUs, 4206 complete and 0 interrupted iterations
+fork10_test   [  90% ] 191/200 VUs  27.0s/30s  200.00 iters/s
+
+running (0m28.0s), 200/200 VUs, 4363 complete and 0 interrupted iterations
+fork10_test   [  93% ] 200/200 VUs  28.0s/30s  200.00 iters/s
+
+running (0m29.0s), 182/200 VUs, 4537 complete and 0 interrupted iterations
+fork10_test   [  97% ] 182/200 VUs  29.0s/30s  200.00 iters/s
+
+running (0m30.0s), 196/200 VUs, 4676 complete and 0 interrupted iterations
+fork10_test   [ 100% ] 196/200 VUs  30.0s/30s  200.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 29238   950.577308/s
+    checks_succeeded...: 100.00% 29238 out of 29238
+    checks_failed......: 0.00%   0 out of 29238
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=1.03s min=33.5ms  med=1.22s max=1.5s p(90)=1.32s p(95)=1.35s
+      { expected_response:true }...: avg=1.03s min=33.5ms  med=1.22s max=1.5s p(90)=1.32s p(95)=1.35s
+    http_req_failed................: 0.00%  0 out of 4873
+    http_reqs......................: 4873   158.429551/s
+
+    EXECUTION
+    dropped_iterations.............: 1128   36.673206/s
+    iteration_duration.............: avg=1.03s min=34.05ms med=1.22s max=1.5s p(90)=1.32s p(95)=1.35s
+    iterations.....................: 4873   158.429551/s
+    vus............................: 196    min=35        max=200
+    vus_max........................: 200    min=44        max=200
+
+    NETWORK
+    data_received..................: 958 kB 31 kB/s
+    data_sent......................: 934 kB 30 kB/s
+
+
+
+
+running (0m30.8s), 000/200 VUs, 4873 complete and 0 interrupted iterations
+fork10_test ✓ [ 100% ] 000/200 VUs  30s  200.00 iters/s
+
+----------------------------------------
+===== ZONE 3: HIGH LOAD =====
+
+========================================
+RUN: RATE=300 | SCRIPT=k6-fork3.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork3.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork3_test: 300.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 006/012 VUs, 292 complete and 0 interrupted iterations
+fork3_test   [   3% ] 006/012 VUs  01.0s/30s  300.00 iters/s
+
+running (0m02.0s), 009/012 VUs, 589 complete and 0 interrupted iterations
+fork3_test   [   7% ] 009/012 VUs  02.0s/30s  300.00 iters/s
+
+running (0m03.0s), 009/014 VUs, 887 complete and 0 interrupted iterations
+fork3_test   [  10% ] 009/014 VUs  03.0s/30s  300.00 iters/s
+
+running (0m04.0s), 009/016 VUs, 1185 complete and 0 interrupted iterations
+fork3_test   [  13% ] 009/016 VUs  04.0s/30s  300.00 iters/s
+
+running (0m05.0s), 014/016 VUs, 1480 complete and 0 interrupted iterations
+fork3_test   [  17% ] 014/016 VUs  05.0s/30s  300.00 iters/s
+
+running (0m06.0s), 013/028 VUs, 1769 complete and 0 interrupted iterations
+fork3_test   [  20% ] 013/028 VUs  06.0s/30s  300.00 iters/s
+
+running (0m07.0s), 008/028 VUs, 2074 complete and 0 interrupted iterations
+fork3_test   [  23% ] 008/028 VUs  07.0s/30s  300.00 iters/s
+
+running (0m08.0s), 024/029 VUs, 2357 complete and 0 interrupted iterations
+fork3_test   [  27% ] 024/029 VUs  08.0s/30s  300.00 iters/s
+
+running (0m09.0s), 007/030 VUs, 2673 complete and 0 interrupted iterations
+fork3_test   [  30% ] 007/030 VUs  09.0s/30s  300.00 iters/s
+
+running (0m10.0s), 006/030 VUs, 2974 complete and 0 interrupted iterations
+fork3_test   [  33% ] 006/030 VUs  10.0s/30s  300.00 iters/s
+
+running (0m11.0s), 007/030 VUs, 3273 complete and 0 interrupted iterations
+fork3_test   [  37% ] 007/030 VUs  11.0s/30s  300.00 iters/s
+
+running (0m12.0s), 007/030 VUs, 3573 complete and 0 interrupted iterations
+fork3_test   [  40% ] 007/030 VUs  12.0s/30s  300.00 iters/s
+
+running (0m13.0s), 007/035 VUs, 3868 complete and 0 interrupted iterations
+fork3_test   [  43% ] 007/035 VUs  13.0s/30s  300.00 iters/s
+
+running (0m14.0s), 006/035 VUs, 4169 complete and 0 interrupted iterations
+fork3_test   [  47% ] 006/035 VUs  14.0s/30s  300.00 iters/s
+
+running (0m15.0s), 006/035 VUs, 4469 complete and 0 interrupted iterations
+fork3_test   [  50% ] 006/035 VUs  15.0s/30s  300.00 iters/s
+
+running (0m16.0s), 006/035 VUs, 4769 complete and 0 interrupted iterations
+fork3_test   [  53% ] 006/035 VUs  16.0s/30s  300.00 iters/s
+
+running (0m17.0s), 005/035 VUs, 5070 complete and 0 interrupted iterations
+fork3_test   [  57% ] 005/035 VUs  17.0s/30s  300.00 iters/s
+
+running (0m18.0s), 006/035 VUs, 5369 complete and 0 interrupted iterations
+fork3_test   [  60% ] 006/035 VUs  18.0s/30s  300.00 iters/s
+
+running (0m19.0s), 006/035 VUs, 5669 complete and 0 interrupted iterations
+fork3_test   [  63% ] 006/035 VUs  19.0s/30s  300.00 iters/s
+
+running (0m20.0s), 006/035 VUs, 5969 complete and 0 interrupted iterations
+fork3_test   [  67% ] 006/035 VUs  20.0s/30s  300.00 iters/s
+
+running (0m21.0s), 006/035 VUs, 6269 complete and 0 interrupted iterations
+fork3_test   [  70% ] 006/035 VUs  21.0s/30s  300.00 iters/s
+
+running (0m22.0s), 007/035 VUs, 6568 complete and 0 interrupted iterations
+fork3_test   [  73% ] 007/035 VUs  22.0s/30s  300.00 iters/s
+
+running (0m23.0s), 007/035 VUs, 6868 complete and 0 interrupted iterations
+fork3_test   [  77% ] 007/035 VUs  23.0s/30s  300.00 iters/s
+
+running (0m24.0s), 006/035 VUs, 7169 complete and 0 interrupted iterations
+fork3_test   [  80% ] 006/035 VUs  24.0s/30s  300.00 iters/s
+
+running (0m25.0s), 006/035 VUs, 7469 complete and 0 interrupted iterations
+fork3_test   [  83% ] 006/035 VUs  25.0s/30s  300.00 iters/s
+
+running (0m26.0s), 006/035 VUs, 7769 complete and 0 interrupted iterations
+fork3_test   [  87% ] 006/035 VUs  26.0s/30s  300.00 iters/s
+
+running (0m27.0s), 006/035 VUs, 8069 complete and 0 interrupted iterations
+fork3_test   [  90% ] 006/035 VUs  27.0s/30s  300.00 iters/s
+
+running (0m28.0s), 006/035 VUs, 8369 complete and 0 interrupted iterations
+fork3_test   [  93% ] 006/035 VUs  28.0s/30s  300.00 iters/s
+
+running (0m29.0s), 006/035 VUs, 8669 complete and 0 interrupted iterations
+fork3_test   [  97% ] 006/035 VUs  29.0s/30s  300.00 iters/s
+
+running (0m30.0s), 006/035 VUs, 8969 complete and 0 interrupted iterations
+fork3_test   [ 100% ] 006/035 VUs  30.0s/30s  300.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 53856   1794.170049/s
+    checks_succeeded...: 100.00% 53856 out of 53856
+    checks_failed......: 0.00%   0 out of 53856
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=25.99ms min=14.13ms med=20.7ms  max=127.6ms  p(90)=37.31ms p(95)=65.15ms
+      { expected_response:true }...: avg=25.99ms min=14.13ms med=20.7ms  max=127.6ms  p(90)=37.31ms p(95)=65.15ms
+    http_req_failed................: 0.00%  0 out of 8976
+    http_reqs......................: 8976   299.028342/s
+
+    EXECUTION
+    dropped_iterations.............: 25     0.832855/s
+    iteration_duration.............: avg=26.19ms min=14.34ms med=20.89ms max=128.11ms p(90)=37.62ms p(95)=65.57ms
+    iterations.....................: 8976   299.028342/s
+    vus............................: 6      min=5         max=24
+    vus_max........................: 35     min=12        max=35
+
+    NETWORK
+    data_received..................: 1.8 MB 59 kB/s
+    data_sent......................: 1.7 MB 57 kB/s
+
+
+
+
+running (0m30.0s), 000/035 VUs, 8976 complete and 0 interrupted iterations
+fork3_test ✓ [ 100% ] 000/035 VUs  30s  300.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=300 | SCRIPT=k6-fork5.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork5.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork5_test: 300.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 013/016 VUs, 281 complete and 0 interrupted iterations
+fork5_test   [   3% ] 013/016 VUs  01.0s/30s  300.00 iters/s
+
+running (0m02.0s), 015/018 VUs, 577 complete and 0 interrupted iterations
+fork5_test   [   7% ] 015/018 VUs  02.0s/30s  300.00 iters/s
+
+running (0m03.0s), 012/018 VUs, 880 complete and 0 interrupted iterations
+fork5_test   [  10% ] 012/018 VUs  03.0s/30s  300.00 iters/s
+
+running (0m04.0s), 015/018 VUs, 1177 complete and 0 interrupted iterations
+fork5_test   [  13% ] 015/018 VUs  04.0s/30s  300.00 iters/s
+
+running (0m05.0s), 015/018 VUs, 1477 complete and 0 interrupted iterations
+fork5_test   [  17% ] 015/018 VUs  05.0s/30s  300.00 iters/s
+
+running (0m06.0s), 015/020 VUs, 1775 complete and 0 interrupted iterations
+fork5_test   [  20% ] 015/020 VUs  06.0s/30s  300.00 iters/s
+
+running (0m07.0s), 027/031 VUs, 2051 complete and 0 interrupted iterations
+fork5_test   [  23% ] 027/031 VUs  07.0s/30s  300.00 iters/s
+
+running (0m08.0s), 025/032 VUs, 2352 complete and 0 interrupted iterations
+fork5_test   [  27% ] 025/032 VUs  08.0s/30s  300.00 iters/s
+
+running (0m09.0s), 036/038 VUs, 2635 complete and 0 interrupted iterations
+fork5_test   [  30% ] 036/038 VUs  09.0s/30s  300.00 iters/s
+
+running (0m10.0s), 041/044 VUs, 2924 complete and 0 interrupted iterations
+fork5_test   [  33% ] 041/044 VUs  10.0s/30s  300.00 iters/s
+
+running (0m11.0s), 054/055 VUs, 3200 complete and 0 interrupted iterations
+fork5_test   [  37% ] 054/055 VUs  11.0s/30s  300.00 iters/s
+
+running (0m12.0s), 062/063 VUs, 3484 complete and 0 interrupted iterations
+fork5_test   [  40% ] 062/063 VUs  12.0s/30s  300.00 iters/s
+
+running (0m13.0s), 060/072 VUs, 3777 complete and 0 interrupted iterations
+fork5_test   [  43% ] 060/072 VUs  13.0s/30s  300.00 iters/s
+
+running (0m14.0s), 032/072 VUs, 4105 complete and 0 interrupted iterations
+fork5_test   [  47% ] 032/072 VUs  14.0s/30s  300.00 iters/s
+
+running (0m15.0s), 026/072 VUs, 4411 complete and 0 interrupted iterations
+fork5_test   [  50% ] 026/072 VUs  15.0s/30s  300.00 iters/s
+
+running (0m16.0s), 060/072 VUs, 4677 complete and 0 interrupted iterations
+fork5_test   [  53% ] 060/072 VUs  16.0s/30s  300.00 iters/s
+
+running (0m17.0s), 091/093 VUs, 4925 complete and 0 interrupted iterations
+fork5_test   [  57% ] 091/093 VUs  17.0s/30s  300.00 iters/s
+
+running (0m18.0s), 110/115 VUs, 5184 complete and 0 interrupted iterations
+fork5_test   [  60% ] 110/115 VUs  18.0s/30s  300.00 iters/s
+
+running (0m19.0s), 127/130 VUs, 5452 complete and 0 interrupted iterations
+fork5_test   [  63% ] 127/130 VUs  19.0s/30s  300.00 iters/s
+
+running (0m20.0s), 140/142 VUs, 5727 complete and 0 interrupted iterations
+fork5_test   [  67% ] 140/142 VUs  20.0s/30s  300.00 iters/s
+
+running (0m21.0s), 153/156 VUs, 6000 complete and 0 interrupted iterations
+fork5_test   [  70% ] 153/156 VUs  21.0s/30s  300.00 iters/s
+
+running (0m22.0s), 176/181 VUs, 6252 complete and 0 interrupted iterations
+fork5_test   [  73% ] 176/181 VUs  22.0s/30s  300.00 iters/s
+
+running (0m23.0s), 188/190 VUs, 6531 complete and 0 interrupted iterations
+fork5_test   [  77% ] 188/190 VUs  23.0s/30s  300.00 iters/s
+time="2026-04-28T12:39:51+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=fork5_test
+
+running (0m24.0s), 199/200 VUs, 6803 complete and 0 interrupted iterations
+fork5_test   [  80% ] 199/200 VUs  24.0s/30s  300.00 iters/s
+
+running (0m25.0s), 196/200 VUs, 7079 complete and 0 interrupted iterations
+fork5_test   [  83% ] 196/200 VUs  25.0s/30s  300.00 iters/s
+
+running (0m26.0s), 188/200 VUs, 7375 complete and 0 interrupted iterations
+fork5_test   [  87% ] 188/200 VUs  26.0s/30s  300.00 iters/s
+
+running (0m27.0s), 200/200 VUs, 7642 complete and 0 interrupted iterations
+fork5_test   [  90% ] 200/200 VUs  27.0s/30s  300.00 iters/s
+
+running (0m28.0s), 200/200 VUs, 7918 complete and 0 interrupted iterations
+fork5_test   [  93% ] 200/200 VUs  28.0s/30s  300.00 iters/s
+
+running (0m29.0s), 196/200 VUs, 8187 complete and 0 interrupted iterations
+fork5_test   [  97% ] 196/200 VUs  29.0s/30s  300.00 iters/s
+
+running (0m30.0s), 195/200 VUs, 8460 complete and 0 interrupted iterations
+fork5_test   [ 100% ] 195/200 VUs  30.0s/30s  300.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 51936   1707.754735/s
+    checks_succeeded...: 100.00% 51936 out of 51936
+    checks_failed......: 0.00%   0 out of 51936
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=325.87ms min=19.44ms med=197.7ms  max=769.12ms p(90)=716.77ms p(95)=729.73ms
+      { expected_response:true }...: avg=325.87ms min=19.44ms med=197.7ms  max=769.12ms p(90)=716.77ms p(95)=729.73ms
+    http_req_failed................: 0.00%  0 out of 8656
+    http_reqs......................: 8656   284.625789/s
+
+    EXECUTION
+    dropped_iterations.............: 345    11.344258/s
+    iteration_duration.............: avg=326.13ms min=19.63ms med=197.92ms max=769.32ms p(90)=717.02ms p(95)=729.97ms
+    iterations.....................: 8656   284.625789/s
+    vus............................: 195    min=12        max=200
+    vus_max........................: 200    min=16        max=200
+
+    NETWORK
+    data_received..................: 1.7 MB 56 kB/s
+    data_sent......................: 1.7 MB 54 kB/s
+
+
+
+
+running (0m30.4s), 000/200 VUs, 8656 complete and 0 interrupted iterations
+fork5_test ✓ [ 100% ] 000/200 VUs  30s  300.00 iters/s
+
+----------------------------------------
+
+========================================
+RUN: RATE=300 | SCRIPT=k6-fork10.js
+========================================
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: bench/k6-fork10.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 1m0s max duration (incl. graceful stop):
+              * fork10_test: 300.00 iterations/s for 30s (maxVUs: 10-200, gracefulStop: 30s)
+
+
+running (0m01.0s), 087/088 VUs, 135 complete and 0 interrupted iterations
+fork10_test   [   3% ] 087/088 VUs  01.0s/30s  300.00 iters/s
+
+running (0m02.0s), 168/169 VUs, 273 complete and 0 interrupted iterations
+fork10_test   [   7% ] 168/169 VUs  02.0s/30s  300.00 iters/s
+time="2026-04-28T12:40:00+02:00" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=fork10_test
+
+running (0m03.0s), 198/200 VUs, 396 complete and 0 interrupted iterations
+fork10_test   [  10% ] 198/200 VUs  03.0s/30s  300.00 iters/s
+
+running (0m04.0s), 200/200 VUs, 565 complete and 0 interrupted iterations
+fork10_test   [  13% ] 200/200 VUs  04.0s/30s  300.00 iters/s
+
+running (0m05.0s), 200/200 VUs, 728 complete and 0 interrupted iterations
+fork10_test   [  17% ] 200/200 VUs  05.0s/30s  300.00 iters/s
+
+running (0m06.0s), 186/200 VUs, 899 complete and 0 interrupted iterations
+fork10_test   [  20% ] 186/200 VUs  06.0s/30s  300.00 iters/s
+
+running (0m07.0s), 190/200 VUs, 1041 complete and 0 interrupted iterations
+fork10_test   [  23% ] 190/200 VUs  07.0s/30s  300.00 iters/s
+
+running (0m08.0s), 200/200 VUs, 1189 complete and 0 interrupted iterations
+fork10_test   [  27% ] 200/200 VUs  08.0s/30s  300.00 iters/s
+
+running (0m09.0s), 194/200 VUs, 1358 complete and 0 interrupted iterations
+fork10_test   [  30% ] 194/200 VUs  09.0s/30s  300.00 iters/s
+
+running (0m10.0s), 195/200 VUs, 1532 complete and 0 interrupted iterations
+fork10_test   [  33% ] 195/200 VUs  10.0s/30s  300.00 iters/s
+
+running (0m11.0s), 199/200 VUs, 1694 complete and 0 interrupted iterations
+fork10_test   [  37% ] 199/200 VUs  11.0s/30s  300.00 iters/s
+
+running (0m12.0s), 193/200 VUs, 1850 complete and 0 interrupted iterations
+fork10_test   [  40% ] 193/200 VUs  12.0s/30s  300.00 iters/s
+
+running (0m13.0s), 197/200 VUs, 2015 complete and 0 interrupted iterations
+fork10_test   [  43% ] 197/200 VUs  13.0s/30s  300.00 iters/s
+
+running (0m14.0s), 186/200 VUs, 2179 complete and 0 interrupted iterations
+fork10_test   [  47% ] 186/200 VUs  14.0s/30s  300.00 iters/s
+
+running (0m15.0s), 200/200 VUs, 2313 complete and 0 interrupted iterations
+fork10_test   [  50% ] 200/200 VUs  15.0s/30s  300.00 iters/s
+
+running (0m16.0s), 200/200 VUs, 2462 complete and 0 interrupted iterations
+fork10_test   [  53% ] 200/200 VUs  16.0s/30s  300.00 iters/s
+
+running (0m17.0s), 200/200 VUs, 2596 complete and 0 interrupted iterations
+fork10_test   [  57% ] 200/200 VUs  17.0s/30s  300.00 iters/s
+
+running (0m18.0s), 185/200 VUs, 2737 complete and 0 interrupted iterations
+fork10_test   [  60% ] 185/200 VUs  18.0s/30s  300.00 iters/s
+
+running (0m19.0s), 200/200 VUs, 2849 complete and 0 interrupted iterations
+fork10_test   [  63% ] 200/200 VUs  19.0s/30s  300.00 iters/s
+
+running (0m20.0s), 185/200 VUs, 2997 complete and 0 interrupted iterations
+fork10_test   [  67% ] 185/200 VUs  20.0s/30s  300.00 iters/s
+
+running (0m21.0s), 200/200 VUs, 3127 complete and 0 interrupted iterations
+fork10_test   [  70% ] 200/200 VUs  21.0s/30s  300.00 iters/s
+
+running (0m22.0s), 200/200 VUs, 3236 complete and 0 interrupted iterations
+fork10_test   [  73% ] 200/200 VUs  22.0s/30s  300.00 iters/s
+
+running (0m23.0s), 200/200 VUs, 3390 complete and 0 interrupted iterations
+fork10_test   [  77% ] 200/200 VUs  23.0s/30s  300.00 iters/s
+
+running (0m24.0s), 200/200 VUs, 3532 complete and 0 interrupted iterations
+fork10_test   [  80% ] 200/200 VUs  24.0s/30s  300.00 iters/s
+
+running (0m25.0s), 200/200 VUs, 3706 complete and 0 interrupted iterations
+fork10_test   [  83% ] 200/200 VUs  25.0s/30s  300.00 iters/s
+
+running (0m26.0s), 200/200 VUs, 3857 complete and 0 interrupted iterations
+fork10_test   [  87% ] 200/200 VUs  26.0s/30s  300.00 iters/s
+
+running (0m27.0s), 200/200 VUs, 4028 complete and 0 interrupted iterations
+fork10_test   [  90% ] 200/200 VUs  27.0s/30s  300.00 iters/s
+
+running (0m28.0s), 200/200 VUs, 4185 complete and 0 interrupted iterations
+fork10_test   [  93% ] 200/200 VUs  28.0s/30s  300.00 iters/s
+
+running (0m29.0s), 199/200 VUs, 4351 complete and 0 interrupted iterations
+fork10_test   [  97% ] 199/200 VUs  29.0s/30s  300.00 iters/s
+
+running (0m30.0s), 200/200 VUs, 4501 complete and 0 interrupted iterations
+fork10_test   [ 100% ] 200/200 VUs  30.0s/30s  300.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.1' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 28206   920.316736/s
+    checks_succeeded...: 100.00% 28206 out of 28206
+    checks_failed......: 0.00%   0 out of 28206
+
+    ✓ status 200
+    ✓ completed
+    ✓ subflowsCount matches
+    ✓ orderId matches
+    ✓ customerId matches
+    ✓ amount matches
+
+    HTTP
+    http_req_duration..............: avg=1.22s min=43.52ms med=1.22s max=1.77s p(90)=1.49s p(95)=1.58s
+      { expected_response:true }...: avg=1.22s min=43.52ms med=1.22s max=1.77s p(90)=1.49s p(95)=1.58s
+    http_req_failed................: 0.00%  0 out of 4701
+    http_reqs......................: 4701   153.386123/s
+
+    EXECUTION
+    dropped_iterations.............: 4300   140.302133/s
+    iteration_duration.............: avg=1.22s min=44.49ms med=1.22s max=1.77s p(90)=1.49s p(95)=1.58s
+    iterations.....................: 4701   153.386123/s
+    vus............................: 200    min=87        max=200
+    vus_max........................: 200    min=88        max=200
+
+    NETWORK
+    data_received..................: 924 kB 30 kB/s
+    data_sent......................: 901 kB 29 kB/s
+
+
+
+
+running (0m30.6s), 000/200 VUs, 4701 complete and 0 interrupted iterations
+fork10_test ✓ [ 100% ] 000/200 VUs  30s  300.00 iters/s
+
+----------------------------------------
+
+Finished at: Tue Apr 28 12:40:29 PM CEST 2026
+========================================

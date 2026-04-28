@@ -1,0 +1,48 @@
+<infinispan
+  xmlns="urn:infinispan:config:15.0"
+  xmlns:server="urn:infinispan:server:15.0">
+
+  <cache-container name="default" statistics="true">
+    <local-cache name="respCache" statistics="true">
+      <encoding>
+        <key media-type="application/octet-stream"/>
+        <value media-type="application/octet-stream"/>
+      </encoding>
+      <transaction mode="NON_XA" locking="PESSIMISTIC"/>
+    </local-cache>
+  </cache-container>
+
+  <server xmlns="urn:infinispan:server:15.0">
+    <interfaces>
+      <interface name="public">
+        <inet-address value="${infinispan.bind.address:0.0.0.0}"/>
+      </interface>
+    </interfaces>
+
+    <socket-bindings default-interface="public" port-offset="${infinispan.socket.binding.port-offset:0}">
+      <socket-binding name="default" port="${infinispan.bind.port:11222}"/>
+    </socket-bindings>
+
+    <security>
+      <security-realms>
+        <security-realm name="default">
+          <properties-realm groups-attribute="Roles">
+            <user-properties path="users.properties"
+                             relative-to="infinispan.server.config.path"
+                             plain-text="true"/>
+            <group-properties path="groups.properties"
+                              relative-to="infinispan.server.config.path"/>
+          </properties-realm>
+        </security-realm>
+      </security-realms>
+    </security>
+
+    <endpoints socket-binding="default" security-realm="default">
+      <endpoint>
+	<resp-connector cache="respCache" max-content-length="128MB"/>      
+        <rest-connector/>
+        <hotrod-connector/>
+      </endpoint>
+    </endpoints>
+  </server>
+</infinispan>

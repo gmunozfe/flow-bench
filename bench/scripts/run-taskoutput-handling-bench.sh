@@ -67,26 +67,26 @@ run() {
 # =========================
 echo "===== ZONE 1: 1 MB TASKOUTPUT =====" | tee -a "$OUTFILE"
 
-#run 50 1000
-#run 100 1000
-#run 200 1000
+run 50 1000
+run 100 1000
+run 200 1000
 
 # =========================
 # ZONE 2 — 5 MB
 # =========================
 echo "===== ZONE 2: 5 MB TASKOUTPUT =====" | tee -a "$OUTFILE"
 
-#run 10 5000
-#run 20 5000
-#run 30 5000
+run 10 5000
+run 20 5000
+run 30 5000
 
 # =========================
 # ZONE 3 — 20 MB
 # =========================
 echo "===== ZONE 3: 20 MB TASKOUTPUT =====" | tee -a "$OUTFILE"
 
-#run 1 20000
-#run 2 20000
+run 1 20000
+run 2 20000
 run 5 20000
 
 # --- Footer ---

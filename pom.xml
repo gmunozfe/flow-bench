@@ -211,5 +211,21 @@
     </dependencies>
 </profile>
 
+<profile>
+  <id>infinispan</id>
+  <dependencies>
+    <dependency>
+      <groupId>io.quarkiverse.flow</groupId>
+      <artifactId>quarkus-flow-redis</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>io.serverlessworkflow</groupId>
+      <artifactId>serverlessworkflow-persistence-jackson-marshaller</artifactId>
+      <version>${serverlessworkflow.version}</version>
+    </dependency>
+  </dependencies>
+</profile>
+
     </profiles>
 </project>
