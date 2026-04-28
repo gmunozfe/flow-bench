@@ -34,6 +34,7 @@ Each benchmark targets a specific aspect of execution:
 | TaskOutput processing | Large TaskOutput generated (CPU-heavy)         |
 | TaskOutput handling   | Large TaskOutput reused (memory/serialization) |
 | External call         | Workflow dominated by HTTP call                |
+| Subflow orchestration | Multiple parallel subflows                     |
 
 ---
 
@@ -41,12 +42,19 @@ Each benchmark targets a specific aspect of execution:
 
 Each workflow is executed with different persistence backends:
 
-| Strategy       | Description               |
-| -------------- | ------------------------- |
-| None           | No persistence            |
-| Redis          | Key-Value store    |
-| File (MVStore) | Embedded file-based store |
-| JPA            | Relational database       |
+| Strategy                | Description               |
+| ----------------------- | ------------------------- |
+| None                    | No persistence            |
+| Redis                   | Key-Value store    |
+| File (MVStore)          | Embedded file-based store |
+| JPA                     | Relational database       |
+| Infinispan (standalone) | single-node in-memory data grid |
+| Infinispan (clustered)  | distributed cache across multiple nodes |
+
+### Notes on Infinispan
+
+- **Standalone** uses a single node via RESP/Redis protocol.
+- **Clustered** uses multiple nodes with distributed cache (`owners=2`).
 
 ---
 
@@ -56,13 +64,14 @@ Each workflow is evaluated under each persistence strategy:
 
 ```text
                     Persistence Strategy
-Workflow        None   Redis   File   JPA
---------------------------------------------
-Baseline         ✓      ✓       ✓      ✓
-Orchestration    ✓      ✓       ✓      ✓
-Processing       ✓      ✓       ✓      ✓
-Handling         ✓      ✓       ✓      ✓
-External Call    ✓      ✓       ✓      ✓
+Workflow        None  Redis  File  JPA  IS  IC 
+----------------------------------------------
+Baseline         ✓     ✓      ✓     ✓    ✓   ✓
+Orchestration    ✓     ✓      ✓     ✓    ✓   ✓
+Processing       ✓     ✓      ✓     ✓    ✓   ✓
+Handling         ✓     ✓      ✓     ✓    ✓   ✓
+External Call    ✓     ✓      ✓     ✓    ✓   ✓
+Subflow          ✓     ✓      ✓     ✓    ✓   ✓
 ```
 
 👉 This separates:
@@ -169,6 +178,30 @@ External Call    ✓      ✓       ✓      ✓
 
 ---
 
+## 6. Subflow Orchestration Scenario
+
+Evaluates the performance impact of executing multiple parallel subflows within a workflow.
+
+**Workflows:** `fork3.yaml, fork5.yaml, fork10.yaml, simple-subflow-child.yaml`
+
+**Characteristics:**
+
+* A parent workflow forks into multiple subflows:
+  * `fork3` → 3 parallel subflows
+  * `fork5` → 5 parallel subflows
+  * `fork10` → 10 parallel subflows
+* Each subflow executes independently and joins at completion
+* Measures orchestration overhead + persistence cost
+
+👉 measures:
+
+* Coordination overhead of parallel execution
+* Persistence contention under fan-out
+* Impact of backend latency amplification
+
+
+---
+
 # 📊 Performance Model
 
 ## Latency decomposition
@@ -181,6 +214,7 @@ Latency
 + External call overhead
 + Persistence strategy effect
 + Queueing (under saturation)
++ Subflow orchestration
 ```
 
 ---
