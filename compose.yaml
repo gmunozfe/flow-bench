@@ -42,7 +42,7 @@ services:
     command: ["-c", "custom.xml"]
 
   infinispan-1:
-    image: quay.io/infinispan/server:latest
+    image: quay.io/infinispan-test/server:17346
     container_name: flow-bench-infinispan-1
     hostname: infinispan-1
     ports:
@@ -62,7 +62,7 @@ services:
           - infinispan
   
   infinispan-2:
-    image: quay.io/infinispan/server:latest
+    image: quay.io/infinispan-test/server:17346
     container_name: flow-bench-infinispan-2
     hostname: infinispan-2
     ports:

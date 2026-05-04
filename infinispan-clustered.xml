@@ -13,7 +13,7 @@
 	               key-partitioner="org.infinispan.distribution.ch.impl.RESPHashFunctionPartitioner"
                        remote-timeout="60000">
       <encoding media-type="application/octet-stream"/>
-      <!--transaction mode="NON_XA" locking="PESSIMISTIC"/-->
+      <transaction mode="NON_XA" locking="PESSIMISTIC"/>
     </distributed-cache>
   </cache-container>
 
