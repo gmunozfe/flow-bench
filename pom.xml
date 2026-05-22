@@ -227,5 +227,41 @@
   </dependencies>
 </profile>
 
+ <profile>
+    <id>retry</id>
+    <build>
+      <resources>
+        <resource>
+          <directory>src/main/resources</directory>
+        </resource>
+        <resource>
+          <directory>src/main/flow-retry</directory>
+          <targetPath>flow</targetPath>
+          <includes>
+            <include>**/*.yaml</include>
+            <include>**/*.yml</include>
+          </includes>
+        </resource>
+      </resources>
+      <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <!-- REST resources tied to excluded YAML workflows -->
+            <exclude>org/acme/ForkYamlResource*.java</exclude>
+
+            <!-- Java workflow classes not needed for retry validation -->
+            <exclude>org/acme/OrderWorkflow*.java</exclude>
+            <exclude>org/acme/ExternalCallWorkflow.java</exclude>
+            <exclude>org/acme/JsonProcessingWorkflow.java</exclude>
+            <exclude>org/acme/TaskOutputPersistenceWorkflow.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+    </build>
+  </profile>
+
     </profiles>
 </project>

@@ -1,0 +1,24 @@
+document:
+  dsl: '1.0.3'
+  namespace: bench
+  name: switch-loop-wait-test
+  version: '1.0.0'
+
+do:
+  - inc:
+      set:
+        count: ${ (.count // 0) + 1 }
+      then: looping
+
+  - looping:
+      switch:
+        - loopCount:
+            when: ${ .count < ($workflow.input.maxCount // 5) }
+            then: waitABit
+        - default:
+            then: exit
+
+  - waitABit:
+      wait:
+        milliseconds: 100
+      then: inc

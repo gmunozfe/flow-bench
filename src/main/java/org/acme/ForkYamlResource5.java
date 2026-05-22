@@ -21,7 +21,7 @@ import jakarta.ws.rs.core.MediaType;
 public class ForkYamlResource5 {
 
     @Inject
-    @Identifier("bench.ForkWorkflow5")
+    @Identifier("bench:fork-workflow-5")
     Flow workflow;
 
     @POST

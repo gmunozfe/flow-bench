@@ -1,0 +1,28 @@
+document:
+  dsl: '1.0.3'
+  namespace: bench
+  name: retry-task-position-test
+  version: '1.0.0'
+
+do:
+  - tryMissingEndpoint:
+      try:
+        - missingEndpoint:
+            call: http
+            with:
+              method: post
+              endpoint: http://localhost:8080/mock/does-not-exist
+              body: ${ . }
+      catch:
+        errors:
+          with:
+            type: https://serverlessworkflow.io/spec/1.0.0/errors/communication
+            status: 404
+        retry:
+          delay:
+            milliseconds: 100
+          backoff:
+            constant: { }
+          limit:
+            attempt:
+              count: 3
