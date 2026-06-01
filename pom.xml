@@ -227,7 +227,7 @@
   </dependencies>
 </profile>
 
- <profile>
+ <!--profile>
     <id>retry</id>
     <build>
       <resources>
@@ -248,10 +248,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <excludes>
-            <!-- REST resources tied to excluded YAML workflows -->
             <exclude>org/acme/ForkYamlResource*.java</exclude>
 
-            <!-- Java workflow classes not needed for retry validation -->
             <exclude>org/acme/OrderWorkflow*.java</exclude>
             <exclude>org/acme/ExternalCallWorkflow.java</exclude>
             <exclude>org/acme/JsonProcessingWorkflow.java</exclude>
@@ -261,7 +259,7 @@
       </plugin>
     </plugins>
     </build>
-  </profile>
+  </profile-->
 
     </profiles>
 </project>

@@ -41,16 +41,34 @@ services:
     - ./infinispan-transactional.xml:/opt/infinispan/server/conf/custom.xml:ro,z
     command: ["-c", "custom.xml"]
 
-  fluentbit:
+  fluentbit-pg:
     image: fluent/fluent-bit:latest
     container_name: flow-bench-fluentbit
+    profiles: ["postgres"]
     depends_on:
       data-index-postgres:
         condition: service_healthy
     volumes:
       - ./target:/logs:ro,z
-      - ./fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf:ro,z
-      - ./parsers.conf:/fluent-bit/etc/parsers.conf:ro,z
+      - ./fluent-bit/fluent-bit-postgres.conf:/fluent-bit/etc/fluent-bit.conf:ro,z
+      - ./fluent-bit/parsers.conf:/fluent-bit/etc/parsers.conf:ro,z
+      - fluentbit-storage:/tmp/fluent-bit-buffers
+    ports:
+      - "2020:2020"
+    command: ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf"]
+
+  fluentbit-es:
+    image: fluent/fluent-bit:latest
+    container_name: flow-bench-fluentbit
+    profiles: ["elasticsearch"]
+    depends_on:
+      data-index-elasticsearch:
+        condition: service_healthy
+    volumes:
+      - ./target:/logs:ro,z
+      - ./fluent-bit/fluent-bit-elasticsearch.conf:/fluent-bit/etc/fluent-bit.conf:ro,z
+      - ./fluent-bit/parsers.conf:/fluent-bit/etc/parsers.conf:ro,z
+      - fluentbit-storage:/tmp/fluent-bit-buffers
     ports:
       - "2020:2020"
     command: ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf"]
@@ -98,6 +116,7 @@ services:
   data-index-postgres:
     image: postgres:17
     container_name: flow-bench-data-index-postgres
+    profiles: ["postgres"]
     ports:
       - "5433:5432"
     environment:
@@ -114,9 +133,10 @@ services:
       retries: 20
       start_period: 10s
   
-  data-index:
+  data-index-service-pg:
     image: kubesmarts/data-index-service-postgresql:999-SNAPSHOT
-    container_name: flow-bench-data-index
+    container_name: flow-bench-data-index-service-pg
+    profiles: ["postgres"]
     depends_on:
       data-index-postgres:
         condition: service_healthy
@@ -127,6 +147,40 @@ services:
       QUARKUS_DATASOURCE_USERNAME: dataindex
       QUARKUS_DATASOURCE_PASSWORD: dataindex123
 
+  data-index-elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+    container_name: flow-bench-data-index-elasticsearch
+    profiles: ["elasticsearch"]
+    ports:
+      - "9200:9200"
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      xpack.security.http.ssl.enabled: "false"
+      ES_JAVA_OPTS: "-Xms2g -Xmx2g"
+    volumes:
+      - data-index-elasticsearch-data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9200/_cluster/health | grep -E 'green|yellow'"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  data-index-service-es:
+    image: kubesmarts/data-index-service-elasticsearch:999-SNAPSHOT
+    container_name: flow-bench-data-index-service-es
+    profiles: ["elasticsearch"]
+    depends_on:
+      data-index-elasticsearch:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+    environment:
+      QUARKUS_ELASTICSEARCH_HOSTS: data-index-elasticsearch:9200
+      DATA_INDEX_STORAGE_SKIP_INIT_SCHEMA: "false"
+      DATA_INDEX_ELASTICSEARCH_SCHEMA_INIT_ENABLED: "true"
+
 networks:
   flow-bench:
 volumes:
@@ -135,3 +189,4 @@ volumes:
   postgres-data:
   fluentbit-storage:
   data-index-postgres-data:
+  data-index-elasticsearch-data:
