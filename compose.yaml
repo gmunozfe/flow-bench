@@ -132,6 +132,8 @@ services:
       timeout: 5s
       retries: 20
       start_period: 10s
+    networks:
+      - flow-bench
   
   data-index-service-pg:
     image: kubesmarts/data-index-service-postgresql:999-SNAPSHOT
@@ -181,6 +183,51 @@ services:
       DATA_INDEX_STORAGE_SKIP_INIT_SCHEMA: "false"
       DATA_INDEX_ELASTICSEARCH_SCHEMA_INIT_ENABLED: "true"
 
+  kafka:
+    image: docker.redpanda.com/redpandadata/redpanda:latest
+    container_name: flow-bench-kafka
+    profiles: ["kafka"]
+    command:
+      - redpanda
+      - start
+      - --overprovisioned
+      - --smp=1
+      - --memory=1G
+      - --reserve-memory=0M
+      - --node-id=0
+      - --check=false
+      - --kafka-addr=PLAINTEXT://0.0.0.0:9092,OUTSIDE://0.0.0.0:19092
+      - --advertise-kafka-addr=PLAINTEXT://kafka:9092,OUTSIDE://localhost:19092
+    ports:
+      - "19092:19092"
+      - "9644:9644"
+    volumes:
+      - kafka-data:/var/lib/redpanda/data
+    networks:
+      - flow-bench
+
+  data-index-service-kafka:
+    image: kubesmarts/data-index-ingestion-kafka-service:999-SNAPSHOT
+    container_name: flow-bench-data-index-ingestion-kafka-service
+    profiles: ["kafka"]
+    depends_on:
+      data-index-postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://data-index-postgres:5432/dataindex
+      QUARKUS_DATASOURCE_USERNAME: dataindex
+      QUARKUS_DATASOURCE_PASSWORD: dataindex123
+
+      MP_MESSAGING_INCOMING_DATA_INDEX_EVENTS_TOPIC: flow-lifecycle-out
+      MP_MESSAGING_INCOMING_DATA_INDEX_EVENTS_DEAD_LETTER_QUEUE_TOPIC: data-index-events-dlq
+    ports:
+      - "8082:8080"
+    networks:
+      - flow-bench
+
 networks:
   flow-bench:
 volumes:
@@ -190,3 +237,4 @@ volumes:
   fluentbit-storage:
   data-index-postgres-data:
   data-index-elasticsearch-data:
+  kafka-data:
